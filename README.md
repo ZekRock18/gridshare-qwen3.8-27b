@@ -2,6 +2,10 @@
 
 This repository builds a public GHCR Docker image for GridShare's custom serverless container interface.
 
+Documentation: [Wiki home](docs/wiki/Home.md) · [Deployment](docs/wiki/Deployment.md) · [Testing](docs/wiki/Testing.md) · [Costs and results](docs/wiki/Costs-and-Results.md) · [Troubleshooting](docs/wiki/Troubleshooting.md) · [Build history](docs/wiki/Build-History.md) · [Saved logs](logs/2026-10-26/README.md).
+
+The archive captured after scale-to-zero records **INR 1.5828 total endpoint cost**, including retained-worker charges, and zero live workers. The inference-only charge was INR 0.040565. See the saved API snapshot for the distinction between request metrics and total endpoint cost.
+
 ## Verified live test — 2026-10-26
 
 The public image built successfully, passed five HTTP contract tests and a container startup smoke check, and completed a real GridShare inference request on an **NVIDIA RTX 4000 Ada Generation, 20 GB**.

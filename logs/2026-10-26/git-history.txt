@@ -1,0 +1,8 @@
+358f688a40b40fd8d3590603428867011fc7af9e 2026-10-26T13:53:18+05:30 Record successful budget-GPU inference and measured charges [skip ci]
+39ca308abe6464fcb469a23d9b29fe02ca4b9859 2026-10-26T13:39:53+05:30 Resolve llama-server shared libraries from wrapper working directory
+530251018d6fcbf6950d77ea1d57dbdc5ecbab5a 2026-10-26T13:32:36+05:30 Use pinned official CUDA runtime for faster reproducible image builds
+0a33b698142d4912ef477f3f42a53e58cfc5a705 2026-10-26T13:11:45+05:30 Target lowest-priced available CUDA GPU with reduced context [skip ci]
+52a415ad972c65b134e5bd9bfdbd200abc8af9e2 2026-10-26T13:03:15+05:30 Verify published container runtime and correct wrapper license label [skip ci]
+347dc948f9ed873488428c858d95581140a4da74 2026-10-26T12:57:42+05:30 Prefer RTX 4090 for NVIDIA CUDA inference test [skip ci]
+b908dd01f8c17764a769f9295c70e2b6eb5f9559 2026-10-26T12:56:13+05:30 Document exact endpoint settings and asynchronous cold-start test [skip ci]
+8740b36e79581dc1e3c16dcd7454904a06d946c4 2026-10-26T12:52:34+05:30 Prepare Qwen3.8 GPU serverless image and verify GridShare HTTP contract

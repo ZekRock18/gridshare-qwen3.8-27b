@@ -1,0 +1,189 @@
+smoke	UNKNOWN STEP	﻿2026-10-26T08:12:07.2966339Z Current runner version: '2.338.0'
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2987007Z ##[group]Runner Image Provisioner
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2987697Z Hosted Compute Agent
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2988057Z Version: 20261021.618
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2988474Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2988897Z Build Date: 2026-10-21T00:45:21Z
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2989300Z Worker ID: {da687a96-e1ac-4f59-8912-3b68e748438f}
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2989912Z Region: centralus
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2990277Z Cloud: Azure
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2990630Z ##[endgroup]
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2991689Z ##[group]Operating System
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2992053Z Ubuntu
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2992477Z 24.04.5
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2992790Z LTS
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2993138Z ##[endgroup]
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2993482Z ##[group]Runner Image
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2993838Z Image: ubuntu-24.04
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2994243Z Version: 20261012.334.1
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2995036Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2995943Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2996496Z ##[endgroup]
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2997293Z ##[group]GITHUB_TOKEN Permissions
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2998542Z Contents: read
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2998936Z Metadata: read
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2999272Z Packages: read
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.2999602Z ##[endgroup]
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.3001280Z Secret source: Actions
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.3001823Z Cache mode: write
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.3002327Z Prepare workflow directory
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.3242294Z Prepare all required actions
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.3288707Z Getting action download info
+smoke	UNKNOWN STEP	2026-10-26T08:12:07.5719576Z Download action repository 'docker/login-action@v3' (SHA:c94ce9fb468520275223c153574b00df6fe4bcc9)
+smoke	UNKNOWN STEP	2026-10-26T08:12:08.4387747Z Complete job name: smoke
+smoke	UNKNOWN STEP	2026-10-26T08:12:08.5037632Z ##[group]Run docker/login-action@v3
+smoke	UNKNOWN STEP	2026-10-26T08:12:08.5038156Z with:
+smoke	UNKNOWN STEP	2026-10-26T08:12:08.5038434Z   registry: ghcr.io
+smoke	UNKNOWN STEP	2026-10-26T08:12:08.5038749Z   username: ZekRock18
+smoke	UNKNOWN STEP	2026-10-26T08:12:08.5042160Z   password: ***
+smoke	UNKNOWN STEP	2026-10-26T08:12:08.5042459Z   logout: true
+smoke	UNKNOWN STEP	2026-10-26T08:12:08.5042898Z ##[endgroup]
+smoke	UNKNOWN STEP	2026-10-26T08:12:08.7281143Z Logging into ghcr.io...
+smoke	UNKNOWN STEP	2026-10-26T08:12:08.7282644Z (node:1933) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+smoke	UNKNOWN STEP	2026-10-26T08:12:08.7283495Z (Use `node --trace-deprecation ...` to show where the warning was created)
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2178654Z Login Succeeded!
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2383754Z ##[group]Run set -euo pipefail
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2384644Z [36;1mset -euo pipefail[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2385527Z [36;1mimage="ghcr.io/${GITHUB_REPOSITORY,,}:latest"[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2386520Z [36;1mdocker pull "$image"[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2387546Z [36;1mdocker run --rm --entrypoint /app/llama-server "$image" --version[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2388832Z [36;1mdocker run -d --name smoke -p 127.0.0.1:8080:8080 \[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2390458Z [36;1m  -e MODEL_URL=http://127.0.0.1:1/intentionally-unavailable "$image"[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2391776Z [36;1mtrap 'docker logs smoke; docker rm -f smoke' EXIT[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2392744Z [36;1mfor attempt in $(seq 1 30); do[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2394030Z [36;1m  status=$(curl -s -o /tmp/health.json -w '%{http_code}' http://127.0.0.1:8080/health || true)[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2395304Z [36;1m  if [ "$status" = "503" ]; then[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2396518Z [36;1m    python3 -c 'import json; assert json.load(open("/tmp/health.json"))["ready"] is False'[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2397758Z [36;1m    curl -fsS http://127.0.0.1:8080/[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2398526Z [36;1m    exit 0[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2399107Z [36;1m  fi[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2399634Z [36;1m  sleep 2[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2400262Z [36;1mdone[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2401147Z [36;1mecho 'Wrapper did not expose an unready health response within 60 seconds'[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2402241Z [36;1mexit 1[0m
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2637090Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.2638053Z ##[endgroup]
+smoke	UNKNOWN STEP	2026-10-26T08:12:09.8808117Z latest: Pulling from zekrock18/gridshare-qwen3.8-27b
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0005357Z 5a7813e071bf: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0006192Z a102f36d092c: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0006860Z 05ec76e31584: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0007511Z 398182656c47: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0008166Z 73389fbd088f: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0008894Z cbb9175a9bc5: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0009566Z 3d6ab8c799cd: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0010493Z 7209097bfb98: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0011132Z 545a3ada5b6b: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0011778Z 7f6cdaf7a337: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0012411Z 69e0001f8711: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0013056Z 9303fe791da9: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0013725Z 4f4fb700ef54: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0014381Z 4be0cedecc5e: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0015048Z 45f49b8b1592: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0015664Z 63f3d10d4d78: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0016283Z 74c03fa5f2cf: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0016905Z d2c539e0b7fa: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0017520Z eca064805641: Pulling fs layer
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0018122Z cbb9175a9bc5: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0018648Z 3d6ab8c799cd: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0019166Z 7209097bfb98: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0019684Z 545a3ada5b6b: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0020345Z 7f6cdaf7a337: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0021140Z 69e0001f8711: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0021780Z 9303fe791da9: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0022450Z 4f4fb700ef54: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0023170Z d2c539e0b7fa: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0023971Z 4be0cedecc5e: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0024543Z 45f49b8b1592: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0025055Z eca064805641: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0025564Z 63f3d10d4d78: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0026120Z 74c03fa5f2cf: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0026648Z 398182656c47: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.0027153Z 73389fbd088f: Waiting
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.2966320Z 5a7813e071bf: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.2967491Z 5a7813e071bf: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.3487797Z a102f36d092c: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.3488241Z a102f36d092c: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.4542510Z 05ec76e31584: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.4543199Z 05ec76e31584: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.4872222Z 398182656c47: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.4874201Z 398182656c47: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.5181182Z 73389fbd088f: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.5186207Z 73389fbd088f: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.6705892Z 3d6ab8c799cd: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.7085139Z 7209097bfb98: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.7085863Z 7209097bfb98: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:10.8549508Z 545a3ada5b6b: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:11.1331171Z 5a7813e071bf: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:11.9128887Z 69e0001f8711: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:11.9129840Z 69e0001f8711: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:12.0772358Z 9303fe791da9: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:12.0773186Z 9303fe791da9: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:12.2325725Z 7f6cdaf7a337: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:12.2326172Z 7f6cdaf7a337: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:12.2410610Z 4f4fb700ef54: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:12.2410966Z 4f4fb700ef54: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:12.5001605Z 45f49b8b1592: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:12.7542482Z 63f3d10d4d78: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:12.7561183Z 63f3d10d4d78: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:12.9865269Z 4be0cedecc5e: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:12.9865628Z 4be0cedecc5e: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:13.3854800Z d2c539e0b7fa: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:13.3855453Z d2c539e0b7fa: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:13.5508741Z 74c03fa5f2cf: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:13.5509344Z 74c03fa5f2cf: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:13.6225986Z eca064805641: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:13.6226504Z eca064805641: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:16.3535743Z cbb9175a9bc5: Verifying Checksum
+smoke	UNKNOWN STEP	2026-10-26T08:12:16.3536107Z cbb9175a9bc5: Download complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:33.8324208Z a102f36d092c: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:35.5730966Z 05ec76e31584: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:35.5831691Z 398182656c47: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:35.5920112Z 73389fbd088f: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:58.2265463Z cbb9175a9bc5: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:58.2389402Z 3d6ab8c799cd: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:58.2507763Z 7209097bfb98: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:12:58.2594224Z 545a3ada5b6b: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:13:07.4280491Z 7f6cdaf7a337: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:13:09.2065334Z 69e0001f8711: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:13:09.2180399Z 9303fe791da9: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:13:09.2247711Z 4f4fb700ef54: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:13:09.3362368Z 4be0cedecc5e: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:13:09.3428851Z 45f49b8b1592: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:13:09.3492353Z 63f3d10d4d78: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:13:10.2456844Z 74c03fa5f2cf: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:13:10.2566078Z d2c539e0b7fa: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:13:10.2636906Z eca064805641: Pull complete
+smoke	UNKNOWN STEP	2026-10-26T08:13:10.2668806Z Digest: sha256:8d439bead8506ca8fb645367553b96f7a4431f128331bd8bc3bc80bc2040a49f
+smoke	UNKNOWN STEP	2026-10-26T08:13:10.2680737Z Status: Downloaded newer image for ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest
+smoke	UNKNOWN STEP	2026-10-26T08:13:10.2689141Z ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest
+smoke	UNKNOWN STEP	2026-10-26T08:13:10.4561907Z version: 0.7.0-dev (build 11889, commit d854d98ba)
+smoke	UNKNOWN STEP	2026-10-26T08:13:10.4562175Z built with GNU 14.2.0 for Linux x86_64
+smoke	UNKNOWN STEP	2026-10-26T08:13:10.5503179Z 5bc3f7cca6a7b739e283acafd05c7832479b4e6991572da66b77a52a696f4db4
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7278347Z INFO:     Started server process [1]
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7278626Z INFO:     Waiting for application startup.
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7278809Z INFO:     Application startup complete.
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7279186Z 2026-10-26 08:13:10,931 INFO Downloading model file (~13.44 GB) from Hugging Face; first cold start may take several minutes.
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7279934Z INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7280217Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7280478Z                                  Dload  Upload   Total   Spent    Left  Speed
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7280635Z 
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7281097Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7281330Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7281631Z curl: (7) Failed to connect to 127.0.0.1 port 1 after 0 ms: Couldn't connect to server
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7281961Z Warning: Problem (retrying all errors). Will retry in 2 seconds. 5 retries 
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7282204Z Warning: left.
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7282627Z {"service":"GridShare Qwen3.8-27B Q3_K_P","phase":"downloading","ready":false,"health":"/health","invoke":"POST /run"}INFO:     172.17.0.1:56676 - "GET /health HTTP/1.1" 503 Service Unavailable
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.7290508Z INFO:     172.17.0.1:56678 - "GET / HTTP/1.1" 200 OK
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.8477467Z smoke
+smoke	UNKNOWN STEP	2026-10-26T08:13:12.8563961Z Post job cleanup.
+smoke	UNKNOWN STEP	2026-10-26T08:13:13.0697780Z ##[group]Logout from ghcr.io
+smoke	UNKNOWN STEP	2026-10-26T08:13:13.0708999Z (node:2338) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+smoke	UNKNOWN STEP	2026-10-26T08:13:13.0709625Z (Use `node --trace-deprecation ...` to show where the warning was created)
+smoke	UNKNOWN STEP	2026-10-26T08:13:13.0736822Z [command]/usr/bin/docker logout ghcr.io
+smoke	UNKNOWN STEP	2026-10-26T08:13:13.0881620Z Removing login credentials for ghcr.io
+smoke	UNKNOWN STEP	2026-10-26T08:13:13.0899115Z ##[endgroup]
+smoke	UNKNOWN STEP	2026-10-26T08:13:13.0899669Z ##[group]Post cache
+smoke	UNKNOWN STEP	2026-10-26T08:13:13.0900293Z State not set
+smoke	UNKNOWN STEP	2026-10-26T08:13:13.0901395Z ##[endgroup]
+smoke	UNKNOWN STEP	2026-10-26T08:13:13.1087755Z Cleaning up orphan processes
+smoke	UNKNOWN STEP	2026-10-26T08:13:13.1532065Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: docker/login-action@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

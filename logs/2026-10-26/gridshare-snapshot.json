@@ -1,0 +1,131 @@
+{
+  "captured_at_utc": "2026-10-26T16:49:41.9729442Z",
+  "request": {
+    "id": "6e51190f-82e6-4cf2-9c0e-d290e8973099",
+    "endpoint_id": "737cd73f-2425-46d1-978c-3df43f1de62c",
+    "status": "completed",
+    "input": {
+      "prompt": "In two sentences, explain what a GPU does.",
+      "max_tokens": 96,
+      "temperature": 0.7,
+      "enable_thinking": false
+    },
+    "output": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "A GPU, or Graphics Processing Unit, is a specialized processor designed to handle thousands of calculations simultaneously by focusing on parallel processing tasks rather than complex, sequential logic. This architecture allows it to accelerate computationally intensive operations such as rendering images, video, and 3D graphics, as well as powering modern artificial intelligence and data analysis workloads."
+          }
+        }
+      ],
+      "created": 1793002906,
+      "model": "/models/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q3_K_P.gguf",
+      "system_fingerprint": "b11889-d854d98ba",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 69,
+        "prompt_tokens": 22,
+        "total_tokens": 91,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-j6uosZX002PfP8pJr0Dx2vjENwnfxviw",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 22,
+        "prompt_ms": 201.432,
+        "prompt_per_token_ms": 9.155999999999999,
+        "prompt_per_second": 109.217999126256,
+        "predicted_n": 69,
+        "predicted_ms": 2972.572,
+        "predicted_per_token_ms": 43.71429411764706,
+        "predicted_per_second": 22.87581259596067
+      }
+    },
+    "error": "",
+    "compute_ms": 3192,
+    "queue_wait_ms": 457010.3,
+    "cost_inr": 0.040565,
+    "was_cold_start": true,
+    "was_failover": false,
+    "queued_at": "2026-10-26T08:14:05.772730+00:00",
+    "completed_at": "2026-10-26T08:21:46.050520+00:00"
+  },
+  "endpoint": {
+    "id": "737cd73f-2425-46d1-978c-3df43f1de62c",
+    "name": "qwen38-27b-q3",
+    "description": "",
+    "image": "ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest",
+    "gpu_count": 1,
+    "min_vram_gb": 20,
+    "disk_gb": 20,
+    "env": {
+      "MODEL_CTX": "2048"
+    },
+    "startup_cmd": "",
+    "health_check_path": "/health",
+    "min_workers": 0,
+    "max_workers": 1,
+    "scale_up_queue_depth": 3,
+    "warmup_timeout_s": 900,
+    "request_timeout_s": 300,
+    "effective_rate_per_second_inr": 0.022916666666666665,
+    "preferred_gpu_family": "RTX 4000 Ada",
+    "preferred_node_id": null,
+    "redundant_mode": false,
+    "notify_on_capacity": false,
+    "status": "active",
+    "total_requests": 1,
+    "total_compute_ms": 3192,
+    "total_cost_inr": 1.5828,
+    "avg_latency_ms": 3192,
+    "cold_starts": 1,
+    "created_at": "2026-10-26T07:41:24.856451+00:00",
+    "model_version_id": null,
+    "invoke_url": "/v1/serverless/737cd73f-2425-46d1-978c-3df43f1de62c/run",
+    "playground_url": "/v1/serverless/737cd73f-2425-46d1-978c-3df43f1de62c/playground"
+  },
+  "workers": {
+    "value": [
+      {
+        "id": "f4560fb3-420d-4ba2-b3d1-c4cb8c5e56f1",
+        "node_id": "30479558-d158-4842-a9d2-6448c8a5bf65",
+        "status": "offline",
+        "requests_served": 1,
+        "total_compute_ms": 3192,
+        "warmed_at": "2026-10-26T08:21:42.442981+00:00",
+        "last_request_at": "2026-10-26T08:21:46.050520+00:00"
+      }
+    ],
+    "Count": 1
+  },
+  "metrics": {
+    "endpoint_id": "737cd73f-2425-46d1-978c-3df43f1de62c",
+    "window_hours": 24,
+    "total_requests": 1,
+    "success_rate": 100,
+    "failed": 0,
+    "cold_starts": 1,
+    "cold_start_rate": 100,
+    "avg_latency_ms": 3192,
+    "total_cost_inr": 0.0406,
+    "p50_ms": 3192,
+    "p95_ms": 3192,
+    "p99_ms": 3192
+  },
+  "trust": {
+    "relocations_survived": 0,
+    "requests_total": 1,
+    "failover_success_rate": null,
+    "scaled_to_zero": true,
+    "workers_live_now": 0,
+    "cold_starts": 1,
+    "idle_hours_not_billed": 9.1,
+    "est_inr_saved_vs_always_on": 753.85,
+    "redundant_mode": false
+  }
+}

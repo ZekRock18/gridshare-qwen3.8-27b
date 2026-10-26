@@ -1,0 +1,1489 @@
+build-and-push	UNKNOWN STEP	﻿2026-10-26T08:10:00.3670920Z Current runner version: '2.338.0'
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3687698Z ##[group]Runner Image Provisioner
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3688224Z Hosted Compute Agent
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3688627Z Version: 20261021.618
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3689032Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3689446Z Build Date: 2026-10-21T00:45:21Z
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3689899Z Worker ID: {79667de2-8aa6-403c-9d98-b52aee3b1496}
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3690314Z Region: centralus
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3690671Z Cloud: Azure
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3691035Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3691941Z ##[group]Operating System
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3692353Z Ubuntu
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3692666Z 24.04.5
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3693323Z LTS
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3693672Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3694000Z ##[group]Runner Image
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3694385Z Image: ubuntu-24.04
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3694723Z Version: 20261012.334.1
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3695538Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3696404Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3696990Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3697706Z ##[group]GITHUB_TOKEN Permissions
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3699062Z Contents: read
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3699403Z Metadata: read
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3699795Z Packages: write
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3700143Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3701432Z Secret source: Actions
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3702030Z Cache mode: write
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3702444Z Prepare workflow directory
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3913628Z Prepare all required actions
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.3944652Z Getting action download info
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.6420916Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:00.7439767Z Download action repository 'docker/setup-buildx-action@v3' (SHA:8d2750c68a42422c14e847fe6c8ac0403b4cbd6f)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:01.2888267Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:01.4202548Z Download action repository 'docker/login-action@v3' (SHA:c94ce9fb468520275223c153574b00df6fe4bcc9)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.0575472Z Download action repository 'docker/build-push-action@v6' (SHA:10e90e3645eae34f1e60eeb005ba3a3d33f178e8)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.7686950Z Complete job name: build-and-push
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8181558Z ##[group]Run actions/checkout@v4
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8181924Z with:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8182139Z   repository: ZekRock18/gridshare-qwen3.8-27b
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8184060Z   token: ***
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8184279Z   ssh-strict: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8184460Z   ssh-user: git
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8184728Z   persist-credentials: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8184932Z   clean: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8185187Z   sparse-checkout-cone-mode: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8185408Z   fetch-depth: 1
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8185587Z   fetch-tags: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8185829Z   show-progress: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8186066Z   lfs: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8186263Z   submodules: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8186496Z   set-safe-directory: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8186716Z   allow-unsafe-pr-checkout: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8187080Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8831063Z Syncing repository: ZekRock18/gridshare-qwen3.8-27b
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8832284Z ##[group]Getting Git version info
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8832819Z Working directory is '/home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b'
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8833501Z [command]/usr/bin/git version
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8890180Z git version 2.55.0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8906487Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8918155Z Temporarily overriding HOME='/home/runner/work/_temp/07683a09-ae21-4dc4-8cb4-cc847a1f715d' before making global git config changes
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8918966Z Adding repository directory to the temporary git global config as a safe directory
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8922686Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8971846Z Deleting the contents of '/home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b'
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8978812Z ##[group]Initializing the repository
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.8979550Z [command]/usr/bin/git init /home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9097093Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9102003Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9102912Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9103627Z hint: call:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9104023Z hint:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9104802Z hint: 	git config --global init.defaultBranch <name>
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9105299Z hint:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9105738Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9106253Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9106691Z hint:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9107026Z hint: 	git branch -m <name>
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9107353Z hint:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9107749Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9108379Z Initialized empty Git repository in /home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b/.git/
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9114693Z [command]/usr/bin/git remote add origin https://github.com/ZekRock18/gridshare-qwen3.8-27b
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9163195Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9163822Z ##[group]Disabling automatic garbage collection
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9166239Z [command]/usr/bin/git config --local gc.auto 0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9195365Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9195875Z ##[group]Setting up auth
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9201251Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9228950Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9529837Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9558829Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9732545Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9787006Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9939340Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9973312Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9973677Z ##[group]Fetching the repository
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:02.9979771Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +39ca308abe6464fcb469a23d9b29fe02ca4b9859:refs/remotes/origin/main
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3465227Z From https://github.com/ZekRock18/gridshare-qwen3.8-27b
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3465570Z  * [new ref]         39ca308abe6464fcb469a23d9b29fe02ca4b9859 -> origin/main
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3470392Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3470735Z ##[group]Determining the checkout info
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3472646Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3478141Z [command]/usr/bin/git sparse-checkout disable
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3522117Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3547797Z ##[group]Checking out the ref
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3551099Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3602041Z Switched to a new branch 'main'
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3606818Z branch 'main' set up to track 'origin/main'.
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3610972Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3644168Z [command]/usr/bin/git log -1 --format=%H
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3665106Z 39ca308abe6464fcb469a23d9b29fe02ca4b9859
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3835756Z ##[group]Run docker/setup-buildx-action@v3
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3835932Z with:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3836059Z   driver: docker-container
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3836189Z   use: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3836296Z   keep-state: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3836413Z   cache-binary: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3836532Z   cleanup: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3836644Z   install: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.3836762Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.5465585Z (node:2133) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.5466124Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.5515467Z ##[group]Docker info
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.5530243Z [command]/usr/bin/docker version
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6324543Z Client: Docker Engine - Community
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6324907Z  Version:           28.0.4
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6325164Z  API version:       1.48
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6325424Z  Go version:        go1.23.7
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6325631Z  Git commit:        b8034c0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6325853Z  Built:             Tue Mar 25 15:07:16 2025
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6326570Z  OS/Arch:           linux/amd64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6326814Z  Context:           default
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6326948Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6327051Z Server: Docker Engine - Community
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6327278Z  Engine:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6327446Z   Version:          28.0.4
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6327611Z   API version:      1.48 (minimum version 1.24)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6327797Z   Go version:       go1.23.7
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6327990Z   Git commit:       6430e49
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6328172Z   Built:            Tue Mar 25 15:07:16 2025
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6328345Z   OS/Arch:          linux/amd64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6328490Z   Experimental:     false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6328634Z  containerd:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6328833Z   Version:          v2.4.1
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6329049Z   GitCommit:        f2551031d7276a770f65f98c9b52e57e7dad07e8
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6329407Z  runc:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6329565Z   Version:          1.5.2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6329734Z   GitCommit:        v1.5.2-0-g29dd3dc2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6329883Z  docker-init:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6330001Z   Version:          0.19.0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6330133Z   GitCommit:        de40ad0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.6357903Z [command]/usr/bin/docker info
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9116205Z Client: Docker Engine - Community
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9116633Z  Version:    28.0.4
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9116920Z  Context:    default
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9117114Z  Debug Mode: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9117297Z  Plugins:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9117531Z   buildx: Docker Buildx (Docker Inc.)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9117782Z     Version:  v0.38.0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9118090Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9118437Z   compose: Docker Compose (Docker Inc.)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9118670Z     Version:  v2.38.2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9118944Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9119152Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9119223Z Server:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9119389Z  Containers: 0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9119554Z   Running: 0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9119717Z   Paused: 0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9119879Z   Stopped: 0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9120358Z  Images: 6
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9120546Z  Server Version: 28.0.4
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9120764Z  Storage Driver: overlay2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9121078Z   Backing Filesystem: extfs
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9121355Z   Supports d_type: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9121576Z   Using metacopy: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9121782Z   Native Overlay Diff: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9121991Z   userxattr: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9122180Z  Logging Driver: json-file
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9122386Z  Cgroup Driver: systemd
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9122576Z  Cgroup Version: 2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9123327Z  Plugins:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9123506Z   Volume: local
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9123736Z   Network: bridge host ipvlan macvlan null overlay
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9124322Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9124635Z  Swarm: inactive
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9124839Z  Runtimes: io.containerd.runc.v2 runc
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9125078Z  Default Runtime: runc
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9125282Z  Init Binary: docker-init
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9125545Z  containerd version: f2551031d7276a770f65f98c9b52e57e7dad07e8
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9125880Z  runc version: v1.5.2-0-g29dd3dc2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9126098Z  init version: de40ad0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9126285Z  Security Options:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9126464Z   apparmor
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9126629Z   seccomp
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9126792Z    Profile: builtin
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9126967Z   cgroupns
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9127143Z  Kernel Version: 6.17.0-1022-azure
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9127380Z  Operating System: Ubuntu 24.04.5 LTS
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9127612Z  OSType: linux
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9127793Z  Architecture: x86_64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9127976Z  CPUs: 4
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9128141Z  Total Memory: 15.61GiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9128336Z  Name: runnervmtai0g
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9128542Z  ID: 6134b6ae-8eb1-4f62-889e-a360c80bcfbf
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9128783Z  Docker Root Dir: /var/lib/docker
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9128997Z  Debug Mode: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9129187Z  Username: githubactions
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9129394Z  Experimental: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9129593Z  Insecure Registries:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9132879Z   ::1/128
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9133360Z   127.0.0.0/8
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9133547Z  Live Restore Enabled: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9133639Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9148041Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9598531Z ##[group]Buildx version
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9612088Z [command]/usr/bin/docker buildx version
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9947797Z github.com/docker/buildx v0.38.0 0dbe87f36ed472fe36b6796c3f70b4210a731fc5
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:03.9974529Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0091265Z ##[group]Inspecting default docker context
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0205114Z [
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0205478Z   {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0205701Z     "Name": "default",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0205928Z     "Metadata": {},
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0206196Z     "Endpoints": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0206410Z       "docker": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0206692Z         "Host": "unix:///var/run/docker.sock",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0207031Z         "SkipTLSVerify": false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0207309Z       }
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0207477Z     },
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0207692Z     "TLSMaterial": {},
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0207921Z     "Storage": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0208155Z       "MetadataPath": "<IN MEMORY>",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0208454Z       "TLSPath": "<IN MEMORY>"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0208706Z     }
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0208875Z   }
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0209023Z ]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0209513Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.0210737Z ##[group]Creating a new builder instance
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.1241124Z [command]/usr/bin/docker buildx create --name builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509 --driver docker-container --buildkitd-flags --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host --use
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.1742143Z builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.1784537Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.1784903Z ##[group]Booting builder
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.1811860Z [command]/usr/bin/docker buildx inspect --bootstrap --builder builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.2370554Z #1 [internal] booting buildkit
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:04.3873766Z #1 pulling image moby/buildkit:buildx-stable-1
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.4384052Z #1 pulling image moby/buildkit:buildx-stable-1 11.2s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.5906678Z #1 creating container buildx_buildkit_builder-781bdf3e-4a38-4397-a3c5-fe595a1fe5090
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.6536034Z #1 creating container buildx_buildkit_builder-781bdf3e-4a38-4397-a3c5-fe595a1fe5090 0.2s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.6756219Z #1 DONE 11.4s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7013537Z Name:          builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7014186Z Driver:        docker-container
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7015176Z Last Activity: 2026-10-26 08:10:04 +0000 UTC
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7015407Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7015506Z Nodes:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7015851Z Name:                  builder-781bdf3e-4a38-4397-a3c5-fe595a1fe5090
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7016174Z Endpoint:              unix:///var/run/docker.sock
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7016428Z Status:                running
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7016872Z BuildKit daemon flags: --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7017314Z BuildKit version:      v0.33.1
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7017652Z Platforms:             linux/amd64, linux/amd64/v2, linux/amd64/v3, linux/amd64/v4, linux/386
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7017981Z Labels:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7018204Z  org.mobyproject.buildkit.worker.executor:         oci
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7018582Z  org.mobyproject.buildkit.worker.hostname:         e96cd03e8800
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7018942Z  org.mobyproject.buildkit.worker.network:          host
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7019283Z  org.mobyproject.buildkit.worker.oci.process-mode: sandbox
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7019632Z  org.mobyproject.buildkit.worker.selinux.enabled:  false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7019974Z  org.mobyproject.buildkit.worker.snapshotter:      overlayfs
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7020307Z GC Policy rule#0:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7020493Z  All:            false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7020813Z  Filters:        type==source.local type==exec.cachemount type==source.git.checkout
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7021141Z  Keep Duration:  48h0m0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7021332Z  Max Used Space: 488.3MiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7021531Z GC Policy rule#1:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7021727Z  All:            false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7021909Z  Keep Duration:  1440h0m0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7022098Z  Reserved Space: 9.313GiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7022287Z  Max Used Space: 93.13GiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7022475Z  Min Free Space: 27.01GiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7022666Z GC Policy rule#2:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7022836Z  All:            false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7023192Z  Reserved Space: 9.313GiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7023385Z  Max Used Space: 93.13GiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7023571Z  Min Free Space: 27.01GiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7023753Z GC Policy rule#3:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7023919Z  All:            true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7024099Z  Reserved Space: 9.313GiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7024284Z  Max Used Space: 93.13GiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7024467Z  Min Free Space: 27.01GiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7053491Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7822450Z ##[group]Inspect builder
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7822910Z {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7823155Z   "nodes": [
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7823319Z     {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7823557Z       "name": "builder-781bdf3e-4a38-4397-a3c5-fe595a1fe5090",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7823863Z       "endpoint": "unix:///var/run/docker.sock",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7824108Z       "status": "running",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7824432Z       "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7824755Z       "buildkit": "v0.33.1",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7824976Z       "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/amd64/v4,linux/386",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7825193Z       "features": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7825413Z         "Automatically load images to the Docker Engine image store": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7825710Z         "Cache export": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7825847Z         "Direct push": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7825983Z         "Docker exporter": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7826125Z         "Multi-platform build": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7826269Z         "OCI exporter": true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7826390Z       },
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7826493Z       "labels": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7826646Z         "org.mobyproject.buildkit.worker.executor": "oci",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7826873Z         "org.mobyproject.buildkit.worker.hostname": "e96cd03e8800",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7827334Z         "org.mobyproject.buildkit.worker.network": "host",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7827563Z         "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7827915Z         "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7828153Z         "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7828332Z       },
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7828436Z       "gcPolicy": [
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7828548Z         {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7828654Z           "all": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7828770Z           "filter": [
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7828948Z             "type==source.local type==exec.cachemount type==source.git.checkout"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7829148Z           ],
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7829262Z           "keepDuration": "48h0m0s",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7829406Z           "maxUsedSpace": "488.3MiB"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7829536Z         },
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7829633Z         {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7829735Z           "all": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7829881Z           "keepDuration": "1440h0m0s",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7830026Z           "reservedSpace": "9.313GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7830181Z           "maxUsedSpace": "93.13GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7830320Z           "minFreeSpace": "27.01GiB"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7830465Z         },
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7830572Z         {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7830672Z           "all": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7830796Z           "reservedSpace": "9.313GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7830938Z           "maxUsedSpace": "93.13GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7831076Z           "minFreeSpace": "27.01GiB"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7831203Z         },
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7831316Z         {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7831417Z           "all": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7831545Z           "reservedSpace": "9.313GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7831684Z           "maxUsedSpace": "93.13GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7831839Z           "minFreeSpace": "27.01GiB"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7831981Z         }
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7832079Z       ]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7832185Z     }
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7832285Z   ],
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7832439Z   "name": "builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7832625Z   "driver": "docker-container",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7832774Z   "lastActivity": "2026-10-26T08:10:04.000Z"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7832918Z }
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7833511Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7834362Z ##[group]BuildKit version
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7834653Z builder-781bdf3e-4a38-4397-a3c5-fe595a1fe5090: v0.33.1
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7835088Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7984673Z ##[group]Run actions/setup-python@v5
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7984829Z with:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7984945Z   python-version: 3.11
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7985071Z   check-latest: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7986603Z   token: ***
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7986720Z   update-environment: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7986856Z   allow-prereleases: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7986983Z   freethreaded: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.7987102Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.8793351Z ##[group]Installed versions
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.8897736Z (node:2624) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.8898261Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.8898635Z Successfully set up CPython (3.11.17)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.8899028Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9058625Z ##[group]Run python -m pip install -r requirements.txt httpx==0.28.1
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9059113Z [36;1mpython -m pip install -r requirements.txt httpx==0.28.1[0m
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9059446Z [36;1mpython -m unittest discover -s tests -v[0m
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9296928Z shell: /usr/bin/bash -e {0}
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9297109Z env:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9297279Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9297556Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9297790Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9298194Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9298397Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9298605Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:15.9298786Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.6311493Z Collecting httpx==0.28.1
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.6865990Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.7511680Z Collecting fastapi==0.115.12 (from -r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.7606193Z   Downloading fastapi-0.115.12-py3-none-any.whl.metadata (27 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.7928199Z Collecting uvicorn==0.34.2 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.8022346Z   Downloading uvicorn-0.34.2-py3-none-any.whl.metadata (6.5 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.8272291Z Collecting requests==2.32.3 (from -r requirements.txt (line 3))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.8364356Z   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.8696388Z Collecting anyio (from httpx==0.28.1)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.8788446Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.9025109Z Collecting certifi (from httpx==0.28.1)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.9117042Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.9330739Z Collecting httpcore==1.* (from httpx==0.28.1)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.9422974Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.9648518Z Collecting idna (from httpx==0.28.1)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:16.9739410Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.0008122Z Collecting starlette<0.47.0,>=0.40.0 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.0100842Z   Downloading starlette-0.46.2-py3-none-any.whl.metadata (6.2 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.0972714Z Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.1067731Z   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.1424546Z Collecting typing-extensions>=4.8.0 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.1517488Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.1742457Z Collecting click>=7.0 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.1834378Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.2027874Z Collecting h11>=0.8 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.2119488Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.3068372Z Collecting charset-normalizer<4,>=2 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.3164889Z   Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.3432062Z Collecting urllib3<3,>=1.21.1 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.3524086Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.3842637Z Collecting httptools>=0.6.3 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.3935106Z   Downloading httptools-0.9.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.4201823Z Collecting python-dotenv>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.4293757Z   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.4601644Z Collecting pyyaml>=5.1 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.4693736Z   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.5004750Z Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.5096555Z   Downloading uvloop-0.23.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.5753415Z Collecting watchfiles>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.5848428Z   Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.6580783Z Collecting websockets>=10.4 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.6675903Z   Downloading websockets-17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.6886327Z Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:17.6976842Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.1230070Z Collecting pydantic-core==2.50.1 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.1328095Z   Downloading pydantic_core-2.50.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.1534123Z Collecting typing-inspection>=0.4.4 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.1660246Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.1833507Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.1944476Z Downloading fastapi-0.115.12-py3-none-any.whl (95 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.2064384Z Downloading uvicorn-0.34.2-py3-none-any.whl (62 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.2174301Z Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.2286405Z Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.2493202Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.2600346Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.2706984Z Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.2903281Z Downloading pydantic_core-2.50.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.3181565Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 73.7 MB/s  0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.3275000Z Downloading starlette-0.46.2-py3-none-any.whl (72 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.3380053Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.3488755Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.3703422Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.3806742Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.3913449Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.4019306Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.4122326Z Downloading httptools-0.9.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (499 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.4234293Z Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.4340850Z Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.4377708Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 244.4 MB/s  0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.4477855Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.4582888Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.4685443Z Downloading uvloop-0.23.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.0 MB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.5104961Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.0/4.0 MB 94.5 MB/s  0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.5198067Z Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (458 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.5310903Z Downloading websockets-17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:18.6231418Z Installing collected packages: websockets, uvloop, urllib3, typing-extensions, pyyaml, python-dotenv, idna, httptools, h11, click, charset-normalizer, certifi, annotated-types, uvicorn, typing-inspection, requests, pydantic-core, httpcore, anyio, watchfiles, starlette, pydantic, httpx, fastapi
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.4453523Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.4464536Z Successfully installed annotated-types-0.8.0 anyio-4.15.1 certifi-2026.10.23 charset-normalizer-3.5.2 click-8.5.0 fastapi-0.115.12 h11-0.16.0 httpcore-1.0.9 httptools-0.9.0 httpx-0.28.1 idna-3.20 pydantic-2.14.1 pydantic-core-2.50.1 python-dotenv-1.2.4 pyyaml-6.0.3 requests-2.32.3 starlette-0.46.2 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.34.2 uvloop-0.23.0 watchfiles-1.3.0 websockets-17.3
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.4469836Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.4469962Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.4470247Z [notice] To update, run: pip install --upgrade pip
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8452176Z test_crashed_model_is_unhealthy (test_app.ContractTests.test_crashed_model_is_unhealthy) ... 2026-10-26 08:10:19,844 INFO HTTP Request: GET http://testserver/health "HTTP/1.1 503 Service Unavailable"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8452930Z ok
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8471083Z test_gridshare_envelope_and_response (test_app.ContractTests.test_gridshare_envelope_and_response) ... 2026-10-26 08:10:19,846 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8471640Z ok
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8483726Z test_health_waits_for_model (test_app.ContractTests.test_health_waits_for_model) ... 2026-10-26 08:10:19,848 INFO HTTP Request: GET http://testserver/health "HTTP/1.1 503 Service Unavailable"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8494831Z 2026-10-26 08:10:19,849 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 503 Service Unavailable"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8506145Z 2026-10-26 08:10:19,850 INFO HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8506527Z ok
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8519061Z test_invalid_inputs_return_client_errors (test_app.ContractTests.test_invalid_inputs_return_client_errors) ... 2026-10-26 08:10:19,851 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8529485Z 2026-10-26 08:10:19,852 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8540659Z 2026-10-26 08:10:19,853 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8551814Z 2026-10-26 08:10:19,855 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8561368Z 2026-10-26 08:10:19,856 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8561646Z ok
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8576705Z test_upstream_timeout_returns_gateway_error (test_app.ContractTests.test_upstream_timeout_returns_gateway_error) ... 2026-10-26 08:10:19,857 ERROR Upstream inference request failed
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8577338Z Traceback (most recent call last):
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8584600Z   File "/home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b/app.py", line 243, in run
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8584916Z     response = requests.post(
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8585057Z                ^^^^^^^^^^^^^^
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8585341Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/unittest/mock.py", line 1124, in __call__
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8585611Z     return self._mock_call(*args, **kwargs)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8585768Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8586028Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8586298Z     return self._execute_mock_call(*args, **kwargs)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8586648Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8586931Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8587194Z     raise effect
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8587327Z requests.exceptions.Timeout: timeout
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8587576Z 2026-10-26 08:10:19,857 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 502 Bad Gateway"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8587796Z ok
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8587855Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8587940Z ----------------------------------------------------------------------
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8588130Z Ran 5 tests in 0.031s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8588206Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8588244Z OK
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8943754Z ##[group]Run docker/login-action@v3
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8943918Z with:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8944026Z   registry: ghcr.io
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8944142Z   username: ZekRock18
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8945748Z   password: ***
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8945861Z   logout: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8945978Z env:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8946120Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8946355Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8946583Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8946785Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8946988Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8947191Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:19.8947363Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.0779395Z Logging into ghcr.io...
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.0793974Z (node:2683) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.0794795Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5159808Z Login Succeeded!
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5280247Z ##[group]Run echo "name=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5280721Z [36;1mecho "name=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"[0m
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5332851Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5333166Z env:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5333309Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5333537Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5333757Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5333954Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5334153Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5334353Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5334521Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5464856Z ##[group]Run docker/build-push-action@v6
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5465021Z with:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5465124Z   context: .
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5465249Z   platforms: linux/amd64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5465367Z   push: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5465659Z   tags: ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest
+build-and-push	UNKNOWN STEP	ghcr.io/zekrock18/gridshare-qwen3.8-27b:sha-39ca308abe6464fcb469a23d9b29fe02ca4b9859
+build-and-push	UNKNOWN STEP	
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5466318Z   labels: org.opencontainers.image.source=https://github.com/ZekRock18/gridshare-qwen3.8-27b
+build-and-push	UNKNOWN STEP	org.opencontainers.image.description=GridShare serverless wrapper for Qwen3.8-27B Q3_K_P GGUF
+build-and-push	UNKNOWN STEP	org.opencontainers.image.licenses=MIT
+build-and-push	UNKNOWN STEP	
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5466795Z   cache-from: type=gha
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5466921Z   cache-to: type=gha,mode=max
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5467052Z   load: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5467157Z   no-cache: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5467262Z   pull: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5468733Z   github-token: ***
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5468842Z env:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5469003Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5469230Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5469571Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5469771Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5469972Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5470173Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.5470348Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.6905362Z (node:2705) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.6905962Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.6917326Z ##[group]GitHub Actions runtime token ACs
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.6921770Z refs/heads/main: read/write
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.6922234Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.6922565Z ##[group]Docker info
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.6954173Z [command]/usr/bin/docker version
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7134836Z Client: Docker Engine - Community
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7135490Z  Version:           28.0.4
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7136004Z  API version:       1.48
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7136250Z  Go version:        go1.23.7
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7136462Z  Git commit:        b8034c0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7136682Z  Built:             Tue Mar 25 15:07:16 2025
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7136924Z  OS/Arch:           linux/amd64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7137129Z  Context:           default
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7137253Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7137351Z Server: Docker Engine - Community
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7137562Z  Engine:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7137722Z   Version:          28.0.4
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7137933Z   API version:      1.48 (minimum version 1.24)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7138171Z   Go version:       go1.23.7
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7138366Z   Git commit:       6430e49
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7138585Z   Built:            Tue Mar 25 15:07:16 2025
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7138844Z   OS/Arch:          linux/amd64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7139062Z   Experimental:     false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7139263Z  containerd:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7139448Z   Version:          v2.4.1
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7139701Z   GitCommit:        f2551031d7276a770f65f98c9b52e57e7dad07e8
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7139971Z  runc:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7140137Z   Version:          1.5.2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7140328Z   GitCommit:        v1.5.2-0-g29dd3dc2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7140536Z  docker-init:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7140700Z   Version:          0.19.0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7140902Z   GitCommit:        de40ad0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7160394Z [command]/usr/bin/docker info
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7685743Z Client: Docker Engine - Community
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7686031Z  Version:    28.0.4
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7686222Z  Context:    default
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7686401Z  Debug Mode: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7686574Z  Plugins:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7686755Z   buildx: Docker Buildx (Docker Inc.)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7687606Z     Version:  v0.38.0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7687847Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7688133Z   compose: Docker Compose (Docker Inc.)
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7688369Z     Version:  v2.38.2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7688597Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7688793Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7688858Z Server:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7689014Z  Containers: 1
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7689175Z   Running: 1
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7689330Z   Paused: 0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7689484Z   Stopped: 0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7689637Z  Images: 7
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7689795Z  Server Version: 28.0.4
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7689981Z  Storage Driver: overlay2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7690174Z   Backing Filesystem: extfs
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7690368Z   Supports d_type: true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7690552Z   Using metacopy: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7690740Z   Native Overlay Diff: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7690936Z   userxattr: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7691115Z  Logging Driver: json-file
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7691276Z  Cgroup Driver: systemd
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7691395Z  Cgroup Version: 2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7691501Z  Plugins:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7691600Z   Volume: local
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7691868Z   Network: bridge host ipvlan macvlan null overlay
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7692086Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7692279Z  Swarm: inactive
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7692403Z  Runtimes: io.containerd.runc.v2 runc
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7701962Z  Default Runtime: runc
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7702166Z  Init Binary: docker-init
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7702388Z  containerd version: f2551031d7276a770f65f98c9b52e57e7dad07e8
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7702661Z  runc version: v1.5.2-0-g29dd3dc2
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7702873Z  init version: de40ad0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7703153Z  Security Options:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7703332Z   apparmor
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7703496Z   seccomp
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7703650Z    Profile: builtin
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7703798Z   cgroupns
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7703922Z  Kernel Version: 6.17.0-1022-azure
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7704067Z  Operating System: Ubuntu 24.04.5 LTS
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7704206Z  OSType: linux
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7704327Z  Architecture: x86_64
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7704443Z  CPUs: 4
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7704558Z  Total Memory: 15.61GiB
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7704678Z  Name: runnervmtai0g
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7704808Z  ID: 6134b6ae-8eb1-4f62-889e-a360c80bcfbf
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7704966Z  Docker Root Dir: /var/lib/docker
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7705098Z  Debug Mode: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7705215Z  Username: githubactions
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7705339Z  Experimental: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7705456Z  Insecure Registries:
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7705608Z   ::1/128
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7705707Z   127.0.0.0/8
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7705819Z  Live Restore Enabled: false
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7705906Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7706529Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7707047Z ##[group]Proxy configuration
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7707250Z No proxy configuration found
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.7707547Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.8089107Z ##[group]Buildx version
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.8104512Z [command]/usr/bin/docker buildx version
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.8441127Z github.com/docker/buildx v0.38.0 0dbe87f36ed472fe36b6796c3f70b4210a731fc5
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.8465415Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.8465685Z ##[group]Builder info
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9146302Z {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9146838Z   "nodes": [
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9147241Z     {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9147565Z       "name": "builder-781bdf3e-4a38-4397-a3c5-fe595a1fe5090",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9147903Z       "endpoint": "unix:///var/run/docker.sock",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9148168Z       "status": "running",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9148622Z       "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9149098Z       "buildkit": "v0.33.1",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9149439Z       "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/amd64/v4,linux/386",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9150158Z       "features": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9150435Z         "Automatically load images to the Docker Engine image store": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9150779Z         "Cache export": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9151025Z         "Direct push": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9151240Z         "Docker exporter": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9151466Z         "Multi-platform build": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9151698Z         "OCI exporter": true
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9151878Z       },
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9152024Z       "labels": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9152249Z         "org.mobyproject.buildkit.worker.executor": "oci",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9152584Z         "org.mobyproject.buildkit.worker.hostname": "e96cd03e8800",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9152932Z         "org.mobyproject.buildkit.worker.network": "host",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9153441Z         "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9153861Z         "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9154261Z         "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9154567Z       },
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9154736Z       "gcPolicy": [
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9155113Z         {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9155279Z           "all": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9155470Z           "filter": [
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9155763Z             "type==source.local type==exec.cachemount type==source.git.checkout"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9156091Z           ],
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9156289Z           "keepDuration": "48h0m0s",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9156509Z           "maxUsedSpace": "488.3MiB"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9156732Z         },
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9156903Z         {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9157061Z           "all": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9157279Z           "keepDuration": "1440h0m0s",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9157503Z           "reservedSpace": "9.313GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9157745Z           "maxUsedSpace": "93.13GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9157987Z           "minFreeSpace": "27.01GiB"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9158189Z         },
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9158349Z         {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9158506Z           "all": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9158701Z           "reservedSpace": "9.313GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9158926Z           "maxUsedSpace": "93.13GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9159148Z           "minFreeSpace": "27.01GiB"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9159386Z         },
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9159531Z         {
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9159690Z           "all": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9159883Z           "reservedSpace": "9.313GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9160107Z           "maxUsedSpace": "93.13GiB",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9160331Z           "minFreeSpace": "27.01GiB"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9160532Z         }
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9160677Z       ]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9160825Z     }
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9160974Z   ],
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9161218Z   "name": "builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9161524Z   "driver": "docker-container",
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9161775Z   "lastActivity": "2026-10-26T08:10:04.000Z"
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9162003Z }
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:20.9162444Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.0263712Z [command]/usr/bin/docker buildx build --cache-from type=gha --cache-to type=gha,mode=max --iidfile /home/runner/work/_temp/docker-actions-toolkit-UoZhSJ/build-iidfile-72bfb65c95.txt --label org.opencontainers.image.source=https://github.com/ZekRock18/gridshare-qwen3.8-27b --label org.opencontainers.image.description=GridShare serverless wrapper for Qwen3.8-27B Q3_K_P GGUF --label org.opencontainers.image.licenses=MIT --platform linux/amd64 --attest type=provenance,mode=max,builder-id=https://github.com/ZekRock18/gridshare-qwen3.8-27b/actions/runs/40290374641/attempts/1 --tag ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest --tag ghcr.io/zekrock18/gridshare-qwen3.8-27b:sha-39ca308abe6464fcb469a23d9b29fe02ca4b9859 --metadata-file /home/runner/work/_temp/docker-actions-toolkit-UoZhSJ/build-metadata-e3f4e18f7b.json --push .
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.2579821Z #0 building with "builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509" instance using docker-container driver
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.2580549Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.2580666Z #1 [internal] load build definition from Dockerfile
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.2580936Z #1 transferring dockerfile: 1.61kB done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.2583413Z #1 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.2583517Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.2583763Z #2 [auth] docker/dockerfile:pull token for registry-1.docker.io
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.4084430Z #2 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.4084531Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.4084708Z #3 resolve image config for docker-image://docker.io/docker/dockerfile:1.7
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.8159303Z #3 DONE 0.7s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.9724113Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.9724773Z #4 docker-image://docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.9725260Z #4 resolve docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:21.9740075Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 0B / 11.98MB 0.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:22.1244280Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 1.05MB / 11.98MB 0.3s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:22.2740574Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 2.10MB / 11.98MB 0.5s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:22.4240116Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 3.15MB / 11.98MB 0.6s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:22.5736342Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 4.19MB / 11.98MB 0.8s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:22.7243254Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 5.24MB / 11.98MB 0.9s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:22.8747556Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 6.29MB / 11.98MB 1.1s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.0245513Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 7.34MB / 11.98MB 1.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.1741158Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 8.39MB / 11.98MB 1.4s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.3242298Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 9.44MB / 11.98MB 1.5s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.4738302Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 10.49MB / 11.98MB 1.7s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.6139794Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 11.98MB / 11.98MB 1.8s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.7343833Z #4 extracting sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 0.1s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.7344231Z #4 DONE 1.9s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.7344304Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.7344548Z #5 [internal] load metadata for ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.9812352Z #5 ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.9812535Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.9812671Z #6 [auth] ggml-org/llama.cpp:pull token for ghcr.io
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:23.9812860Z #6 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.1313755Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.1314183Z #5 [internal] load metadata for ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.3750285Z #5 DONE 0.6s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.5331073Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.5331527Z #7 [internal] load .dockerignore
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.5331745Z #7 transferring context: 102B done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.5331887Z #7 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.8384862Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.8385477Z #8 importing cache manifest from gha:13482095625864498589
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.9935571Z #8 ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.9935729Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.9935826Z #9 [internal] load build context
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.9936030Z #9 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.9936096Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.9936317Z #10 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.9936755Z #10 resolve ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:24.9937053Z #10 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.0866598Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.0867335Z #8 importing cache manifest from gha:13482095625864498589
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.0867535Z #8 DONE 0.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.1975399Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.1975877Z #9 [internal] load build context
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.1976098Z #9 transferring context: 9.36kB done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.1976239Z #9 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.1976302Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.1976535Z #10 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.1977213Z #10 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 0.1s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.3267064Z #10 sha256:9303fe791da9bc367e2a203c350b589327625c8d3e82ddbb321b23c87c8dcf66 25.05kB / 25.05kB 0.2s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.3267677Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 0B / 177.66MB 0.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.3268293Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 0B / 261.95MB 0.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.3268639Z #10 sha256:545a3ada5b6bc612a11c13a659775d67eeda5a61615e7f49c76ecd24adcad626 1.52kB / 1.52kB 0.1s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.4394879Z #10 sha256:7209097bfb98d6f8b422984480f1fddead5ea62f8900ff6b6548e060b71aca76 1.68kB / 1.68kB 0.1s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.4395532Z #10 sha256:3d6ab8c799cda2f4c6a6277b0e24dd2231c5de83b0316968b7cce81156bb8be0 59.62kB / 59.62kB 0.1s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.5422959Z #10 sha256:73389fbd088f5ed5d9fd258baced59de092978b4f483920ea6d074522a105119 6.88kB / 6.88kB 0.1s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.6446217Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 16.78MB / 177.66MB 0.5s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.6446727Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 17.83MB / 261.95MB 0.5s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.6447306Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 0B / 2.06GB 0.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.6447847Z #10 sha256:398182656c471d6ecca3c2d6d30e97193b40ffc8028a94515093960322f3d64e 183B / 183B 0.1s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.7953314Z #10 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 0B / 64.29MB 0.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.9457548Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 35.65MB / 261.95MB 0.8s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:25.9458581Z #10 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 13.63MB / 64.29MB 0.3s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:26.0949827Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 52.43MB / 261.95MB 0.9s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:26.0953724Z #10 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 28.31MB / 64.29MB 0.5s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:26.2458788Z #10 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 40.89MB / 64.29MB 0.6s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:26.3948811Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 82.84MB / 261.95MB 1.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:26.3949232Z #10 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 52.43MB / 64.29MB 0.8s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:26.5456613Z #10 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 64.29MB / 64.29MB 0.9s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:26.6954547Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 109.05MB / 261.95MB 1.5s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:26.8374162Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 124.78MB / 261.95MB 1.7s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:26.8374846Z #10 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 64.29MB / 64.29MB 1.2s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:26.9882653Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 141.56MB / 261.95MB 1.8s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:26.9883527Z #10 sha256:a102f36d092c0e9e0bef8c97854f606af9156aa36ab408e6fa4b88e27124a7e6 6.95MB / 6.95MB 0.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:27.1534283Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 158.33MB / 261.95MB 2.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:27.1535205Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 113.25MB / 2.06GB 1.7s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:27.1535874Z #10 sha256:a102f36d092c0e9e0bef8c97854f606af9156aa36ab408e6fa4b88e27124a7e6 6.95MB / 6.95MB 0.2s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:27.1536511Z #10 sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040 29.75MB / 29.75MB 0.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:27.2848048Z #10 sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040 29.75MB / 29.75MB 0.3s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:27.4932713Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 180.36MB / 261.95MB 2.3s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:27.4933507Z #10 extracting sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:27.7664811Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 199.23MB / 261.95MB 2.6s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:27.7665512Z #10 extracting sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040 0.5s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:27.8786177Z #10 extracting sha256:a102f36d092c0e9e0bef8c97854f606af9156aa36ab408e6fa4b88e27124a7e6 0.1s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:28.0930600Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 218.10MB / 261.95MB 2.9s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:28.0931578Z #10 extracting sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:28.3929756Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 232.78MB / 261.95MB 3.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:28.5427659Z #10 extracting sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 0.6s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:28.5428165Z #10 extracting sha256:398182656c471d6ecca3c2d6d30e97193b40ffc8028a94515093960322f3d64e done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:28.5428502Z #10 extracting sha256:73389fbd088f5ed5d9fd258baced59de092978b4f483920ea6d074522a105119 done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:28.6934127Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 250.61MB / 261.95MB 3.5s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:29.1437336Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 220.20MB / 2.06GB 3.8s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:30.1933492Z #10 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 261.95MB / 261.95MB 5.0s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:30.7934902Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 20.97MB / 177.66MB 5.6s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:30.9426130Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 325.06MB / 2.06GB 5.6s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:31.9932074Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 36.70MB / 177.66MB 6.8s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:32.1430788Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 46.14MB / 177.66MB 6.9s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:32.4437558Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 62.91MB / 177.66MB 7.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:32.5930213Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 73.40MB / 177.66MB 7.4s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:32.8933727Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 87.03MB / 177.66MB 7.7s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:33.1938912Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 104.86MB / 177.66MB 8.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:33.3438534Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 115.34MB / 177.66MB 8.1s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:33.4932283Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 429.92MB / 2.06GB 8.1s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:33.7930054Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 132.12MB / 177.66MB 8.6s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:34.0933480Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 148.90MB / 177.66MB 8.9s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:34.3938991Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 167.77MB / 177.66MB 9.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:34.5426982Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 177.66MB / 177.66MB 9.3s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:35.4435383Z #10 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 177.66MB / 177.66MB 10.2s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:35.7432222Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 536.87MB / 2.06GB 10.4s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:37.6928037Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 649.07MB / 2.06GB 12.3s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:39.4932842Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 759.17MB / 2.06GB 14.1s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:40.6935600Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 868.22MB / 2.06GB 15.3s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:42.7929118Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 980.42MB / 2.06GB 17.4s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:44.7426009Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.09GB / 2.06GB 19.4s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:46.8428851Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.20GB / 2.06GB 21.5s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:48.6437339Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.30GB / 2.06GB 23.3s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:50.4434883Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.41GB / 2.06GB 25.1s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:52.2432400Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.51GB / 2.06GB 26.9s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:54.1931196Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.61GB / 2.06GB 28.8s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:56.1434518Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.73GB / 2.06GB 30.8s
+build-and-push	UNKNOWN STEP	2026-10-26T08:10:58.0929612Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.84GB / 2.06GB 32.7s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:00.0431682Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.94GB / 2.06GB 34.7s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:01.8427874Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 2.04GB / 2.06GB 36.5s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:06.9431292Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 2.06GB / 2.06GB 41.6s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:09.8185180Z #10 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 2.06GB / 2.06GB 44.3s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:09.8185800Z #10 extracting sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:20.7198779Z #10 extracting sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 11.1s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:20.7199324Z #10 extracting sha256:3d6ab8c799cda2f4c6a6277b0e24dd2231c5de83b0316968b7cce81156bb8be0
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:21.3349748Z #10 extracting sha256:3d6ab8c799cda2f4c6a6277b0e24dd2231c5de83b0316968b7cce81156bb8be0 0.6s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:21.3350132Z #10 DONE 56.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:21.4851634Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:21.4851918Z #10 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:21.4852418Z #10 extracting sha256:7209097bfb98d6f8b422984480f1fddead5ea62f8900ff6b6548e060b71aca76
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:22.0900897Z #10 extracting sha256:7209097bfb98d6f8b422984480f1fddead5ea62f8900ff6b6548e060b71aca76 0.8s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:22.0901229Z #10 DONE 57.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:22.2405552Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:22.2405941Z #10 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:22.2406463Z #10 extracting sha256:545a3ada5b6bc612a11c13a659775d67eeda5a61615e7f49c76ecd24adcad626
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:23.0245964Z #10 extracting sha256:545a3ada5b6bc612a11c13a659775d67eeda5a61615e7f49c76ecd24adcad626 0.9s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:23.0246372Z #10 DONE 57.9s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:23.1749616Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:23.1749986Z #10 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:23.1750386Z #10 extracting sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:27.0980298Z #10 extracting sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 4.1s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:27.0980694Z #10 extracting sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.2501860Z #10 extracting sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 1.2s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.2502320Z #10 DONE 63.2s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.4003937Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.4005203Z #10 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.4021671Z #10 extracting sha256:9303fe791da9bc367e2a203c350b589327625c8d3e82ddbb321b23c87c8dcf66
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.4022221Z #10 extracting sha256:9303fe791da9bc367e2a203c350b589327625c8d3e82ddbb321b23c87c8dcf66 0.2s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.4022586Z #10 DONE 63.3s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.5559530Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.5560275Z #10 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.5560744Z #10 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.5560983Z #10 DONE 63.3s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.5561049Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.5561333Z #11 [2/7] RUN apt-get update && apt-get install -y --no-install-recommends     python3 python3-venv ca-certificates curl libgomp1     && rm -rf /var/lib/apt/lists/*
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.6616995Z #11 0.256 Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.8141562Z #11 0.261 Get:2 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  InRelease [1578 B]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.8142010Z #11 0.409 Get:3 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:28.9842362Z #11 0.579 Get:4 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages [1978 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:29.2154790Z #11 0.810 Get:5 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:29.3522145Z #11 0.947 Get:6 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:29.4895126Z #11 0.992 Get:7 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1549 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:29.4895658Z #11 1.084 Get:8 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.2670547Z #11 1.862 Get:9 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2122 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.5103636Z #11 2.104 Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.6095086Z #11 2.117 Get:11 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.6096262Z #11 2.117 Get:12 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.6096906Z #11 2.120 Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1733 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.6097441Z #11 2.128 Get:14 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1411 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.6098122Z #11 2.135 Get:15 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2170 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.6098774Z #11 2.179 Get:16 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [61.7 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.6099450Z #11 2.179 Get:17 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2231 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.6100122Z #11 2.204 Get:18 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [669 B]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.7900381Z #11 2.204 Get:19 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.0 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.7900794Z #11 2.205 Get:20 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.0 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:30.7901124Z #11 2.234 Get:21 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [55.6 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:31.2459670Z #11 2.841 Fetched 35.6 MB in 3s (12.8 MB/s)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:31.6865930Z #11 2.841 Reading package lists...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:31.8516442Z #11 3.290 W: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.1679274Z #11 3.296 Reading package lists...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.2941070Z #11 3.771 Building dependency tree...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.4096708Z #11 3.889 Reading state information...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.4097168Z #11 4.004 python3 is already the newest version (3.12.3-0ubuntu2.1).
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.4097570Z #11 4.004 python3 set to manually installed.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.4097928Z #11 4.004 curl is already the newest version (8.5.0-2ubuntu10.16).
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.4098303Z #11 4.004 libgomp1 is already the newest version (14.2.0-4ubuntu2~24.04.1).
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.4098668Z #11 4.004 The following NEW packages will be installed:
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.4099053Z #11 4.004   python3-pip-whl python3-setuptools-whl python3-venv python3.12-venv
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.5598846Z #11 4.004 The following packages will be upgraded:
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.5599129Z #11 4.005   ca-certificates
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.8251799Z #11 4.420 1 upgraded, 4 newly installed, 0 to remove and 60 not upgraded.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.8252462Z #11 4.420 Need to get 2569 kB of archives.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.8252918Z #11 4.420 After this operation, 2726 kB of additional disk space will be used.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:32.8253511Z #11 4.420 Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 ca-certificates all 20260816ubuntu0.24.04.1 [139 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:33.4465477Z #11 5.041 Get:2 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-pip-whl all 24.0+dfsg-1ubuntu1.3 [1707 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.3460597Z #11 5.940 Get:3 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-setuptools-whl all 68.1.2-2ubuntu1.2 [716 kB]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.4788002Z #11 6.002 Get:4 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3.12-venv amd64 3.12.3-1ubuntu0.17 [5684 B]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.4788798Z #11 6.002 Get:5 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-venv amd64 3.12.3-0ubuntu2.1 [1032 B]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.4789394Z #11 6.073 debconf: delaying package configuration, since apt-utils is not installed
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6116914Z #11 6.093 Fetched 2569 kB in 2s (1289 kB/s)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6117244Z #11 6.105 (Reading database ... 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6117478Z (Reading database ... 5%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6117682Z (Reading database ... 10%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6117818Z (Reading database ... 15%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6117944Z (Reading database ... 20%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6118146Z (Reading database ... 25%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6118268Z (Reading database ... 30%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6118390Z (Reading database ... 35%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6118516Z (Reading database ... 40%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6118639Z (Reading database ... 45%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6118784Z (Reading database ... 50%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6118956Z (Reading database ... 55%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6119111Z (Reading database ... 60%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6119233Z (Reading database ... 65%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6119354Z (Reading database ... 70%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6119487Z (Reading database ... 75%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6119678Z (Reading database ... 80%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6119803Z (Reading database ... 85%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6119923Z (Reading database ... 90%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6120046Z (Reading database ... 95%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6120169Z (Reading database ... 100%
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6120394Z (Reading database ... 23976 files and directories currently installed.)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6120709Z #11 6.120 Preparing to unpack .../ca-certificates_20260816ubuntu0.24.04.1_all.deb ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6120996Z #11 6.121 Unpacking ca-certificates (20260816ubuntu0.24.04.1) over (20240203) ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.6121326Z #11 6.206 Selecting previously unselected package python3-pip-whl.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8332802Z #11 6.210 Preparing to unpack .../python3-pip-whl_24.0+dfsg-1ubuntu1.3_all.deb ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8333672Z #11 6.211 Unpacking python3-pip-whl (24.0+dfsg-1ubuntu1.3) ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8334051Z #11 6.224 Selecting previously unselected package python3-setuptools-whl.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8334348Z #11 6.228 Preparing to unpack .../python3-setuptools-whl_68.1.2-2ubuntu1.2_all.deb ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8334607Z #11 6.229 Unpacking python3-setuptools-whl (68.1.2-2ubuntu1.2) ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8334828Z #11 6.241 Selecting previously unselected package python3.12-venv.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8335071Z #11 6.245 Preparing to unpack .../python3.12-venv_3.12.3-1ubuntu0.17_amd64.deb ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8335304Z #11 6.245 Unpacking python3.12-venv (3.12.3-1ubuntu0.17) ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8335510Z #11 6.256 Selecting previously unselected package python3-venv.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8335741Z #11 6.259 Preparing to unpack .../python3-venv_3.12.3-0ubuntu2.1_amd64.deb ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8335961Z #11 6.260 Unpacking python3-venv (3.12.3-0ubuntu2.1) ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8336169Z #11 6.276 Setting up python3-setuptools-whl (68.1.2-2ubuntu1.2) ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:34.8336392Z #11 6.278 Setting up ca-certificates (20260816ubuntu0.24.04.1) ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:35.5873407Z #11 7.182 Updating certificates in /etc/ssl/certs...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:36.0625389Z #11 7.657 rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:36.2588147Z #11 7.661 17 added, 43 removed; done.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:36.2588535Z #11 7.667 Setting up python3-pip-whl (24.0+dfsg-1ubuntu1.3) ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:36.2588873Z #11 7.669 Setting up python3.12-venv (3.12.3-1ubuntu0.17) ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:36.2589078Z #11 7.698 Setting up python3-venv (3.12.3-0ubuntu2.1) ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:36.2589310Z #11 7.700 Processing triggers for ca-certificates (20260816ubuntu0.24.04.1) ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:36.2589539Z #11 7.703 Updating certificates in /etc/ssl/certs...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:36.3988168Z #11 7.993 0 added, 0 removed; done.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:36.3988619Z #11 7.993 Running hooks in /etc/ca-certificates/update.d...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:36.5502015Z #11 7.994 done.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:42.9343721Z #11 DONE 14.5s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:43.0994275Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:43.0994733Z #12 [3/7] WORKDIR /opt/app
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:43.0994941Z #12 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:43.0995010Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:43.0995075Z #13 [4/7] COPY requirements.txt .
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:43.0995223Z #13 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:43.0995293Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:43.0995471Z #14 [5/7] RUN python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:44.9157277Z #14 1.967 Collecting fastapi==0.115.12 (from -r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.0308439Z #14 2.034   Downloading fastapi-0.115.12-py3-none-any.whl.metadata (27 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.0309024Z #14 2.067 Collecting uvicorn==0.34.2 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.0309576Z #14 2.082   Downloading uvicorn-0.34.2-py3-none-any.whl.metadata (6.5 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.2275217Z #14 2.107 Collecting requests==2.32.3 (from -r requirements.txt (line 3))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.2275774Z #14 2.121   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.2276582Z #14 2.159 Collecting starlette<0.47.0,>=0.40.0 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.2276937Z #14 2.174   Downloading starlette-0.46.2-py3-none-any.whl.metadata (6.2 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.2277385Z #14 2.279 Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.3381211Z #14 2.294   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.3382360Z #14 2.314      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.0/133.0 kB 6.9 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.3382825Z #14 2.336 Collecting typing-extensions>=4.8.0 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.3383732Z #14 2.351   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.3384264Z #14 2.375 Collecting click>=7.0 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.3384695Z #14 2.390   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.4578396Z #14 2.404 Collecting h11>=0.8 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.4579043Z #14 2.419   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.4579853Z #14 2.509 Collecting charset-normalizer<4,>=2 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.5748650Z #14 2.524   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.5749367Z #14 2.526      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.4/46.4 kB 447.0 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.5749666Z #14 2.545 Collecting idna<4,>=2.5 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.5749928Z #14 2.560   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.5750235Z #14 2.590 Collecting urllib3<3,>=1.21.1 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.5750777Z #14 2.605   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.5751042Z #14 2.626 Collecting certifi>=2017.4.17 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.6813942Z #14 2.641   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.6814572Z #14 2.699 Collecting httptools>=0.6.3 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.6815188Z #14 2.714   Downloading httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.6815583Z #14 2.733 Collecting python-dotenv>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.7882878Z #14 2.747   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.7883457Z #14 2.778 Collecting pyyaml>=5.1 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.7884031Z #14 2.792   Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.7884636Z #14 2.825 Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.7885091Z #14 2.840   Downloading uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.9303129Z #14 2.890 Collecting watchfiles>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.9303812Z #14 2.905   Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:45.9304427Z #14 2.981 Collecting websockets>=10.4 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.1349197Z #14 2.997   Downloading websockets-17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.1349865Z #14 3.021 Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.1350236Z #14 3.036   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.4225619Z #14 3.473 Collecting pydantic-core==2.50.1 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.6145477Z #14 3.489   Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.6146330Z #14 3.506 Collecting typing-inspection>=0.4.4 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.6146717Z #14 3.521   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.6147068Z #14 3.550 Collecting anyio<5,>=3.6.2 (from starlette<0.47.0,>=0.40.0->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.6147371Z #14 3.565   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.6147610Z #14 3.665 Downloading fastapi-0.115.12-py3-none-any.whl (95 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.7178767Z #14 3.669    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.2/95.2 kB 46.1 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.7179200Z #14 3.684 Downloading uvicorn-0.34.2-py3-none-any.whl (62 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.7179497Z #14 3.686    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.5/62.5 kB 50.6 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.7179823Z #14 3.701 Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.7180191Z #14 3.704    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.9/64.9 kB 42.2 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.7180599Z #14 3.718 Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.7181043Z #14 3.723    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.1/135.1 kB 41.8 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.7181822Z #14 3.737 Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.7182326Z #14 3.754    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 257.6/257.6 kB 15.8 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.7182543Z #14 3.769 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.8462092Z #14 3.771    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 105.0 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.8462383Z #14 3.786 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.8462713Z #14 3.801 Downloading httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (552 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.8463379Z #14 3.818    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 552.8/552.8 kB 34.9 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.8463605Z #14 3.833 Downloading idna-3.20-py3-none-any.whl (69 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.8463864Z #14 3.834    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 280.6 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.8464104Z #14 3.849 Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.8464375Z #14 3.853    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 488.1/488.1 kB 137.7 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.8464675Z #14 3.868 Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.9741394Z #14 3.897    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 77.0 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.9742228Z #14 3.912 Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.9742888Z #14 3.928 Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.9743692Z #14 3.930    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 543.6 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.9743947Z #14 3.946 Downloading starlette-0.46.2-py3-none-any.whl (72 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.9744332Z #14 3.947    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.0/72.0 kB 474.5 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.9744581Z #14 3.962 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.9744867Z #14 3.963    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 509.7 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.9745170Z #14 3.978 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.9745439Z #14 3.979    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 kB 527.8 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:46.9745766Z #14 3.994 Downloading uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.5 MB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:47.1102352Z #14 4.025    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 154.6 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:47.1103316Z #14 4.041 Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (458 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:47.1103706Z #14 4.042    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 458.4/458.4 kB 698.4 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:47.1104243Z #14 4.057 Downloading websockets-17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:47.1104612Z #14 4.059    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 225.8/225.8 kB 585.1 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:47.1104911Z #14 4.074 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:47.1105156Z #14 4.089 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:47.1105422Z #14 4.090    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB 574.9 MB/s eta 0:00:00
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:47.1105726Z #14 4.105 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:47.1106356Z #14 4.161 Installing collected packages: websockets, uvloop, urllib3, typing-extensions, pyyaml, python-dotenv, idna, httptools, h11, click, charset-normalizer, certifi, annotated-types, uvicorn, typing-inspection, requests, pydantic-core, anyio, watchfiles, starlette, pydantic, fastapi
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:47.8973172Z #14 4.948 Successfully installed annotated-types-0.8.0 anyio-4.15.1 certifi-2026.10.23 charset-normalizer-3.5.2 click-8.5.0 fastapi-0.115.12 h11-0.16.0 httptools-0.9.0 idna-3.20 pydantic-2.14.1 pydantic-core-2.50.1 python-dotenv-1.2.4 pyyaml-6.0.3 requests-2.32.3 starlette-0.46.2 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.34.2 uvloop-0.23.0 watchfiles-1.3.0 websockets-17.3
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:48.4778027Z #14 DONE 5.5s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:48.6865351Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:48.6865834Z #15 [6/7] COPY app.py .
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:48.6866109Z #15 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:48.6866211Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:48.6866361Z #16 [7/7] RUN mkdir -p /models && chmod 755 /models
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:48.6866638Z #16 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:48.6866738Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:48.6866821Z #17 exporting to image
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:48.6867052Z #17 exporting layers
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:49.8932288Z #17 exporting layers 1.4s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:50.0906172Z #17 ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:50.0906341Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:50.0906492Z #18 [auth] zekrock18/gridshare-qwen3.8-27b:pull,push token for ghcr.io
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:50.0906700Z #18 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:50.0906766Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:50.0906824Z #17 exporting to image
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:50.0907066Z #17 exporting manifest sha256:b32d6a68fed6bfc9b7faa9ebb1756c0449e578efcf00c6adb17a93cc68386833 done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:50.0907418Z #17 exporting config sha256:c0d63082832429fdea0fbe14010b1272ad442e1c9b01abd5307856ee05b8410e done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:50.0907774Z #17 exporting attestation manifest sha256:1b704b76c6c52b0022f47686c82670682c509b02c49307237583effbcc0d1fd8 done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:50.0908139Z #17 exporting manifest list sha256:8d439bead8506ca8fb645367553b96f7a4431f128331bd8bc3bc80bc2040a49f done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:50.0908386Z #17 pushing layers
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:52.7960793Z #17 pushing layers 2.9s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:52.7961303Z #17 pushing manifest for ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest@sha256:8d439bead8506ca8fb645367553b96f7a4431f128331bd8bc3bc80bc2040a49f
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.0473390Z #17 pushing manifest for ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest@sha256:8d439bead8506ca8fb645367553b96f7a4431f128331bd8bc3bc80bc2040a49f 1.3s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3065700Z #17 ...
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3065913Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3066029Z #19 exporting to GitHub Actions Cache
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3066341Z #19 preparing build cache for export done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3066532Z #19 sending cache export 4.4s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3066801Z #19 writing layer sha256:45f49b8b159271e570b67e4407dddf5a3ae18af5ae7eba841cc29bf907524eb9 0.3s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3067173Z #19 writing layer sha256:4be0cedecc5ee765ea3b8a0e8e7292d798c0b5a3d6aa5d00d753e090e0c52d17 0.7s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3067534Z #19 writing layer sha256:63f3d10d4d78a8c6adec11d140d064cebf05c3047f5bc774854af6c4b28401a0 0.3s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3067920Z #19 writing layer sha256:74c03fa5f2cfbe0357c683f894633a5fabd88e7c39ba98e944f7f3b100ba633f 1.5s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3068269Z #19 writing layer sha256:d2c539e0b7fa674ab11ec1cf3ae414ede41b2df56cc6f8c15b1e9d081a62a9d0 0.2s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3068906Z #19 writing layer sha256:eca06480564159e1128fd5abae6faf1e15437715146008fa07930a1b3be591b7 0.3s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.3069149Z #19 DONE 4.4s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.4802156Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.4802317Z #17 exporting to image
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.4802549Z #17 pushing layers 0.3s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.4802970Z #17 pushing manifest for ghcr.io/zekrock18/gridshare-qwen3.8-27b:sha-39ca308abe6464fcb469a23d9b29fe02ca4b9859@sha256:8d439bead8506ca8fb645367553b96f7a4431f128331bd8bc3bc80bc2040a49f
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9366120Z #17 pushing manifest for ghcr.io/zekrock18/gridshare-qwen3.8-27b:sha-39ca308abe6464fcb469a23d9b29fe02ca4b9859@sha256:8d439bead8506ca8fb645367553b96f7a4431f128331bd8bc3bc80bc2040a49f 0.6s done
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9366840Z #17 DONE 6.4s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9551395Z 
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9551783Z #20 resolving provenance for metadata file
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9551982Z #20 DONE 0.0s
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9609998Z ##[group]ImageID
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9610376Z sha256:8d439bead8506ca8fb645367553b96f7a4431f128331bd8bc3bc80bc2040a49f
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9610863Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9611140Z ##[group]Digest
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9611495Z sha256:8d439bead8506ca8fb645367553b96f7a4431f128331bd8bc3bc80bc2040a49f
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9612011Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9612294Z ##[group]Metadata
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9612459Z {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9612650Z   "buildx.build.provenance": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9612854Z     "builder": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9613329Z       "id": "https://github.com/ZekRock18/gridshare-qwen3.8-27b/actions/runs/40290374641/attempts/1"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9613670Z     },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9613869Z     "buildType": "https://mobyproject.org/buildkit@v1",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9614156Z     "materials": [
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9614317Z       {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9614490Z         "uri": "pkg:docker/docker/dockerfile@1.7",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9615075Z         "digest": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9615622Z           "sha256": "a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9616132Z         }
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9616437Z       },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9616668Z       {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9617360Z         "uri": "pkg:docker/ghcr.io/ggml-org/llama.cpp@server-cuda?digest=sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe&platform=linux%2Famd64",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9618046Z         "digest": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9629258Z           "sha256": "b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9629593Z         }
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9629743Z       }
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9629893Z     ],
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9630043Z     "invocation": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9630221Z       "configSource": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9630683Z         "entryPoint": "Dockerfile"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9630915Z       },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9631091Z       "parameters": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9631301Z         "frontend": "gateway.v0",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9631529Z         "args": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9631739Z           "cmdline": "docker/dockerfile:1.7",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9632208Z           "label:org.opencontainers.image.description": "GridShare serverless wrapper for Qwen3.8-27B Q3_K_P GGUF",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9632688Z           "label:org.opencontainers.image.licenses": "MIT",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9633270Z           "label:org.opencontainers.image.source": "https://github.com/ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9633683Z           "source": "docker/dockerfile:1.7"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9633918Z         },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9634065Z         "locals": [
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9634247Z           {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9634403Z             "name": "context"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9634615Z           },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9634771Z           {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9634938Z             "name": "dockerfile"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9635150Z           }
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9635319Z         ],
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9635464Z         "root": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9635877Z           "configSource": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9636096Z             "path": "Dockerfile"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9636278Z           },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9636430Z           "request": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9636593Z             "args": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9636949Z               "label:org.opencontainers.image.description": "GridShare serverless wrapper for Qwen3.8-27B Q3_K_P GGUF",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9637479Z               "label:org.opencontainers.image.licenses": "MIT",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9637918Z               "label:org.opencontainers.image.source": "https://github.com/ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9638333Z               "vcs:localdir:context": ".",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9638627Z               "vcs:localdir:dockerfile": ".",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9638998Z               "vcs:revision": "39ca308abe6464fcb469a23d9b29fe02ca4b9859",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9639456Z               "vcs:source": "https://github.com/ZekRock18/gridshare-qwen3.8-27b"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9639817Z             }
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9639990Z           }
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9640137Z         },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9640327Z         "compatibilityVersion": 30
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9640554Z       },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9640725Z       "environment": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9640917Z         "github_actor": "ZekRock18",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9641158Z         "github_actor_id": "189788636",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9641398Z         "github_event_name": "push",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9641633Z         "github_event_payload": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9641899Z           "after": "39ca308abe6464fcb469a23d9b29fe02ca4b9859",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9642167Z           "base_ref": null,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9642396Z           "before": "530251018d6fcbf6950d77ea1d57dbdc5ecbab5a",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9642669Z           "commits": [
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9642866Z             {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9643702Z               "author": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9643939Z                 "email": "prakhar18.linkedin@gmail.com",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9644190Z                 "name": "Prakhar Gupta",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9644433Z                 "username": "ZekRock18"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9644648Z               },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9644838Z               "committer": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9645118Z                 "email": "prakhar18.linkedin@gmail.com",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9645428Z                 "name": "Prakhar Gupta",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9645668Z                 "username": "ZekRock18"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9645884Z               },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9646049Z               "distinct": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9646303Z               "id": "39ca308abe6464fcb469a23d9b29fe02ca4b9859",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9646694Z               "message": "Resolve llama-server shared libraries from wrapper working directory",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9647096Z               "timestamp": "2026-10-26T13:39:53+05:30",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9647514Z               "tree_id": "fe4f0fd4e9d40b22c70797f32fbd3b33116c4ab3",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9648015Z               "url": "https://github.com/ZekRock18/gridshare-qwen3.8-27b/commit/39ca308abe6464fcb469a23d9b29fe02ca4b9859"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9648431Z             }
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9648600Z           ],
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9648946Z           "compare": "https://github.com/ZekRock18/gridshare-qwen3.8-27b/compare/530251018d6f...39ca308abe64",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9649374Z           "created": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9649560Z           "deleted": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9649770Z           "forced": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9649969Z           "head_commit": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9650150Z             "author": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9650375Z               "email": "prakhar18.linkedin@gmail.com",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9650639Z               "name": "Prakhar Gupta",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9650860Z               "username": "ZekRock18"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9651077Z             },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9651260Z             "committer": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9651480Z               "email": "prakhar18.linkedin@gmail.com",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9651744Z               "name": "Prakhar Gupta",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9652086Z               "username": "ZekRock18"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9652279Z             },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9652461Z             "distinct": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9652680Z             "id": "39ca308abe6464fcb469a23d9b29fe02ca4b9859",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9653164Z             "message": "Resolve llama-server shared libraries from wrapper working directory",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9653562Z             "timestamp": "2026-10-26T13:39:53+05:30",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9653837Z             "tree_id": "fe4f0fd4e9d40b22c70797f32fbd3b33116c4ab3",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9654327Z             "url": "https://github.com/ZekRock18/gridshare-qwen3.8-27b/commit/39ca308abe6464fcb469a23d9b29fe02ca4b9859"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9654741Z           },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9654912Z           "pusher": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9655112Z             "email": "prakhar18.linkedin@gmail.com",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9655369Z             "name": "ZekRock18"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9655569Z           },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9655737Z           "ref": "refs/heads/main",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9655958Z           "repository": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9656149Z             "allow_forking": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9656568Z             "archive_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/{archive_format}{/ref}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9656985Z             "archived": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9657377Z             "assignees_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/assignees{/user}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9657917Z             "blobs_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/git/blobs{/sha}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9658610Z             "branches_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/branches{/branch}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9659150Z             "clone_url": "https://github.com/ZekRock18/gridshare-qwen3.8-27b.git",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9659690Z             "collaborators_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/collaborators{/collaborator}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9660319Z             "comments_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/comments{/number}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9660879Z             "commits_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/commits{/sha}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9661448Z             "compare_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/compare/{base}...{head}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9662035Z             "contents_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/contents/{+path}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9662605Z             "contributors_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/contributors",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9663094Z             "created_at": 1792998774,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9663435Z             "default_branch": "main",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9663815Z             "deployments_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/deployments",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9664235Z             "description": null,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9664434Z             "disabled": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9664783Z             "downloads_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/downloads",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9665301Z             "events_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/events",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9667315Z             "fork": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9667495Z             "forks": 0,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9667700Z             "forks_count": 0,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9668030Z             "forks_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/forks",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9668428Z             "full_name": "ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9668911Z             "git_commits_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/git/commits{/sha}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9669494Z             "git_refs_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/git/refs{/sha}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9670219Z             "git_tags_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/git/tags{/sha}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9670657Z             "git_url": "git://github.com/ZekRock18/gridshare-qwen3.8-27b.git",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9670950Z             "has_discussions": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9671162Z             "has_downloads": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9671391Z             "has_issues": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9671585Z             "has_pages": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9671776Z             "has_projects": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9672002Z             "has_pull_requests": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9672210Z             "has_wiki": true,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9672413Z             "homepage": null,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9672752Z             "hooks_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/hooks",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9673417Z             "html_url": "https://github.com/ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9673717Z             "id": 1434030111,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9673925Z             "is_template": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9674348Z             "issue_comment_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/issues/comments{/number}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9674868Z             "issue_events_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/issues/events{/number}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9675356Z             "issues_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/issues{/number}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9675909Z             "keys_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/keys{/key_id}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9676451Z             "labels_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/labels{/name}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9676796Z             "language": "Python",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9677134Z             "languages_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/languages",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9677486Z             "license": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9677665Z               "key": "other",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9677849Z               "name": "Other",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9678046Z               "node_id": "MDc6TGljZW5zZTA=",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9678271Z               "spdx_id": "NOASSERTION",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9678478Z               "url": null
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9678651Z             },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9678816Z             "master_branch": "main",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9679145Z             "merges_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/merges",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9679654Z             "milestones_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/milestones{/number}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9680040Z             "mirror_url": null,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9680251Z             "name": "gridshare-qwen3.8-27b",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9680609Z             "node_id": "R_kgDOVXmQHw",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9681062Z             "notifications_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/notifications{?since,all,participating}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9681528Z             "open_issues": 0,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9681727Z             "open_issues_count": 0,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9681923Z             "owner": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9682191Z               "avatar_url": "https://avatars.githubusercontent.com/u/189788636?v=4",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9682533Z               "email": "prakhar18.linkedin@gmail.com",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9682863Z               "events_url": "https://api.github.com/users/ZekRock18/events{/privacy}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9683371Z               "followers_url": "https://api.github.com/users/ZekRock18/followers",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9683790Z               "following_url": "https://api.github.com/users/ZekRock18/following{/other_user}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9684211Z               "gists_url": "https://api.github.com/users/ZekRock18/gists{/gist_id}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9684518Z               "gravatar_id": "",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9684750Z               "html_url": "https://github.com/ZekRock18",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9685092Z               "id": 189788636,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9685283Z               "login": "ZekRock18",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9685487Z               "name": "ZekRock18",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9685693Z               "node_id": "U_kgDOC0_x3A",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9685986Z               "organizations_url": "https://api.github.com/users/ZekRock18/orgs",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9686392Z               "received_events_url": "https://api.github.com/users/ZekRock18/received_events",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9686792Z               "repos_url": "https://api.github.com/users/ZekRock18/repos",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9687080Z               "site_admin": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9687394Z               "starred_url": "https://api.github.com/users/ZekRock18/starred{/owner}{/repo}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9687842Z               "subscriptions_url": "https://api.github.com/users/ZekRock18/subscriptions",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9688176Z               "type": "User",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9688405Z               "url": "https://api.github.com/users/ZekRock18",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9688682Z               "user_view_type": "public"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9688885Z             },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9689045Z             "private": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9689252Z             "pull_request_creation_policy": "all",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9689634Z             "pulls_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/pulls{/number}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9689998Z             "pushed_at": 1793002195,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9690389Z             "releases_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/releases{/id}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9690754Z             "size": 0,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9690996Z             "ssh_url": "git@github.com:ZekRock18/gridshare-qwen3.8-27b.git",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9691285Z             "stargazers": 0,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9691485Z             "stargazers_count": 0,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9691830Z             "stargazers_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/stargazers",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9692335Z             "statuses_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/statuses/{sha}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9692849Z             "subscribers_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/subscribers",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9693523Z             "subscription_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/subscription",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9693968Z             "svn_url": "https://github.com/ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9694359Z             "tags_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/tags",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9694792Z             "teams_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/teams",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9695140Z             "topics": [],
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9695607Z             "trees_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/git/trees{/sha}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9695896Z             "updated_at": "2026-10-26T08:02:47Z",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9696102Z             "url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9696448Z             "visibility": "public",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9696646Z             "watchers": 0,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9696832Z             "watchers_count": 0,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9697044Z             "web_commit_signoff_required": false
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9697263Z           },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9697420Z           "sender": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9697685Z             "avatar_url": "https://avatars.githubusercontent.com/u/189788636?v=4",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9698084Z             "events_url": "https://api.github.com/users/ZekRock18/events{/privacy}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9698477Z             "followers_url": "https://api.github.com/users/ZekRock18/followers",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9698895Z             "following_url": "https://api.github.com/users/ZekRock18/following{/other_user}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9699306Z             "gists_url": "https://api.github.com/users/ZekRock18/gists{/gist_id}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9699710Z             "gravatar_id": "",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9699933Z             "html_url": "https://github.com/ZekRock18",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9700173Z             "id": 189788636,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9700364Z             "login": "ZekRock18",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9700568Z             "node_id": "U_kgDOC0_x3A",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9700862Z             "organizations_url": "https://api.github.com/users/ZekRock18/orgs",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9701271Z             "received_events_url": "https://api.github.com/users/ZekRock18/received_events",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9701658Z             "repos_url": "https://api.github.com/users/ZekRock18/repos",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9701938Z             "site_admin": false,
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9702244Z             "starred_url": "https://api.github.com/users/ZekRock18/starred{/owner}{/repo}",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9702672Z             "subscriptions_url": "https://api.github.com/users/ZekRock18/subscriptions",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9703094Z             "type": "User",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9703315Z             "url": "https://api.github.com/users/ZekRock18",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9703567Z             "user_view_type": "public"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9703770Z           }
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9703915Z         },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9704081Z         "github_job": "build-and-push",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9704300Z         "github_ref": "refs/heads/main",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9704515Z         "github_ref_name": "main",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9704720Z         "github_ref_protected": "false",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9704940Z         "github_ref_type": "branch",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9705195Z         "github_repository": "ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9705467Z         "github_repository_id": "1434030111",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9705703Z         "github_repository_owner": "ZekRock18",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9705960Z         "github_repository_owner_id": "189788636",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9706198Z         "github_run_attempt": "1",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9706414Z         "github_run_id": "40290374641",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9706629Z         "github_run_number": "3",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9706833Z         "github_runner_arch": "X64",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9707069Z         "github_runner_environment": "github-hosted",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9707323Z         "github_runner_image_os": "ubuntu24",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9707575Z         "github_runner_image_version": "20261023.334.3",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9707848Z         "github_runner_name": "GitHub Actions 1000000128",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9708097Z         "github_runner_os": "Linux",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9708401Z         "github_runner_tracking_id": "github_f93e390a-8b68-4e94-a7ce-2c4fd248fb0a",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9708742Z         "github_server_url": "https://github.com",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9708993Z         "github_triggering_actor": "ZekRock18",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9709371Z         "github_workflow": "Build and publish GridShare image",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9709813Z         "github_workflow_ref": "ZekRock18/gridshare-qwen3.8-27b/.github/workflows/publish.yml@refs/heads/main",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9710276Z         "github_workflow_sha": "39ca308abe6464fcb469a23d9b29fe02ca4b9859",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9710572Z         "platform": "linux/amd64"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9710764Z       }
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9710910Z     }
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9711051Z   },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9711526Z   "buildx.build.ref": "builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509/builder-781bdf3e-4a38-4397-a3c5-fe595a1fe5090/46i42usgwut27jevwcunzgllk",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9712069Z   "containerimage.descriptor": {
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9712339Z     "mediaType": "application/vnd.oci.image.index.v1+json",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9712739Z     "digest": "sha256:8d439bead8506ca8fb645367553b96f7a4431f128331bd8bc3bc80bc2040a49f",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9713264Z     "size": 856
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9713417Z   },
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9713735Z   "containerimage.digest": "sha256:8d439bead8506ca8fb645367553b96f7a4431f128331bd8bc3bc80bc2040a49f",
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9714404Z   "image.name": "ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest,ghcr.io/zekrock18/gridshare-qwen3.8-27b:sha-39ca308abe6464fcb469a23d9b29fe02ca4b9859"
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9714998Z }
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9715356Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9715637Z ##[group]Reference
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9716045Z builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509/builder-781bdf3e-4a38-4397-a3c5-fe595a1fe5090/46i42usgwut27jevwcunzgllk
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9716568Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9716833Z ##[group]Check build summary support
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9717154Z Build summary supported!
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9717428Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:54.9797251Z Post job cleanup.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.1137908Z ##[group]Generating build summary
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.1139788Z exporting build record to /home/runner/work/_temp/docker-actions-toolkit-MbC8LN/export
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.1147405Z (node:8043) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.1147975Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.2419556Z [command]/usr/bin/docker buildx history export --builder builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509 --output /home/runner/work/_temp/docker-actions-toolkit-MbC8LN/export/ZekRock18~gridshare-qwen3.8-27b~46I42U.dockerbuild 46i42usgwut27jevwcunzgllk --finalize
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.4113360Z Build record written to /home/runner/work/_temp/docker-actions-toolkit-MbC8LN/export/ZekRock18~gridshare-qwen3.8-27b~46I42U.dockerbuild (76.33 KB)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.4128919Z Uploading ZekRock18~gridshare-qwen3.8-27b~46I42U.dockerbuild to blob storage
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.6692801Z Beginning upload of artifact content to blob storage
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.6742133Z (node:8043) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.6747053Z Uploaded bytes 65536
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.6747980Z Uploaded bytes 78160
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.8920998Z Finished uploading artifact content to blob storage!
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.8924323Z SHA256 hash of uploaded artifact is 6ba1bc17fb31fa8f60594a1653e37691816ff7a4f6e7408399d8d194ff73e0fe
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:55.8925812Z Finalizing artifact upload
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.3769768Z Artifact successfully finalized (12635872362)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.3770486Z Artifact download URL: https://github.com/ZekRock18/gridshare-qwen3.8-27b/actions/runs/40290374641/artifacts/12635872362
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.3786157Z Writing summary
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.3794441Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.3794881Z ##[group]Removing temp folder /home/runner/work/_temp/docker-actions-toolkit-UoZhSJ
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.3797899Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.3798183Z ##[group]Post cache
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.3799192Z State not set
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.3799456Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.3921370Z Post job cleanup.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.5633373Z ##[group]Logout from ghcr.io
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.5645707Z (node:8189) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.5646072Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.5658217Z [command]/usr/bin/docker logout ghcr.io
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.5758685Z Removing login credentials for ghcr.io
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.5777800Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.5778207Z ##[group]Post cache
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.5778410Z State not set
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.5778833Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.5963880Z Post job cleanup.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.6662501Z (node:8209) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.6663253Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.6790580Z Post job cleanup.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.8242335Z ##[group]Removing builder
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.8245080Z (node:8217) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.8246041Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:56.9207365Z [command]/usr/bin/docker buildx rm builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:59.9317046Z builder-781bdf3e-4a38-4397-a3c5-fe595a1fe509 removed
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:59.9346499Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:59.9346839Z ##[group]Cleaning up certificates
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:59.9348749Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:59.9349407Z ##[group]Post cache
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:59.9350904Z State not set
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:59.9351209Z ##[endgroup]
+build-and-push	UNKNOWN STEP	2026-10-26T08:11:59.9486781Z Post job cleanup.
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0005517Z [command]/usr/bin/git version
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0038544Z git version 2.55.0
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0062358Z Temporarily overriding HOME='/home/runner/work/_temp/d87cf1ed-ec02-4707-88b1-05dd56f68c75' before making global git config changes
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0062903Z Adding repository directory to the temporary git global config as a safe directory
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0066337Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0095655Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0120952Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0343331Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0355985Z http.https://github.com/.extraheader
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0370309Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0407255Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0594213Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0623305Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.0900271Z Cleaning up orphan processes
+build-and-push	UNKNOWN STEP	2026-10-26T08:12:00.1126280Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, docker/build-push-action@v6, docker/login-action@v3, docker/setup-buildx-action@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

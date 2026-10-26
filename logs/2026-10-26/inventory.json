@@ -1,0 +1,92 @@
+[
+  {
+    "path": ".build-artifacts/40289582417/build-record.dockerbuild",
+    "bytes": 89812,
+    "sha256": "6f125f8a31a5236d20abee2d607ba391cdd5c5180a791bc04daa8d808b8ed0ee"
+  },
+  {
+    "path": ".build-artifacts/40290374641/build-record.dockerbuild",
+    "bytes": 78160,
+    "sha256": "6ba1bc17fb31fa8f60594a1653e37691816ff7a4f6e7408399d8d194ff73e0fe"
+  },
+  {
+    "path": "docs/wiki/Build-History.md",
+    "bytes": 1758,
+    "sha256": "ecad081e8043ba8514fac2ea7f7a72aaf6596ba981349143c1aaa4b2067a0b67"
+  },
+  {
+    "path": "docs/wiki/Costs-and-Results.md",
+    "bytes": 2071,
+    "sha256": "4002fa7feb6284693e94c7793e19544a083ece506b163efc951ce3bb0bf5f858"
+  },
+  {
+    "path": "docs/wiki/Deployment.md",
+    "bytes": 2624,
+    "sha256": "b2b8b956c7eaaf5dfb80f913ab4dd6d6896ffbd24dfb01665255cec0f5a35342"
+  },
+  {
+    "path": "docs/wiki/Home.md",
+    "bytes": 1345,
+    "sha256": "6c0633137b8be5f39e163fd79c09e480a0dcb8ac63a49d85000fb3c75a0585ef"
+  },
+  {
+    "path": "docs/wiki/Testing.md",
+    "bytes": 2193,
+    "sha256": "c3f817ec0776057e820dc7d64805ba278962a86a44f13745e0c71ad92022ca8f"
+  },
+  {
+    "path": "docs/wiki/Troubleshooting.md",
+    "bytes": 1767,
+    "sha256": "b1417a626993008c79ccc8135a76762443b4f242a66a92c2ca3c42a286156b11"
+  },
+  {
+    "path": "logs/2026-10-26/actions/run-40285420367.log",
+    "bytes": 230468,
+    "sha256": "d462a495e52ea8b36dd30bfbc39efebd356b1c66b943509040258f3f12544022"
+  },
+  {
+    "path": "logs/2026-10-26/actions/run-40289582417.log",
+    "bytes": 179975,
+    "sha256": "711574476531f0c1283a38182b3ff260c255dd1c62273d584ac072ecea4f20c3"
+  },
+  {
+    "path": "logs/2026-10-26/actions/run-40289635679.log",
+    "bytes": 60,
+    "sha256": "e2356e0023cee15de9be77b4c44f2161d77b25cacc45471260cfd218eb0299c6"
+  },
+  {
+    "path": "logs/2026-10-26/actions/run-40290133571.log",
+    "bytes": 19868,
+    "sha256": "4bd6c45b554c6ebecfa40a33c001fe921946a57186ef269a4bb88f19e51f78b9"
+  },
+  {
+    "path": "logs/2026-10-26/actions/run-40290374641.log",
+    "bytes": 168257,
+    "sha256": "77b0851ebc27afaeeeb55ff4639e2ca459d6c8d7fd810bfdd7693da0be6a8ea5"
+  },
+  {
+    "path": "logs/2026-10-26/actions/run-40290613596.log",
+    "bytes": 16210,
+    "sha256": "26d09796c34a53ac85304bf811e1e2a65ffeb84267ca6a55472c6be8bbe26b82"
+  },
+  {
+    "path": "logs/2026-10-26/actions/runs.json",
+    "bytes": 1742,
+    "sha256": "f538f4ffeeaa757bb4cbacfab17ab97dd5fd42bb7080c9fc9caea7443b8674e2"
+  },
+  {
+    "path": "logs/2026-10-26/git-history.txt",
+    "bytes": 1100,
+    "sha256": "3fbbe91dcbb9f53b7278008df5deb2d5976ce3d57ba1f1be3e958c83fab65ef4"
+  },
+  {
+    "path": "logs/2026-10-26/gridshare-snapshot.json",
+    "bytes": 4190,
+    "sha256": "1290a4580b3239b070b3b5d63dabcfe938b8867883503693487e701a4c605ad0"
+  },
+  {
+    "path": "logs/2026-10-26/README.md",
+    "bytes": 2266,
+    "sha256": "3293b373be64566320ef96bcd97530d6b605a3ff18c3e45f629eeb4a24691aef"
+  }
+]

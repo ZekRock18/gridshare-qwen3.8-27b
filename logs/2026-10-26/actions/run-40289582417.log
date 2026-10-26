@@ -1,0 +1,1489 @@
+build-and-push	Set up job	﻿2026-10-26T08:02:47.7838885Z Current runner version: '2.338.0'
+build-and-push	Set up job	2026-10-26T08:02:47.7865679Z ##[group]Runner Image Provisioner
+build-and-push	Set up job	2026-10-26T08:02:47.7866719Z Hosted Compute Agent
+build-and-push	Set up job	2026-10-26T08:02:47.7867293Z Version: 20261021.618
+build-and-push	Set up job	2026-10-26T08:02:47.7867965Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+build-and-push	Set up job	2026-10-26T08:02:47.7868770Z Build Date: 2026-10-21T00:45:21Z
+build-and-push	Set up job	2026-10-26T08:02:47.7869431Z Worker ID: {90d5f880-def1-466e-9c69-797da0a04a87}
+build-and-push	Set up job	2026-10-26T08:02:47.7870153Z Region: northcentralus
+build-and-push	Set up job	2026-10-26T08:02:47.7870711Z Cloud: Azure
+build-and-push	Set up job	2026-10-26T08:02:47.7871215Z ##[endgroup]
+build-and-push	Set up job	2026-10-26T08:02:47.7872879Z ##[group]Operating System
+build-and-push	Set up job	2026-10-26T08:02:47.7873495Z Ubuntu
+build-and-push	Set up job	2026-10-26T08:02:47.7874039Z 24.04.5
+build-and-push	Set up job	2026-10-26T08:02:47.7874550Z LTS
+build-and-push	Set up job	2026-10-26T08:02:47.7875055Z ##[endgroup]
+build-and-push	Set up job	2026-10-26T08:02:47.7876075Z ##[group]Runner Image
+build-and-push	Set up job	2026-10-26T08:02:47.7876710Z Image: ubuntu-24.04
+build-and-push	Set up job	2026-10-26T08:02:47.7877287Z Version: 20261012.334.1
+build-and-push	Set up job	2026-10-26T08:02:47.7878306Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+build-and-push	Set up job	2026-10-26T08:02:47.7880042Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+build-and-push	Set up job	2026-10-26T08:02:47.7880944Z ##[endgroup]
+build-and-push	Set up job	2026-10-26T08:02:47.7882423Z ##[group]GITHUB_TOKEN Permissions
+build-and-push	Set up job	2026-10-26T08:02:47.7884880Z Contents: read
+build-and-push	Set up job	2026-10-26T08:02:47.7885480Z Metadata: read
+build-and-push	Set up job	2026-10-26T08:02:47.7886033Z Packages: write
+build-and-push	Set up job	2026-10-26T08:02:47.7886607Z ##[endgroup]
+build-and-push	Set up job	2026-10-26T08:02:47.7888656Z Secret source: Actions
+build-and-push	Set up job	2026-10-26T08:02:47.7889539Z Cache mode: write
+build-and-push	Set up job	2026-10-26T08:02:47.7890687Z Prepare workflow directory
+build-and-push	Set up job	2026-10-26T08:02:47.8214565Z Prepare all required actions
+build-and-push	Set up job	2026-10-26T08:02:47.8266815Z Getting action download info
+build-and-push	Set up job	2026-10-26T08:02:48.0944137Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build-and-push	Set up job	2026-10-26T08:02:48.1877900Z Download action repository 'docker/setup-buildx-action@v3' (SHA:8d2750c68a42422c14e847fe6c8ac0403b4cbd6f)
+build-and-push	Set up job	2026-10-26T08:02:48.7087958Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+build-and-push	Set up job	2026-10-26T08:02:48.8937286Z Download action repository 'docker/login-action@v3' (SHA:c94ce9fb468520275223c153574b00df6fe4bcc9)
+build-and-push	Set up job	2026-10-26T08:02:49.5077342Z Download action repository 'docker/build-push-action@v6' (SHA:10e90e3645eae34f1e60eeb005ba3a3d33f178e8)
+build-and-push	Set up job	2026-10-26T08:02:50.2789906Z Complete job name: build-and-push
+build-and-push	Check out repository	﻿2026-10-26T08:02:50.3798218Z ##[group]Run actions/checkout@v4
+build-and-push	Check out repository	2026-10-26T08:02:50.3799970Z with:
+build-and-push	Check out repository	2026-10-26T08:02:50.3801327Z   repository: ZekRock18/gridshare-qwen3.8-27b
+build-and-push	Check out repository	2026-10-26T08:02:50.3814085Z   token: ***
+build-and-push	Check out repository	2026-10-26T08:02:50.3815459Z   ssh-strict: true
+build-and-push	Check out repository	2026-10-26T08:02:50.3816731Z   ssh-user: git
+build-and-push	Check out repository	2026-10-26T08:02:50.3818009Z   persist-credentials: true
+build-and-push	Check out repository	2026-10-26T08:02:50.3819375Z   clean: true
+build-and-push	Check out repository	2026-10-26T08:02:50.3820706Z   sparse-checkout-cone-mode: true
+build-and-push	Check out repository	2026-10-26T08:02:50.3822506Z   fetch-depth: 1
+build-and-push	Check out repository	2026-10-26T08:02:50.3823666Z   fetch-tags: false
+build-and-push	Check out repository	2026-10-26T08:02:50.3824857Z   show-progress: true
+build-and-push	Check out repository	2026-10-26T08:02:50.3826022Z   lfs: false
+build-and-push	Check out repository	2026-10-26T08:02:50.3827132Z   submodules: false
+build-and-push	Check out repository	2026-10-26T08:02:50.3828142Z   set-safe-directory: true
+build-and-push	Check out repository	2026-10-26T08:02:50.3829241Z   allow-unsafe-pr-checkout: false
+build-and-push	Check out repository	2026-10-26T08:02:50.3830901Z ##[endgroup]
+build-and-push	Check out repository	2026-10-26T08:02:50.4839604Z Syncing repository: ZekRock18/gridshare-qwen3.8-27b
+build-and-push	Check out repository	2026-10-26T08:02:50.4842809Z ##[group]Getting Git version info
+build-and-push	Check out repository	2026-10-26T08:02:50.4844433Z Working directory is '/home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b'
+build-and-push	Check out repository	2026-10-26T08:02:50.4846958Z [command]/usr/bin/git version
+build-and-push	Check out repository	2026-10-26T08:02:50.4919798Z git version 2.55.0
+build-and-push	Check out repository	2026-10-26T08:02:50.4953055Z ##[endgroup]
+build-and-push	Check out repository	2026-10-26T08:02:50.4976245Z Temporarily overriding HOME='/home/runner/work/_temp/81daf95e-2ac9-4f71-9a05-d7717360c7bf' before making global git config changes
+build-and-push	Check out repository	2026-10-26T08:02:50.4979760Z Adding repository directory to the temporary git global config as a safe directory
+build-and-push	Check out repository	2026-10-26T08:02:50.4983537Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b
+build-and-push	Check out repository	2026-10-26T08:02:50.5037134Z Deleting the contents of '/home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b'
+build-and-push	Check out repository	2026-10-26T08:02:50.5044011Z ##[group]Initializing the repository
+build-and-push	Check out repository	2026-10-26T08:02:50.5048509Z [command]/usr/bin/git init /home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b
+build-and-push	Check out repository	2026-10-26T08:02:50.5141322Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-push	Check out repository	2026-10-26T08:02:50.5144809Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-push	Check out repository	2026-10-26T08:02:50.5147473Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-push	Check out repository	2026-10-26T08:02:50.5149522Z hint: call:
+build-and-push	Check out repository	2026-10-26T08:02:50.5150960Z hint:
+build-and-push	Check out repository	2026-10-26T08:02:50.5152554Z hint: 	git config --global init.defaultBranch <name>
+build-and-push	Check out repository	2026-10-26T08:02:50.5154392Z hint:
+build-and-push	Check out repository	2026-10-26T08:02:50.5156044Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-push	Check out repository	2026-10-26T08:02:50.5158550Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-push	Check out repository	2026-10-26T08:02:50.5160685Z hint:
+build-and-push	Check out repository	2026-10-26T08:02:50.5165507Z hint: 	git branch -m <name>
+build-and-push	Check out repository	2026-10-26T08:02:50.5166966Z hint:
+build-and-push	Check out repository	2026-10-26T08:02:50.5168738Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-push	Check out repository	2026-10-26T08:02:50.5172580Z Initialized empty Git repository in /home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b/.git/
+build-and-push	Check out repository	2026-10-26T08:02:50.5178297Z [command]/usr/bin/git remote add origin https://github.com/ZekRock18/gridshare-qwen3.8-27b
+build-and-push	Check out repository	2026-10-26T08:02:50.5227113Z ##[endgroup]
+build-and-push	Check out repository	2026-10-26T08:02:50.5229408Z ##[group]Disabling automatic garbage collection
+build-and-push	Check out repository	2026-10-26T08:02:50.5231350Z [command]/usr/bin/git config --local gc.auto 0
+build-and-push	Check out repository	2026-10-26T08:02:50.5266427Z ##[endgroup]
+build-and-push	Check out repository	2026-10-26T08:02:50.5268908Z ##[group]Setting up auth
+build-and-push	Check out repository	2026-10-26T08:02:50.5272881Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-push	Check out repository	2026-10-26T08:02:50.5303637Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-push	Check out repository	2026-10-26T08:02:50.5640464Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-push	Check out repository	2026-10-26T08:02:50.5672365Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-push	Check out repository	2026-10-26T08:02:50.5886435Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-push	Check out repository	2026-10-26T08:02:50.5922420Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-push	Check out repository	2026-10-26T08:02:50.6113031Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-push	Check out repository	2026-10-26T08:02:50.6153817Z ##[endgroup]
+build-and-push	Check out repository	2026-10-26T08:02:50.6156207Z ##[group]Fetching the repository
+build-and-push	Check out repository	2026-10-26T08:02:50.6165570Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +530251018d6fcbf6950d77ea1d57dbdc5ecbab5a:refs/remotes/origin/main
+build-and-push	Check out repository	2026-10-26T08:02:50.8599818Z From https://github.com/ZekRock18/gridshare-qwen3.8-27b
+build-and-push	Check out repository	2026-10-26T08:02:50.8600697Z  * [new ref]         530251018d6fcbf6950d77ea1d57dbdc5ecbab5a -> origin/main
+build-and-push	Check out repository	2026-10-26T08:02:50.8603834Z ##[endgroup]
+build-and-push	Check out repository	2026-10-26T08:02:50.8604848Z ##[group]Determining the checkout info
+build-and-push	Check out repository	2026-10-26T08:02:50.8606705Z ##[endgroup]
+build-and-push	Check out repository	2026-10-26T08:02:50.8612713Z [command]/usr/bin/git sparse-checkout disable
+build-and-push	Check out repository	2026-10-26T08:02:50.8664053Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-push	Check out repository	2026-10-26T08:02:50.8693639Z ##[group]Checking out the ref
+build-and-push	Check out repository	2026-10-26T08:02:50.8699447Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-and-push	Check out repository	2026-10-26T08:02:50.8763728Z Switched to a new branch 'main'
+build-and-push	Check out repository	2026-10-26T08:02:50.8769351Z branch 'main' set up to track 'origin/main'.
+build-and-push	Check out repository	2026-10-26T08:02:50.8774119Z ##[endgroup]
+build-and-push	Check out repository	2026-10-26T08:02:50.8811251Z [command]/usr/bin/git log -1 --format=%H
+build-and-push	Check out repository	2026-10-26T08:02:50.8831735Z 530251018d6fcbf6950d77ea1d57dbdc5ecbab5a
+build-and-push	Set up Docker Buildx	﻿2026-10-26T08:02:50.9083772Z ##[group]Run docker/setup-buildx-action@v3
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:50.9084260Z with:
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:50.9084618Z   driver: docker-container
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:50.9085040Z   use: true
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:50.9085436Z   keep-state: false
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:50.9085774Z   cache-binary: true
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:50.9086213Z   cleanup: true
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:50.9086566Z   install: false
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:50.9086918Z ##[endgroup]
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.1468430Z (node:2294) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.1469394Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.1530912Z ##[group]Docker info
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.1551611Z [command]/usr/bin/docker version
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2455028Z Client: Docker Engine - Community
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2456867Z  Version:           28.0.4
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2457298Z  API version:       1.48
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2457815Z  Go version:        go1.23.7
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2458299Z  Git commit:        b8034c0
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2458690Z  Built:             Tue Mar 25 15:07:16 2025
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2459146Z  OS/Arch:           linux/amd64
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2459620Z  Context:           default
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2459862Z 
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2460047Z Server: Docker Engine - Community
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2460439Z  Engine:
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2460807Z   Version:          28.0.4
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2461270Z   API version:      1.48 (minimum version 1.24)
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2462097Z   Go version:       go1.23.7
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2462525Z   Git commit:       6430e49
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2462950Z   Built:            Tue Mar 25 15:07:16 2025
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2463498Z   OS/Arch:          linux/amd64
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2464017Z   Experimental:     false
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2464334Z  containerd:
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2464670Z   Version:          v2.4.1
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2465033Z   GitCommit:        f2551031d7276a770f65f98c9b52e57e7dad07e8
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2465390Z  runc:
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2465709Z   Version:          1.5.2
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2466022Z   GitCommit:        v1.5.2-0-g29dd3dc2
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2466383Z  docker-init:
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2466695Z   Version:          0.19.0
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2467103Z   GitCommit:        de40ad0
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.2503187Z [command]/usr/bin/docker info
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6234212Z Client: Docker Engine - Community
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6234908Z  Version:    28.0.4
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6235295Z  Context:    default
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6235608Z  Debug Mode: false
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6235895Z  Plugins:
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6236214Z   buildx: Docker Buildx (Docker Inc.)
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6236599Z     Version:  v0.38.0
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6237047Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6237654Z   compose: Docker Compose (Docker Inc.)
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6238035Z     Version:  v2.38.2
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6238440Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6238823Z 
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6238920Z Server:
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6239135Z  Containers: 0
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6239356Z   Running: 0
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6239638Z   Paused: 0
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6239851Z   Stopped: 0
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6240059Z  Images: 6
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6240334Z  Server Version: 28.0.4
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6240599Z  Storage Driver: overlay2
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6240936Z   Backing Filesystem: extfs
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6241220Z   Supports d_type: true
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6241716Z   Using metacopy: false
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6242005Z   Native Overlay Diff: false
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6242385Z   userxattr: false
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6242628Z  Logging Driver: json-file
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6242884Z  Cgroup Driver: systemd
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6243172Z  Cgroup Version: 2
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6243696Z  Plugins:
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6243923Z   Volume: local
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6244210Z   Network: bridge host ipvlan macvlan null overlay
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6244638Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6245156Z  Swarm: inactive
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6245414Z  Runtimes: io.containerd.runc.v2 runc
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6245703Z  Default Runtime: runc
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6245956Z  Init Binary: docker-init
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6246285Z  containerd version: f2551031d7276a770f65f98c9b52e57e7dad07e8
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6246638Z  runc version: v1.5.2-0-g29dd3dc2
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6246910Z  init version: de40ad0
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6247139Z  Security Options:
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6247351Z   apparmor
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6247588Z   seccomp
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6247954Z    Profile: builtin
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6248179Z   cgroupns
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6248410Z  Kernel Version: 6.17.0-1022-azure
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6248701Z  Operating System: Ubuntu 24.04.5 LTS
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6248980Z  OSType: linux
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6249205Z  Architecture: x86_64
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6249432Z  CPUs: 4
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6249649Z  Total Memory: 15.61GiB
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6249891Z  Name: runnervmtai0g
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6250162Z  ID: 6134b6ae-8eb1-4f62-889e-a360c80bcfbf
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6250461Z  Docker Root Dir: /var/lib/docker
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6250718Z  Debug Mode: false
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6250946Z  Username: githubactions
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6251194Z  Experimental: false
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6251564Z  Insecure Registries:
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6255723Z   ::1/128
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6255950Z   127.0.0.0/8
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6256190Z  Live Restore Enabled: false
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6256361Z 
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.6270108Z ##[endgroup]
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.7501811Z ##[group]Buildx version
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.7530757Z [command]/usr/bin/docker buildx version
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8289319Z github.com/docker/buildx v0.38.0 0dbe87f36ed472fe36b6796c3f70b4210a731fc5
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8313157Z ##[endgroup]
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8467423Z ##[group]Inspecting default docker context
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8608413Z [
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8608834Z   {
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8609058Z     "Name": "default",
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8609422Z     "Metadata": {},
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8609723Z     "Endpoints": {
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8609989Z       "docker": {
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8610323Z         "Host": "unix:///var/run/docker.sock",
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8610786Z         "SkipTLSVerify": false
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8611056Z       }
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8611257Z     },
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8611627Z     "TLSMaterial": {},
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8611880Z     "Storage": {
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8612201Z       "MetadataPath": "<IN MEMORY>",
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8612710Z       "TLSPath": "<IN MEMORY>"
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8612976Z     }
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8613211Z   }
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8613408Z ]
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8614075Z ##[endgroup]
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.8614641Z ##[group]Creating a new builder instance
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:51.9920567Z [command]/usr/bin/docker buildx create --name builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2 --driver docker-container --buildkitd-flags --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host --use
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:52.0730635Z builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:52.0757914Z ##[endgroup]
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:52.0758812Z ##[group]Booting builder
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:52.0796233Z [command]/usr/bin/docker buildx inspect --bootstrap --builder builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:52.1349615Z #1 [internal] booting buildkit
+build-and-push	Set up Docker Buildx	2026-10-26T08:02:52.2856346Z #1 pulling image moby/buildkit:buildx-stable-1
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.3155844Z #1 pulling image moby/buildkit:buildx-stable-1 10.2s done
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.4682915Z #1 creating container buildx_buildkit_builder-95b8935b-2ce4-488a-9a22-3edd6d684ea20
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6383262Z #1 creating container buildx_buildkit_builder-95b8935b-2ce4-488a-9a22-3edd6d684ea20 0.3s done
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6639465Z #1 DONE 10.5s
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6916871Z Name:          builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6917814Z Driver:        docker-container
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6929019Z Last Activity: 2026-10-26 08:02:52 +0000 UTC
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6931879Z 
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6932530Z Nodes:
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6933370Z Name:                  builder-95b8935b-2ce4-488a-9a22-3edd6d684ea20
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6934297Z Endpoint:              unix:///var/run/docker.sock
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6935064Z Status:                running
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6936125Z BuildKit daemon flags: --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6937351Z BuildKit version:      v0.33.1
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6938238Z Platforms:             linux/amd64, linux/amd64/v2, linux/amd64/v3, linux/amd64/v4, linux/386
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6939043Z Labels:
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6939692Z  org.mobyproject.buildkit.worker.executor:         oci
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6940695Z  org.mobyproject.buildkit.worker.hostname:         c5c47b8a0bdb
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6941977Z  org.mobyproject.buildkit.worker.network:          host
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6954509Z  org.mobyproject.buildkit.worker.oci.process-mode: sandbox
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6962538Z  org.mobyproject.buildkit.worker.selinux.enabled:  false
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6965726Z  org.mobyproject.buildkit.worker.snapshotter:      overlayfs
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6966690Z GC Policy rule#0:
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6967356Z  All:            false
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6968009Z  Filters:        type==source.local type==exec.cachemount type==source.git.checkout
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6968715Z  Keep Duration:  48h0m0s
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6969076Z  Max Used Space: 488.3MiB
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6969406Z GC Policy rule#1:
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6969702Z  All:            false
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6970139Z  Keep Duration:  1440h0m0s
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6970930Z  Reserved Space: 9.313GiB
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6971227Z  Max Used Space: 93.13GiB
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6971831Z  Min Free Space: 27.01GiB
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6974583Z GC Policy rule#2:
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6974907Z  All:            false
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6975215Z  Reserved Space: 9.313GiB
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6975694Z  Max Used Space: 93.13GiB
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6976250Z  Min Free Space: 27.01GiB
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6976602Z GC Policy rule#3:
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6977043Z  All:            true
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6977378Z  Reserved Space: 9.313GiB
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6977841Z  Max Used Space: 93.13GiB
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6978178Z  Min Free Space: 27.01GiB
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.6979671Z ##[endgroup]
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8669610Z ##[group]Inspect builder
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8672113Z {
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8672392Z   "nodes": [
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8672655Z     {
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8673017Z       "name": "builder-95b8935b-2ce4-488a-9a22-3edd6d684ea20",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8673728Z       "endpoint": "unix:///var/run/docker.sock",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8674118Z       "status": "running",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8674873Z       "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8675646Z       "buildkit": "v0.33.1",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8676152Z       "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/amd64/v4,linux/386",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8676597Z       "features": {
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8676905Z         "Automatically load images to the Docker Engine image store": true,
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8677265Z         "Cache export": true,
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8677513Z         "Direct push": true,
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8677769Z         "Docker exporter": true,
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8678023Z         "Multi-platform build": true,
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8678282Z         "OCI exporter": true
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8678504Z       },
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8678695Z       "labels": {
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8678957Z         "org.mobyproject.buildkit.worker.executor": "oci",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8679337Z         "org.mobyproject.buildkit.worker.hostname": "c5c47b8a0bdb",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8679964Z         "org.mobyproject.buildkit.worker.network": "host",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8680359Z         "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8680782Z         "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8681353Z         "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8682142Z       },
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8682404Z       "gcPolicy": [
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8682641Z         {
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8682868Z           "all": false,
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8683089Z           "filter": [
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8683485Z             "type==source.local type==exec.cachemount type==source.git.checkout"
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8683929Z           ],
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8684157Z           "keepDuration": "48h0m0s",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8684427Z           "maxUsedSpace": "488.3MiB"
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8684675Z         },
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8684881Z         {
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8685077Z           "all": false,
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8685365Z           "keepDuration": "1440h0m0s",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8685697Z           "reservedSpace": "9.313GiB",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8686078Z           "maxUsedSpace": "93.13GiB",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8686435Z           "minFreeSpace": "27.01GiB"
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8686783Z         },
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8687026Z         {
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8687276Z           "all": false,
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8687568Z           "reservedSpace": "9.313GiB",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8687910Z           "maxUsedSpace": "93.13GiB",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8688308Z           "minFreeSpace": "27.01GiB"
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8688607Z         },
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8688858Z         {
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8689088Z           "all": true,
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8689350Z           "reservedSpace": "9.313GiB",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8689636Z           "maxUsedSpace": "93.13GiB",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8689896Z           "minFreeSpace": "27.01GiB"
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8690256Z         }
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8690545Z       ]
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8690866Z     }
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8691163Z   ],
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8691738Z   "name": "builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8692189Z   "driver": "docker-container",
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8692669Z   "lastActivity": "2026-10-26T08:02:52.000Z"
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8693205Z }
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8693872Z ##[endgroup]
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8694507Z ##[group]BuildKit version
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8694919Z builder-95b8935b-2ce4-488a-9a22-3edd6d684ea20: v0.33.1
+build-and-push	Set up Docker Buildx	2026-10-26T08:03:02.8695574Z ##[endgroup]
+build-and-push	Set up Python	﻿2026-10-26T08:03:02.8862895Z ##[group]Run actions/setup-python@v5
+build-and-push	Set up Python	2026-10-26T08:03:02.8863228Z with:
+build-and-push	Set up Python	2026-10-26T08:03:02.8863482Z   python-version: 3.11
+build-and-push	Set up Python	2026-10-26T08:03:02.8863731Z   check-latest: false
+build-and-push	Set up Python	2026-10-26T08:03:02.8865834Z   token: ***
+build-and-push	Set up Python	2026-10-26T08:03:02.8866088Z   update-environment: true
+build-and-push	Set up Python	2026-10-26T08:03:02.8866359Z   allow-prereleases: false
+build-and-push	Set up Python	2026-10-26T08:03:02.8866603Z   freethreaded: false
+build-and-push	Set up Python	2026-10-26T08:03:02.8866895Z ##[endgroup]
+build-and-push	Set up Python	2026-10-26T08:03:03.0172227Z ##[group]Installed versions
+build-and-push	Set up Python	2026-10-26T08:03:03.0271723Z (node:2777) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	Set up Python	2026-10-26T08:03:03.0273123Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	Set up Python	2026-10-26T08:03:03.0273685Z Successfully set up CPython (3.11.17)
+build-and-push	Set up Python	2026-10-26T08:03:03.0274261Z ##[endgroup]
+build-and-push	Test HTTP contract	﻿2026-10-26T08:03:03.0426100Z ##[group]Run python -m pip install -r requirements.txt httpx==0.28.1
+build-and-push	Test HTTP contract	2026-10-26T08:03:03.0426718Z [36;1mpython -m pip install -r requirements.txt httpx==0.28.1[0m
+build-and-push	Test HTTP contract	2026-10-26T08:03:03.0427111Z [36;1mpython -m unittest discover -s tests -v[0m
+build-and-push	Test HTTP contract	2026-10-26T08:03:03.0761032Z shell: /usr/bin/bash -e {0}
+build-and-push	Test HTTP contract	2026-10-26T08:03:03.0761367Z env:
+build-and-push	Test HTTP contract	2026-10-26T08:03:03.0761979Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Test HTTP contract	2026-10-26T08:03:03.0762447Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+build-and-push	Test HTTP contract	2026-10-26T08:03:03.0762874Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Test HTTP contract	2026-10-26T08:03:03.0763429Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Test HTTP contract	2026-10-26T08:03:03.0763795Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Test HTTP contract	2026-10-26T08:03:03.0764167Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+build-and-push	Test HTTP contract	2026-10-26T08:03:03.0764483Z ##[endgroup]
+build-and-push	Test HTTP contract	2026-10-26T08:03:06.9158898Z Collecting httpx==0.28.1
+build-and-push	Test HTTP contract	2026-10-26T08:03:06.9741246Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.0293549Z Collecting fastapi==0.115.12 (from -r requirements.txt (line 1))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.0330300Z   Downloading fastapi-0.115.12-py3-none-any.whl.metadata (27 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.0588955Z Collecting uvicorn==0.34.2 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.0625843Z   Downloading uvicorn-0.34.2-py3-none-any.whl.metadata (6.5 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.0960860Z Collecting requests==2.32.3 (from -r requirements.txt (line 3))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.0996727Z   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.1163732Z Collecting anyio (from httpx==0.28.1)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.1198557Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.1362618Z Collecting certifi (from httpx==0.28.1)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.1399965Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.1535001Z Collecting httpcore==1.* (from httpx==0.28.1)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.1569039Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.1705996Z Collecting idna (from httpx==0.28.1)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.1740339Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.1949764Z Collecting starlette<0.47.0,>=0.40.0 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.1983088Z   Downloading starlette-0.46.2-py3-none-any.whl.metadata (6.2 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.2833312Z Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.2868211Z   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.3069073Z Collecting typing-extensions>=4.8.0 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.3106979Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.3296950Z Collecting click>=7.0 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.3336278Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.3439595Z Collecting h11>=0.8 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.3474128Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.4459306Z Collecting charset-normalizer<4,>=2 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.4497856Z   Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.4719196Z Collecting urllib3<3,>=1.21.1 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.4753628Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.5073477Z Collecting httptools>=0.6.3 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.5109838Z   Downloading httptools-0.9.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.5257163Z Collecting python-dotenv>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.5290979Z   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.5588928Z Collecting pyyaml>=5.1 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.5623658Z   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.5935664Z Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.5972824Z   Downloading uvloop-0.23.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.6739859Z Collecting watchfiles>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.6775662Z   Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.7748526Z Collecting websockets>=10.4 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.7785479Z   Downloading websockets-17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.7907812Z Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Test HTTP contract	2026-10-26T08:03:07.7940194Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.3604730Z Collecting pydantic-core==2.50.1 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.3642760Z   Downloading pydantic_core-2.50.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.3754386Z Collecting typing-inspection>=0.4.4 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.3789735Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.3953342Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4008445Z Downloading fastapi-0.115.12-py3-none-any.whl (95 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4062347Z Downloading uvicorn-0.34.2-py3-none-any.whl (62 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4118999Z Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4173451Z Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4246185Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4299259Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4352470Z Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4439958Z Downloading pydantic_core-2.50.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4630486Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 115.5 MB/s  0:00:00
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4668881Z Downloading starlette-0.46.2-py3-none-any.whl (72 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4727111Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4786067Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4844853Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4896331Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.4954356Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.5006869Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.5058863Z Downloading httptools-0.9.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (499 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.5136058Z Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.5185723Z Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.5275626Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 81.5 MB/s  0:00:00
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.5309052Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.5361662Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.5413473Z Downloading uvloop-0.23.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.0 MB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.5740285Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.0/4.0 MB 121.1 MB/s  0:00:00
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.5776829Z Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (458 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.5858230Z Downloading websockets-17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+build-and-push	Test HTTP contract	2026-10-26T08:03:08.9046850Z Installing collected packages: websockets, uvloop, urllib3, typing-extensions, pyyaml, python-dotenv, idna, httptools, h11, click, charset-normalizer, certifi, annotated-types, uvicorn, typing-inspection, requests, pydantic-core, httpcore, anyio, watchfiles, starlette, pydantic, httpx, fastapi
+build-and-push	Test HTTP contract	2026-10-26T08:03:10.1532014Z 
+build-and-push	Test HTTP contract	2026-10-26T08:03:10.1547774Z Successfully installed annotated-types-0.8.0 anyio-4.15.1 certifi-2026.10.23 charset-normalizer-3.5.2 click-8.5.0 fastapi-0.115.12 h11-0.16.0 httpcore-1.0.9 httptools-0.9.0 httpx-0.28.1 idna-3.20 pydantic-2.14.1 pydantic-core-2.50.1 python-dotenv-1.2.4 pyyaml-6.0.3 requests-2.32.3 starlette-0.46.2 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.34.2 uvloop-0.23.0 watchfiles-1.3.0 websockets-17.3
+build-and-push	Test HTTP contract	2026-10-26T08:03:10.1555192Z 
+build-and-push	Test HTTP contract	2026-10-26T08:03:10.1555585Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+build-and-push	Test HTTP contract	2026-10-26T08:03:10.1556068Z [notice] To update, run: pip install --upgrade pip
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3380049Z test_crashed_model_is_unhealthy (test_app.ContractTests.test_crashed_model_is_unhealthy) ... 2026-10-26 08:03:11,337 INFO HTTP Request: GET http://testserver/health "HTTP/1.1 503 Service Unavailable"
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3380879Z ok
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3412792Z test_gridshare_envelope_and_response (test_app.ContractTests.test_gridshare_envelope_and_response) ... 2026-10-26 08:03:11,341 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3413859Z ok
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3435668Z test_health_waits_for_model (test_app.ContractTests.test_health_waits_for_model) ... 2026-10-26 08:03:11,343 INFO HTTP Request: GET http://testserver/health "HTTP/1.1 503 Service Unavailable"
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3459329Z 2026-10-26 08:03:11,345 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 503 Service Unavailable"
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3483060Z 2026-10-26 08:03:11,348 INFO HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3483807Z ok
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3506195Z test_invalid_inputs_return_client_errors (test_app.ContractTests.test_invalid_inputs_return_client_errors) ... 2026-10-26 08:03:11,350 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3526253Z 2026-10-26 08:03:11,352 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3550276Z 2026-10-26 08:03:11,354 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3575463Z 2026-10-26 08:03:11,357 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3596187Z 2026-10-26 08:03:11,359 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3603896Z ok
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3623012Z test_upstream_timeout_returns_gateway_error (test_app.ContractTests.test_upstream_timeout_returns_gateway_error) ... 2026-10-26 08:03:11,361 ERROR Upstream inference request failed
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3624079Z Traceback (most recent call last):
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3630977Z   File "/home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b/app.py", line 243, in run
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3632499Z     response = requests.post(
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3632891Z                ^^^^^^^^^^^^^^
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3633617Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/unittest/mock.py", line 1124, in __call__
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3634372Z     return self._mock_call(*args, **kwargs)
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3634676Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3635139Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3635658Z     return self._execute_mock_call(*args, **kwargs)
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3636095Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3636595Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3637088Z     raise effect
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3637332Z requests.exceptions.Timeout: timeout
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3637790Z 2026-10-26 08:03:11,363 INFO HTTP Request: POST http://testserver/run "HTTP/1.1 502 Bad Gateway"
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3638197Z ok
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3638316Z 
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3638485Z ----------------------------------------------------------------------
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3638820Z Ran 5 tests in 0.053s
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3638955Z 
+build-and-push	Test HTTP contract	2026-10-26T08:03:11.3639050Z OK
+build-and-push	Log in to GitHub Container Registry	﻿2026-10-26T08:03:11.4273426Z ##[group]Run docker/login-action@v3
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4273736Z with:
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4273951Z   registry: ghcr.io
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4274198Z   username: ZekRock18
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4276519Z   password: ***
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4276738Z   logout: true
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4276963Z env:
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4277228Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4277649Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4278060Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4278437Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4278804Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4279171Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.4279488Z ##[endgroup]
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.7170112Z Logging into ghcr.io...
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.7190544Z (node:2835) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:11.7191714Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	Log in to GitHub Container Registry	2026-10-26T08:03:12.0710036Z Login Succeeded!
+build-and-push	Normalize image name	﻿2026-10-26T08:03:12.0837641Z ##[group]Run echo "name=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
+build-and-push	Normalize image name	2026-10-26T08:03:12.0838267Z [36;1mecho "name=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"[0m
+build-and-push	Normalize image name	2026-10-26T08:03:12.0882436Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+build-and-push	Normalize image name	2026-10-26T08:03:12.0882983Z env:
+build-and-push	Normalize image name	2026-10-26T08:03:12.0883460Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Normalize image name	2026-10-26T08:03:12.0883981Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+build-and-push	Normalize image name	2026-10-26T08:03:12.0884542Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Normalize image name	2026-10-26T08:03:12.0885002Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Normalize image name	2026-10-26T08:03:12.0885442Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Normalize image name	2026-10-26T08:03:12.0885901Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+build-and-push	Normalize image name	2026-10-26T08:03:12.0886320Z ##[endgroup]
+build-and-push	Build and push image	﻿2026-10-26T08:03:12.1073493Z ##[group]Run docker/build-push-action@v6
+build-and-push	Build and push image	2026-10-26T08:03:12.1073887Z with:
+build-and-push	Build and push image	2026-10-26T08:03:12.1074173Z   context: .
+build-and-push	Build and push image	2026-10-26T08:03:12.1074569Z   platforms: linux/amd64
+build-and-push	Build and push image	2026-10-26T08:03:12.1074906Z   push: true
+build-and-push	Build and push image	2026-10-26T08:03:12.1075499Z   tags: ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest
+build-and-push	Build and push image	ghcr.io/zekrock18/gridshare-qwen3.8-27b:sha-530251018d6fcbf6950d77ea1d57dbdc5ecbab5a
+build-and-push	Build and push image	
+build-and-push	Build and push image	2026-10-26T08:03:12.1076702Z   labels: org.opencontainers.image.source=https://github.com/ZekRock18/gridshare-qwen3.8-27b
+build-and-push	Build and push image	org.opencontainers.image.description=GridShare serverless wrapper for Qwen3.8-27B Q3_K_P GGUF
+build-and-push	Build and push image	org.opencontainers.image.licenses=MIT
+build-and-push	Build and push image	
+build-and-push	Build and push image	2026-10-26T08:03:12.1077588Z   cache-from: type=gha
+build-and-push	Build and push image	2026-10-26T08:03:12.1077917Z   cache-to: type=gha,mode=max
+build-and-push	Build and push image	2026-10-26T08:03:12.1078299Z   load: false
+build-and-push	Build and push image	2026-10-26T08:03:12.1078586Z   no-cache: false
+build-and-push	Build and push image	2026-10-26T08:03:12.1078887Z   pull: false
+build-and-push	Build and push image	2026-10-26T08:03:12.1080989Z   github-token: ***
+build-and-push	Build and push image	2026-10-26T08:03:12.1081301Z env:
+build-and-push	Build and push image	2026-10-26T08:03:12.1081899Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Build and push image	2026-10-26T08:03:12.1082524Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+build-and-push	Build and push image	2026-10-26T08:03:12.1083149Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Build and push image	2026-10-26T08:03:12.1083632Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Build and push image	2026-10-26T08:03:12.1084110Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+build-and-push	Build and push image	2026-10-26T08:03:12.1084552Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+build-and-push	Build and push image	2026-10-26T08:03:12.1084963Z ##[endgroup]
+build-and-push	Build and push image	2026-10-26T08:03:12.3326731Z (node:2856) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	Build and push image	2026-10-26T08:03:12.3327907Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	Build and push image	2026-10-26T08:03:12.3347448Z ##[group]GitHub Actions runtime token ACs
+build-and-push	Build and push image	2026-10-26T08:03:12.3355226Z refs/heads/main: read/write
+build-and-push	Build and push image	2026-10-26T08:03:12.3356238Z ##[endgroup]
+build-and-push	Build and push image	2026-10-26T08:03:12.3357199Z ##[group]Docker info
+build-and-push	Build and push image	2026-10-26T08:03:12.3395664Z [command]/usr/bin/docker version
+build-and-push	Build and push image	2026-10-26T08:03:12.3610055Z Client: Docker Engine - Community
+build-and-push	Build and push image	2026-10-26T08:03:12.3619737Z  Version:           28.0.4
+build-and-push	Build and push image	2026-10-26T08:03:12.3620723Z  API version:       1.48
+build-and-push	Build and push image	2026-10-26T08:03:12.3621587Z  Go version:        go1.23.7
+build-and-push	Build and push image	2026-10-26T08:03:12.3622353Z  Git commit:        b8034c0
+build-and-push	Build and push image	2026-10-26T08:03:12.3623018Z  Built:             Tue Mar 25 15:07:16 2025
+build-and-push	Build and push image	2026-10-26T08:03:12.3623653Z  OS/Arch:           linux/amd64
+build-and-push	Build and push image	2026-10-26T08:03:12.3624370Z  Context:           default
+build-and-push	Build and push image	2026-10-26T08:03:12.3624804Z 
+build-and-push	Build and push image	2026-10-26T08:03:12.3625131Z Server: Docker Engine - Community
+build-and-push	Build and push image	2026-10-26T08:03:12.3625693Z  Engine:
+build-and-push	Build and push image	2026-10-26T08:03:12.3626247Z   Version:          28.0.4
+build-and-push	Build and push image	2026-10-26T08:03:12.3626891Z   API version:      1.48 (minimum version 1.24)
+build-and-push	Build and push image	2026-10-26T08:03:12.3627606Z   Go version:       go1.23.7
+build-and-push	Build and push image	2026-10-26T08:03:12.3628194Z   Git commit:       6430e49
+build-and-push	Build and push image	2026-10-26T08:03:12.3628731Z   Built:            Tue Mar 25 15:07:16 2025
+build-and-push	Build and push image	2026-10-26T08:03:12.3629409Z   OS/Arch:          linux/amd64
+build-and-push	Build and push image	2026-10-26T08:03:12.3630109Z   Experimental:     false
+build-and-push	Build and push image	2026-10-26T08:03:12.3630738Z  containerd:
+build-and-push	Build and push image	2026-10-26T08:03:12.3631361Z   Version:          v2.4.1
+build-and-push	Build and push image	2026-10-26T08:03:12.3632167Z   GitCommit:        f2551031d7276a770f65f98c9b52e57e7dad07e8
+build-and-push	Build and push image	2026-10-26T08:03:12.3632964Z  runc:
+build-and-push	Build and push image	2026-10-26T08:03:12.3633463Z   Version:          1.5.2
+build-and-push	Build and push image	2026-10-26T08:03:12.3634172Z   GitCommit:        v1.5.2-0-g29dd3dc2
+build-and-push	Build and push image	2026-10-26T08:03:12.3634816Z  docker-init:
+build-and-push	Build and push image	2026-10-26T08:03:12.3635342Z   Version:          0.19.0
+build-and-push	Build and push image	2026-10-26T08:03:12.3635982Z   GitCommit:        de40ad0
+build-and-push	Build and push image	2026-10-26T08:03:12.3673691Z [command]/usr/bin/docker info
+build-and-push	Build and push image	2026-10-26T08:03:12.4688463Z Client: Docker Engine - Community
+build-and-push	Build and push image	2026-10-26T08:03:12.4689584Z  Version:    28.0.4
+build-and-push	Build and push image	2026-10-26T08:03:12.4690365Z  Context:    default
+build-and-push	Build and push image	2026-10-26T08:03:12.4690986Z  Debug Mode: false
+build-and-push	Build and push image	2026-10-26T08:03:12.4691863Z  Plugins:
+build-and-push	Build and push image	2026-10-26T08:03:12.4692445Z   buildx: Docker Buildx (Docker Inc.)
+build-and-push	Build and push image	2026-10-26T08:03:12.4693058Z     Version:  v0.38.0
+build-and-push	Build and push image	2026-10-26T08:03:12.4694476Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+build-and-push	Build and push image	2026-10-26T08:03:12.4695380Z   compose: Docker Compose (Docker Inc.)
+build-and-push	Build and push image	2026-10-26T08:03:12.4696138Z     Version:  v2.38.2
+build-and-push	Build and push image	2026-10-26T08:03:12.4696844Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+build-and-push	Build and push image	2026-10-26T08:03:12.4697423Z 
+build-and-push	Build and push image	2026-10-26T08:03:12.4698137Z Server:
+build-and-push	Build and push image	2026-10-26T08:03:12.4698664Z  Containers: 1
+build-and-push	Build and push image	2026-10-26T08:03:12.4699013Z   Running: 1
+build-and-push	Build and push image	2026-10-26T08:03:12.4699378Z   Paused: 0
+build-and-push	Build and push image	2026-10-26T08:03:12.4699740Z   Stopped: 0
+build-and-push	Build and push image	2026-10-26T08:03:12.4700010Z  Images: 7
+build-and-push	Build and push image	2026-10-26T08:03:12.4700316Z  Server Version: 28.0.4
+build-and-push	Build and push image	2026-10-26T08:03:12.4700689Z  Storage Driver: overlay2
+build-and-push	Build and push image	2026-10-26T08:03:12.4701003Z   Backing Filesystem: extfs
+build-and-push	Build and push image	2026-10-26T08:03:12.4701382Z   Supports d_type: true
+build-and-push	Build and push image	2026-10-26T08:03:12.4701866Z   Using metacopy: false
+build-and-push	Build and push image	2026-10-26T08:03:12.4702240Z   Native Overlay Diff: false
+build-and-push	Build and push image	2026-10-26T08:03:12.4702589Z   userxattr: false
+build-and-push	Build and push image	2026-10-26T08:03:12.4702901Z  Logging Driver: json-file
+build-and-push	Build and push image	2026-10-26T08:03:12.4703273Z  Cgroup Driver: systemd
+build-and-push	Build and push image	2026-10-26T08:03:12.4703613Z  Cgroup Version: 2
+build-and-push	Build and push image	2026-10-26T08:03:12.4703951Z  Plugins:
+build-and-push	Build and push image	2026-10-26T08:03:12.4704247Z   Volume: local
+build-and-push	Build and push image	2026-10-26T08:03:12.4704890Z   Network: bridge host ipvlan macvlan null overlay
+build-and-push	Build and push image	2026-10-26T08:03:12.4705438Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+build-and-push	Build and push image	2026-10-26T08:03:12.4705881Z  Swarm: inactive
+build-and-push	Build and push image	2026-10-26T08:03:12.4706246Z  Runtimes: io.containerd.runc.v2 runc
+build-and-push	Build and push image	2026-10-26T08:03:12.4706678Z  Default Runtime: runc
+build-and-push	Build and push image	2026-10-26T08:03:12.4707075Z  Init Binary: docker-init
+build-and-push	Build and push image	2026-10-26T08:03:12.4707574Z  containerd version: f2551031d7276a770f65f98c9b52e57e7dad07e8
+build-and-push	Build and push image	2026-10-26T08:03:12.4708273Z  runc version: v1.5.2-0-g29dd3dc2
+build-and-push	Build and push image	2026-10-26T08:03:12.4708707Z  init version: de40ad0
+build-and-push	Build and push image	2026-10-26T08:03:12.4709056Z  Security Options:
+build-and-push	Build and push image	2026-10-26T08:03:12.4709421Z   apparmor
+build-and-push	Build and push image	2026-10-26T08:03:12.4709796Z   seccomp
+build-and-push	Build and push image	2026-10-26T08:03:12.4710090Z    Profile: builtin
+build-and-push	Build and push image	2026-10-26T08:03:12.4710378Z   cgroupns
+build-and-push	Build and push image	2026-10-26T08:03:12.4710687Z  Kernel Version: 6.17.0-1022-azure
+build-and-push	Build and push image	2026-10-26T08:03:12.4711048Z  Operating System: Ubuntu 24.04.5 LTS
+build-and-push	Build and push image	2026-10-26T08:03:12.4711670Z  OSType: linux
+build-and-push	Build and push image	2026-10-26T08:03:12.4712009Z  Architecture: x86_64
+build-and-push	Build and push image	2026-10-26T08:03:12.4712309Z  CPUs: 4
+build-and-push	Build and push image	2026-10-26T08:03:12.4712611Z  Total Memory: 15.61GiB
+build-and-push	Build and push image	2026-10-26T08:03:12.4712919Z  Name: runnervmtai0g
+build-and-push	Build and push image	2026-10-26T08:03:12.4713249Z  ID: 6134b6ae-8eb1-4f62-889e-a360c80bcfbf
+build-and-push	Build and push image	2026-10-26T08:03:12.4713646Z  Docker Root Dir: /var/lib/docker
+build-and-push	Build and push image	2026-10-26T08:03:12.4713977Z  Debug Mode: false
+build-and-push	Build and push image	2026-10-26T08:03:12.4714272Z  Username: githubactions
+build-and-push	Build and push image	2026-10-26T08:03:12.4714604Z  Experimental: false
+build-and-push	Build and push image	2026-10-26T08:03:12.4714991Z  Insecure Registries:
+build-and-push	Build and push image	2026-10-26T08:03:12.4715402Z   ::1/128
+build-and-push	Build and push image	2026-10-26T08:03:12.4715716Z   127.0.0.0/8
+build-and-push	Build and push image	2026-10-26T08:03:12.4716029Z  Live Restore Enabled: false
+build-and-push	Build and push image	2026-10-26T08:03:12.4716222Z 
+build-and-push	Build and push image	2026-10-26T08:03:12.4716734Z ##[endgroup]
+build-and-push	Build and push image	2026-10-26T08:03:12.4717235Z ##[group]Proxy configuration
+build-and-push	Build and push image	2026-10-26T08:03:12.4717565Z No proxy configuration found
+build-and-push	Build and push image	2026-10-26T08:03:12.4718080Z ##[endgroup]
+build-and-push	Build and push image	2026-10-26T08:03:12.5236074Z ##[group]Buildx version
+build-and-push	Build and push image	2026-10-26T08:03:12.5258510Z [command]/usr/bin/docker buildx version
+build-and-push	Build and push image	2026-10-26T08:03:12.5744500Z github.com/docker/buildx v0.38.0 0dbe87f36ed472fe36b6796c3f70b4210a731fc5
+build-and-push	Build and push image	2026-10-26T08:03:12.5762286Z ##[endgroup]
+build-and-push	Build and push image	2026-10-26T08:03:12.5762918Z ##[group]Builder info
+build-and-push	Build and push image	2026-10-26T08:03:12.6639560Z {
+build-and-push	Build and push image	2026-10-26T08:03:12.6640781Z   "nodes": [
+build-and-push	Build and push image	2026-10-26T08:03:12.6642310Z     {
+build-and-push	Build and push image	2026-10-26T08:03:12.6643222Z       "name": "builder-95b8935b-2ce4-488a-9a22-3edd6d684ea20",
+build-and-push	Build and push image	2026-10-26T08:03:12.6643902Z       "endpoint": "unix:///var/run/docker.sock",
+build-and-push	Build and push image	2026-10-26T08:03:12.6644278Z       "status": "running",
+build-and-push	Build and push image	2026-10-26T08:03:12.6644959Z       "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+build-and-push	Build and push image	2026-10-26T08:03:12.6645647Z       "buildkit": "v0.33.1",
+build-and-push	Build and push image	2026-10-26T08:03:12.6646163Z       "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/amd64/v4,linux/386",
+build-and-push	Build and push image	2026-10-26T08:03:12.6646668Z       "features": {
+build-and-push	Build and push image	2026-10-26T08:03:12.6647351Z         "Automatically load images to the Docker Engine image store": true,
+build-and-push	Build and push image	2026-10-26T08:03:12.6647879Z         "Cache export": true,
+build-and-push	Build and push image	2026-10-26T08:03:12.6648214Z         "Direct push": true,
+build-and-push	Build and push image	2026-10-26T08:03:12.6648548Z         "Docker exporter": true,
+build-and-push	Build and push image	2026-10-26T08:03:12.6648909Z         "Multi-platform build": true,
+build-and-push	Build and push image	2026-10-26T08:03:12.6649257Z         "OCI exporter": true
+build-and-push	Build and push image	2026-10-26T08:03:12.6649581Z       },
+build-and-push	Build and push image	2026-10-26T08:03:12.6649919Z       "labels": {
+build-and-push	Build and push image	2026-10-26T08:03:12.6650282Z         "org.mobyproject.buildkit.worker.executor": "oci",
+build-and-push	Build and push image	2026-10-26T08:03:12.6650822Z         "org.mobyproject.buildkit.worker.hostname": "c5c47b8a0bdb",
+build-and-push	Build and push image	2026-10-26T08:03:12.6651366Z         "org.mobyproject.buildkit.worker.network": "host",
+build-and-push	Build and push image	2026-10-26T08:03:12.6652118Z         "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+build-and-push	Build and push image	2026-10-26T08:03:12.6652631Z         "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+build-and-push	Build and push image	2026-10-26T08:03:12.6653189Z         "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+build-and-push	Build and push image	2026-10-26T08:03:12.6653661Z       },
+build-and-push	Build and push image	2026-10-26T08:03:12.6654007Z       "gcPolicy": [
+build-and-push	Build and push image	2026-10-26T08:03:12.6654487Z         {
+build-and-push	Build and push image	2026-10-26T08:03:12.6654808Z           "all": false,
+build-and-push	Build and push image	2026-10-26T08:03:12.6655113Z           "filter": [
+build-and-push	Build and push image	2026-10-26T08:03:12.6655586Z             "type==source.local type==exec.cachemount type==source.git.checkout"
+build-and-push	Build and push image	2026-10-26T08:03:12.6656035Z           ],
+build-and-push	Build and push image	2026-10-26T08:03:12.6656365Z           "keepDuration": "48h0m0s",
+build-and-push	Build and push image	2026-10-26T08:03:12.6656771Z           "maxUsedSpace": "488.3MiB"
+build-and-push	Build and push image	2026-10-26T08:03:12.6657130Z         },
+build-and-push	Build and push image	2026-10-26T08:03:12.6657481Z         {
+build-and-push	Build and push image	2026-10-26T08:03:12.6657797Z           "all": false,
+build-and-push	Build and push image	2026-10-26T08:03:12.6658139Z           "keepDuration": "1440h0m0s",
+build-and-push	Build and push image	2026-10-26T08:03:12.6658504Z           "reservedSpace": "9.313GiB",
+build-and-push	Build and push image	2026-10-26T08:03:12.6658848Z           "maxUsedSpace": "93.13GiB",
+build-and-push	Build and push image	2026-10-26T08:03:12.6659240Z           "minFreeSpace": "27.01GiB"
+build-and-push	Build and push image	2026-10-26T08:03:12.6659584Z         },
+build-and-push	Build and push image	2026-10-26T08:03:12.6659931Z         {
+build-and-push	Build and push image	2026-10-26T08:03:12.6660253Z           "all": false,
+build-and-push	Build and push image	2026-10-26T08:03:12.6660611Z           "reservedSpace": "9.313GiB",
+build-and-push	Build and push image	2026-10-26T08:03:12.6661021Z           "maxUsedSpace": "93.13GiB",
+build-and-push	Build and push image	2026-10-26T08:03:12.6661356Z           "minFreeSpace": "27.01GiB"
+build-and-push	Build and push image	2026-10-26T08:03:12.6662069Z         },
+build-and-push	Build and push image	2026-10-26T08:03:12.6662445Z         {
+build-and-push	Build and push image	2026-10-26T08:03:12.6662792Z           "all": true,
+build-and-push	Build and push image	2026-10-26T08:03:12.6663126Z           "reservedSpace": "9.313GiB",
+build-and-push	Build and push image	2026-10-26T08:03:12.6663485Z           "maxUsedSpace": "93.13GiB",
+build-and-push	Build and push image	2026-10-26T08:03:12.6663841Z           "minFreeSpace": "27.01GiB"
+build-and-push	Build and push image	2026-10-26T08:03:12.6664197Z         }
+build-and-push	Build and push image	2026-10-26T08:03:12.6664497Z       ]
+build-and-push	Build and push image	2026-10-26T08:03:12.6664882Z     }
+build-and-push	Build and push image	2026-10-26T08:03:12.6665190Z   ],
+build-and-push	Build and push image	2026-10-26T08:03:12.6665554Z   "name": "builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2",
+build-and-push	Build and push image	2026-10-26T08:03:12.6665982Z   "driver": "docker-container",
+build-and-push	Build and push image	2026-10-26T08:03:12.6666342Z   "lastActivity": "2026-10-26T08:02:52.000Z"
+build-and-push	Build and push image	2026-10-26T08:03:12.6666732Z }
+build-and-push	Build and push image	2026-10-26T08:03:12.6667448Z ##[endgroup]
+build-and-push	Build and push image	2026-10-26T08:03:12.8249578Z [command]/usr/bin/docker buildx build --cache-from type=gha --cache-to type=gha,mode=max --iidfile /home/runner/work/_temp/docker-actions-toolkit-kKzQFt/build-iidfile-f2ae660079.txt --label org.opencontainers.image.source=https://github.com/ZekRock18/gridshare-qwen3.8-27b --label org.opencontainers.image.description=GridShare serverless wrapper for Qwen3.8-27B Q3_K_P GGUF --label org.opencontainers.image.licenses=MIT --platform linux/amd64 --attest type=provenance,mode=max,builder-id=https://github.com/ZekRock18/gridshare-qwen3.8-27b/actions/runs/40289582417/attempts/1 --tag ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest --tag ghcr.io/zekrock18/gridshare-qwen3.8-27b:sha-530251018d6fcbf6950d77ea1d57dbdc5ecbab5a --metadata-file /home/runner/work/_temp/docker-actions-toolkit-kKzQFt/build-metadata-8deadc9e05.json --push .
+build-and-push	Build and push image	2026-10-26T08:03:13.1745706Z #0 building with "builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2" instance using docker-container driver
+build-and-push	Build and push image	2026-10-26T08:03:13.1746273Z 
+build-and-push	Build and push image	2026-10-26T08:03:13.1746867Z #1 [internal] load build definition from Dockerfile
+build-and-push	Build and push image	2026-10-26T08:03:13.1747508Z #1 transferring dockerfile: 1.56kB done
+build-and-push	Build and push image	2026-10-26T08:03:13.1747871Z #1 DONE 0.0s
+build-and-push	Build and push image	2026-10-26T08:03:13.1748045Z 
+build-and-push	Build and push image	2026-10-26T08:03:13.1748350Z #2 [auth] docker/dockerfile:pull token for registry-1.docker.io
+build-and-push	Build and push image	2026-10-26T08:03:13.1748756Z #2 DONE 0.0s
+build-and-push	Build and push image	2026-10-26T08:03:13.1748896Z 
+build-and-push	Build and push image	2026-10-26T08:03:13.1749160Z #3 resolve image config for docker-image://docker.io/docker/dockerfile:1.7
+build-and-push	Build and push image	2026-10-26T08:03:13.4285721Z #3 DONE 0.5s
+build-and-push	Build and push image	2026-10-26T08:03:13.5920146Z 
+build-and-push	Build and push image	2026-10-26T08:03:13.5921243Z #4 docker-image://docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e
+build-and-push	Build and push image	2026-10-26T08:03:13.5922384Z #4 resolve docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e done
+build-and-push	Build and push image	2026-10-26T08:03:13.5945508Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 2.10MB / 11.98MB 0.2s
+build-and-push	Build and push image	2026-10-26T08:03:13.7448183Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 4.19MB / 11.98MB 0.3s
+build-and-push	Build and push image	2026-10-26T08:03:13.8945246Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 6.29MB / 11.98MB 0.5s
+build-and-push	Build and push image	2026-10-26T08:03:14.0445345Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 9.44MB / 11.98MB 0.6s
+build-and-push	Build and push image	2026-10-26T08:03:14.1945738Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 11.53MB / 11.98MB 0.8s
+build-and-push	Build and push image	2026-10-26T08:03:14.3902312Z #4 sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 11.98MB / 11.98MB 0.8s done
+build-and-push	Build and push image	2026-10-26T08:03:14.3903624Z #4 extracting sha256:96918c57e42509b97f10c074d80672ecdbd3bb7dcd38c1bd95960cf291207416 0.1s done
+build-and-push	Build and push image	2026-10-26T08:03:14.3904439Z #4 DONE 1.0s
+build-and-push	Build and push image	2026-10-26T08:03:14.5402836Z 
+build-and-push	Build and push image	2026-10-26T08:03:14.5404641Z #5 [auth] ggml-org/llama.cpp:pull token for ghcr.io
+build-and-push	Build and push image	2026-10-26T08:03:14.6907032Z #5 DONE 0.0s
+build-and-push	Build and push image	2026-10-26T08:03:14.6907613Z 
+build-and-push	Build and push image	2026-10-26T08:03:14.6908154Z #6 [internal] load metadata for ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	Build and push image	2026-10-26T08:03:15.0200743Z #6 DONE 0.6s
+build-and-push	Build and push image	2026-10-26T08:03:15.1844563Z 
+build-and-push	Build and push image	2026-10-26T08:03:15.1845352Z #7 [internal] load .dockerignore
+build-and-push	Build and push image	2026-10-26T08:03:15.1846279Z #7 transferring context: 102B done
+build-and-push	Build and push image	2026-10-26T08:03:15.1846713Z #7 DONE 0.0s
+build-and-push	Build and push image	2026-10-26T08:03:15.4784011Z 
+build-and-push	Build and push image	2026-10-26T08:03:15.4785958Z #8 importing cache manifest from gha:646664539239958842
+build-and-push	Build and push image	2026-10-26T08:03:15.5887350Z #8 DONE 0.1s
+build-and-push	Build and push image	2026-10-26T08:03:15.5888932Z 
+build-and-push	Build and push image	2026-10-26T08:03:15.5891166Z #9 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	Build and push image	2026-10-26T08:03:15.5892929Z #9 resolve ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe done
+build-and-push	Build and push image	2026-10-26T08:03:15.7219423Z #9 ...
+build-and-push	Build and push image	2026-10-26T08:03:15.7223052Z 
+build-and-push	Build and push image	2026-10-26T08:03:15.7223706Z #10 [internal] load build context
+build-and-push	Build and push image	2026-10-26T08:03:15.7224536Z #10 transferring context: 9.36kB done
+build-and-push	Build and push image	2026-10-26T08:03:15.7225256Z #10 DONE 0.0s
+build-and-push	Build and push image	2026-10-26T08:03:15.7225668Z 
+build-and-push	Build and push image	2026-10-26T08:03:15.7226348Z #9 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	Build and push image	2026-10-26T08:03:15.7227675Z #9 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 0.0s done
+build-and-push	Build and push image	2026-10-26T08:03:15.7228773Z #9 sha256:9303fe791da9bc367e2a203c350b589327625c8d3e82ddbb321b23c87c8dcf66 25.05kB / 25.05kB 0.1s done
+build-and-push	Build and push image	2026-10-26T08:03:15.8759685Z #9 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 15.73MB / 177.66MB 0.2s
+build-and-push	Build and push image	2026-10-26T08:03:15.8764909Z #9 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 6.29MB / 261.95MB 0.2s
+build-and-push	Build and push image	2026-10-26T08:03:15.8766159Z #9 sha256:545a3ada5b6bc612a11c13a659775d67eeda5a61615e7f49c76ecd24adcad626 1.52kB / 1.52kB 0.1s done
+build-and-push	Build and push image	2026-10-26T08:03:15.8767550Z #9 sha256:7209097bfb98d6f8b422984480f1fddead5ea62f8900ff6b6548e060b71aca76 1.68kB / 1.68kB 0.1s done
+build-and-push	Build and push image	2026-10-26T08:03:15.8769154Z #9 sha256:3d6ab8c799cda2f4c6a6277b0e24dd2231c5de83b0316968b7cce81156bb8be0 59.62kB / 59.62kB 0.1s done
+build-and-push	Build and push image	2026-10-26T08:03:16.0224899Z #9 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 81.79MB / 177.66MB 0.3s
+build-and-push	Build and push image	2026-10-26T08:03:16.0233688Z #9 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 87.03MB / 261.95MB 0.3s
+build-and-push	Build and push image	2026-10-26T08:03:16.0239255Z #9 sha256:73389fbd088f5ed5d9fd258baced59de092978b4f483920ea6d074522a105119 6.88kB / 6.88kB 0.1s done
+build-and-push	Build and push image	2026-10-26T08:03:16.0242196Z #9 sha256:398182656c471d6ecca3c2d6d30e97193b40ffc8028a94515093960322f3d64e 183B / 183B 0.1s done
+build-and-push	Build and push image	2026-10-26T08:03:16.0244506Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 18.87MB / 2.06GB 0.2s
+build-and-push	Build and push image	2026-10-26T08:03:16.1715179Z #9 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 150.99MB / 177.66MB 0.5s
+build-and-push	Build and push image	2026-10-26T08:03:16.1718793Z #9 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 148.90MB / 261.95MB 0.5s
+build-and-push	Build and push image	2026-10-26T08:03:16.1720673Z #9 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 16.78MB / 64.29MB 0.2s
+build-and-push	Build and push image	2026-10-26T08:03:16.3212477Z #9 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 177.66MB / 177.66MB 0.6s
+build-and-push	Build and push image	2026-10-26T08:03:16.3214345Z #9 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 229.64MB / 261.95MB 0.6s
+build-and-push	Build and push image	2026-10-26T08:03:16.3215416Z #9 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 41.94MB / 64.29MB 0.3s
+build-and-push	Build and push image	2026-10-26T08:03:16.4710401Z #9 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 261.95MB / 261.95MB 0.8s
+build-and-push	Build and push image	2026-10-26T08:03:16.4711703Z #9 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 58.72MB / 64.29MB 0.5s
+build-and-push	Build and push image	2026-10-26T08:03:16.6211880Z #9 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 64.29MB / 64.29MB 0.6s
+build-and-push	Build and push image	2026-10-26T08:03:16.7713795Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 143.65MB / 2.06GB 0.9s
+build-and-push	Build and push image	2026-10-26T08:03:17.5214000Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 267.39MB / 2.06GB 1.7s
+build-and-push	Build and push image	2026-10-26T08:03:18.2712504Z #9 sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 177.66MB / 177.66MB 2.5s done
+build-and-push	Build and push image	2026-10-26T08:03:18.2713734Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 387.97MB / 2.06GB 2.4s
+build-and-push	Build and push image	2026-10-26T08:03:18.2715009Z #9 sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 64.29MB / 64.29MB 1.9s done
+build-and-push	Build and push image	2026-10-26T08:03:18.4214699Z #9 sha256:a102f36d092c0e9e0bef8c97854f606af9156aa36ab408e6fa4b88e27124a7e6 6.95MB / 6.95MB 0.2s
+build-and-push	Build and push image	2026-10-26T08:03:18.4216212Z #9 sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040 29.75MB / 29.75MB 0.2s
+build-and-push	Build and push image	2026-10-26T08:03:18.7220092Z #9 sha256:a102f36d092c0e9e0bef8c97854f606af9156aa36ab408e6fa4b88e27124a7e6 6.95MB / 6.95MB 0.3s done
+build-and-push	Build and push image	2026-10-26T08:03:19.0209670Z #9 sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 261.95MB / 261.95MB 3.3s done
+build-and-push	Build and push image	2026-10-26T08:03:19.0211016Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 492.83MB / 2.06GB 3.2s
+build-and-push	Build and push image	2026-10-26T08:03:19.0212606Z #9 sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040 29.75MB / 29.75MB 0.8s done
+build-and-push	Build and push image	2026-10-26T08:03:19.0213439Z #9 extracting sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040
+build-and-push	Build and push image	2026-10-26T08:03:19.5812258Z #9 extracting sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040 0.6s done
+build-and-push	Build and push image	2026-10-26T08:03:19.7237795Z #9 extracting sha256:a102f36d092c0e9e0bef8c97854f606af9156aa36ab408e6fa4b88e27124a7e6 0.1s done
+build-and-push	Build and push image	2026-10-26T08:03:19.9208669Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 608.17MB / 2.06GB 3.9s
+build-and-push	Build and push image	2026-10-26T08:03:19.9210054Z #9 extracting sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0
+build-and-push	Build and push image	2026-10-26T08:03:20.5210817Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 723.52MB / 2.06GB 4.7s
+build-and-push	Build and push image	2026-10-26T08:03:20.6570384Z #9 extracting sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 0.9s done
+build-and-push	Build and push image	2026-10-26T08:03:20.8210373Z #9 extracting sha256:398182656c471d6ecca3c2d6d30e97193b40ffc8028a94515093960322f3d64e done
+build-and-push	Build and push image	2026-10-26T08:03:20.8211758Z #9 extracting sha256:73389fbd088f5ed5d9fd258baced59de092978b4f483920ea6d074522a105119 done
+build-and-push	Build and push image	2026-10-26T08:03:21.2720177Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 831.52MB / 2.06GB 5.4s
+build-and-push	Build and push image	2026-10-26T08:03:22.0210717Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 943.72MB / 2.06GB 6.2s
+build-and-push	Build and push image	2026-10-26T08:03:22.7718495Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.06GB / 2.06GB 6.9s
+build-and-push	Build and push image	2026-10-26T08:03:23.5222812Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.18GB / 2.06GB 7.7s
+build-and-push	Build and push image	2026-10-26T08:03:24.2721026Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.30GB / 2.06GB 8.4s
+build-and-push	Build and push image	2026-10-26T08:03:25.0220363Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.41GB / 2.06GB 9.2s
+build-and-push	Build and push image	2026-10-26T08:03:25.6217533Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.52GB / 2.06GB 9.8s
+build-and-push	Build and push image	2026-10-26T08:03:26.3713777Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.64GB / 2.06GB 10.5s
+build-and-push	Build and push image	2026-10-26T08:03:27.2725376Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.75GB / 2.06GB 11.4s
+build-and-push	Build and push image	2026-10-26T08:03:28.0218500Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.87GB / 2.06GB 12.2s
+build-and-push	Build and push image	2026-10-26T08:03:28.6209941Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 1.98GB / 2.06GB 12.8s
+build-and-push	Build and push image	2026-10-26T08:03:33.7212321Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 2.06GB / 2.06GB 17.9s
+build-and-push	Build and push image	2026-10-26T08:03:37.4784560Z #9 sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 2.06GB / 2.06GB 21.5s done
+build-and-push	Build and push image	2026-10-26T08:03:37.4786057Z #9 extracting sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053
+build-and-push	Build and push image	2026-10-26T08:03:56.8778386Z #9 extracting sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 19.5s done
+build-and-push	Build and push image	2026-10-26T08:03:56.8779263Z #9 DONE 41.3s
+build-and-push	Build and push image	2026-10-26T08:03:57.0287015Z 
+build-and-push	Build and push image	2026-10-26T08:03:57.0288640Z #9 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	Build and push image	2026-10-26T08:03:57.0289527Z #9 extracting sha256:3d6ab8c799cda2f4c6a6277b0e24dd2231c5de83b0316968b7cce81156bb8be0
+build-and-push	Build and push image	2026-10-26T08:03:57.9121276Z #9 extracting sha256:3d6ab8c799cda2f4c6a6277b0e24dd2231c5de83b0316968b7cce81156bb8be0 1.0s done
+build-and-push	Build and push image	2026-10-26T08:03:57.9122263Z #9 DONE 42.3s
+build-and-push	Build and push image	2026-10-26T08:03:58.0620700Z 
+build-and-push	Build and push image	2026-10-26T08:03:58.0622228Z #9 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	Build and push image	2026-10-26T08:03:58.0624545Z #9 extracting sha256:7209097bfb98d6f8b422984480f1fddead5ea62f8900ff6b6548e060b71aca76
+build-and-push	Build and push image	2026-10-26T08:03:58.7329261Z #9 extracting sha256:7209097bfb98d6f8b422984480f1fddead5ea62f8900ff6b6548e060b71aca76 0.8s done
+build-and-push	Build and push image	2026-10-26T08:03:58.7330206Z #9 DONE 43.2s
+build-and-push	Build and push image	2026-10-26T08:03:58.8832980Z 
+build-and-push	Build and push image	2026-10-26T08:03:58.8833933Z #9 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	Build and push image	2026-10-26T08:03:58.8834868Z #9 extracting sha256:545a3ada5b6bc612a11c13a659775d67eeda5a61615e7f49c76ecd24adcad626
+build-and-push	Build and push image	2026-10-26T08:03:59.3895013Z #9 extracting sha256:545a3ada5b6bc612a11c13a659775d67eeda5a61615e7f49c76ecd24adcad626 0.7s done
+build-and-push	Build and push image	2026-10-26T08:03:59.3895867Z #9 DONE 43.8s
+build-and-push	Build and push image	2026-10-26T08:03:59.5399555Z 
+build-and-push	Build and push image	2026-10-26T08:03:59.5400530Z #9 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	Build and push image	2026-10-26T08:03:59.5401601Z #9 extracting sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485
+build-and-push	Build and push image	2026-10-26T08:04:04.1971844Z #9 extracting sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 4.8s done
+build-and-push	Build and push image	2026-10-26T08:04:04.1972973Z #9 DONE 48.6s
+build-and-push	Build and push image	2026-10-26T08:04:04.3475087Z 
+build-and-push	Build and push image	2026-10-26T08:04:04.3475952Z #9 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	Build and push image	2026-10-26T08:04:04.3476808Z #9 extracting sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7
+build-and-push	Build and push image	2026-10-26T08:04:05.4421370Z #9 extracting sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 1.2s done
+build-and-push	Build and push image	2026-10-26T08:04:05.4422367Z #9 DONE 49.9s
+build-and-push	Build and push image	2026-10-26T08:04:05.5925747Z 
+build-and-push	Build and push image	2026-10-26T08:04:05.5926601Z #9 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	Build and push image	2026-10-26T08:04:05.5927379Z #9 extracting sha256:9303fe791da9bc367e2a203c350b589327625c8d3e82ddbb321b23c87c8dcf66
+build-and-push	Build and push image	2026-10-26T08:04:05.6557514Z #9 extracting sha256:9303fe791da9bc367e2a203c350b589327625c8d3e82ddbb321b23c87c8dcf66 0.2s done
+build-and-push	Build and push image	2026-10-26T08:04:05.6558802Z #9 DONE 50.1s
+build-and-push	Build and push image	2026-10-26T08:04:05.8121248Z 
+build-and-push	Build and push image	2026-10-26T08:04:05.8122645Z #9 [1/7] FROM ghcr.io/ggml-org/llama.cpp:server-cuda@sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe
+build-and-push	Build and push image	2026-10-26T08:04:05.8124284Z #9 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+build-and-push	Build and push image	2026-10-26T08:04:05.8124946Z #9 DONE 50.1s
+build-and-push	Build and push image	2026-10-26T08:04:05.8125230Z 
+build-and-push	Build and push image	2026-10-26T08:04:05.8126181Z #11 [2/7] RUN apt-get update && apt-get install -y --no-install-recommends     python3 python3-venv ca-certificates curl libgomp1     && rm -rf /var/lib/apt/lists/*
+build-and-push	Build and push image	2026-10-26T08:04:05.8408447Z #11 0.179 Get:1 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  InRelease [1578 B]
+build-and-push	Build and push image	2026-10-26T08:04:05.9467615Z #11 0.285 Get:2 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  Packages [1978 kB]
+build-and-push	Build and push image	2026-10-26T08:04:06.1086819Z #11 0.296 Get:3 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+build-and-push	Build and push image	2026-10-26T08:04:06.1622256Z #11 0.501 Get:4 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+build-and-push	Build and push image	2026-10-26T08:04:06.4133835Z #11 0.752 Get:5 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2122 kB]
+build-and-push	Build and push image	2026-10-26T08:04:06.8522764Z #11 1.191 Get:6 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+build-and-push	Build and push image	2026-10-26T08:04:07.0227111Z #11 1.361 Get:7 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+build-and-push	Build and push image	2026-10-26T08:04:07.1942269Z #11 1.438 Get:8 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1549 kB]
+build-and-push	Build and push image	2026-10-26T08:04:07.1943548Z #11 1.533 Get:9 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+build-and-push	Build and push image	2026-10-26T08:04:07.3907549Z #11 1.559 Get:10 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [55.6 kB]
+build-and-push	Build and push image	2026-10-26T08:04:07.3908455Z #11 1.561 Get:11 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1411 kB]
+build-and-push	Build and push image	2026-10-26T08:04:07.3909260Z #11 1.578 Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+build-and-push	Build and push image	2026-10-26T08:04:07.7158065Z #11 2.054 Get:13 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+build-and-push	Build and push image	2026-10-26T08:04:08.4808886Z #11 2.819 Get:14 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+build-and-push	Build and push image	2026-10-26T08:04:08.7296422Z #11 2.822 Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1733 kB]
+build-and-push	Build and push image	2026-10-26T08:04:08.7298294Z #11 2.869 Get:16 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [61.7 kB]
+build-and-push	Build and push image	2026-10-26T08:04:08.7299576Z #11 2.870 Get:17 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2231 kB]
+build-and-push	Build and push image	2026-10-26T08:04:08.7300765Z #11 2.894 Get:18 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2170 kB]
+build-and-push	Build and push image	2026-10-26T08:04:08.7302267Z #11 2.917 Get:19 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.0 kB]
+build-and-push	Build and push image	2026-10-26T08:04:08.7303586Z #11 2.917 Get:20 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [669 B]
+build-and-push	Build and push image	2026-10-26T08:04:08.7304795Z #11 2.917 Get:21 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.0 kB]
+build-and-push	Build and push image	2026-10-26T08:04:09.3955933Z #11 3.734 Fetched 35.6 MB in 4s (9714 kB/s)
+build-and-push	Build and push image	2026-10-26T08:04:10.2283620Z #11 3.734 Reading package lists...
+build-and-push	Build and push image	2026-10-26T08:04:10.3992757Z #11 4.579 W: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+build-and-push	Build and push image	2026-10-26T08:04:11.1171064Z #11 4.587 Reading package lists...
+build-and-push	Build and push image	2026-10-26T08:04:11.3451119Z #11 5.469 Building dependency tree...
+build-and-push	Build and push image	2026-10-26T08:04:11.4958185Z #11 5.683 Reading state information...
+build-and-push	Build and push image	2026-10-26T08:04:11.6787813Z #11 6.017 python3 is already the newest version (3.12.3-0ubuntu2.1).
+build-and-push	Build and push image	2026-10-26T08:04:11.6788625Z #11 6.017 python3 set to manually installed.
+build-and-push	Build and push image	2026-10-26T08:04:11.6789577Z #11 6.017 curl is already the newest version (8.5.0-2ubuntu10.16).
+build-and-push	Build and push image	2026-10-26T08:04:11.6790571Z #11 6.017 libgomp1 is already the newest version (14.2.0-4ubuntu2~24.04.1).
+build-and-push	Build and push image	2026-10-26T08:04:11.6791358Z #11 6.017 The following NEW packages will be installed:
+build-and-push	Build and push image	2026-10-26T08:04:11.8305991Z #11 6.017   python3-pip-whl python3-setuptools-whl python3-venv python3.12-venv
+build-and-push	Build and push image	2026-10-26T08:04:11.8307021Z #11 6.018 The following packages will be upgraded:
+build-and-push	Build and push image	2026-10-26T08:04:11.8307669Z #11 6.019   ca-certificates
+build-and-push	Build and push image	2026-10-26T08:04:11.9944815Z #11 6.333 1 upgraded, 4 newly installed, 0 to remove and 60 not upgraded.
+build-and-push	Build and push image	2026-10-26T08:04:11.9945936Z #11 6.333 Need to get 2569 kB of archives.
+build-and-push	Build and push image	2026-10-26T08:04:11.9946674Z #11 6.333 After this operation, 2726 kB of additional disk space will be used.
+build-and-push	Build and push image	2026-10-26T08:04:11.9947697Z #11 6.333 Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 ca-certificates all 20260816ubuntu0.24.04.1 [139 kB]
+build-and-push	Build and push image	2026-10-26T08:04:12.4221937Z #11 6.761 Get:2 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-pip-whl all 24.0+dfsg-1ubuntu1.3 [1707 kB]
+build-and-push	Build and push image	2026-10-26T08:04:13.0077221Z #11 7.346 Get:3 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-setuptools-whl all 68.1.2-2ubuntu1.2 [716 kB]
+build-and-push	Build and push image	2026-10-26T08:04:13.2390452Z #11 7.427 Get:4 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3.12-venv amd64 3.12.3-1ubuntu0.17 [5684 B]
+build-and-push	Build and push image	2026-10-26T08:04:13.2394344Z #11 7.427 Get:5 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-venv amd64 3.12.3-0ubuntu2.1 [1032 B]
+build-and-push	Build and push image	2026-10-26T08:04:13.3702493Z #11 7.709 debconf: delaying package configuration, since apt-utils is not installed
+build-and-push	Build and push image	2026-10-26T08:04:13.6429248Z #11 7.981 Fetched 2569 kB in 1s (1835 kB/s)
+build-and-push	Build and push image	2026-10-26T08:04:14.5280584Z #11 8.742 (Reading database ... 
+build-and-push	Build and push image	2026-10-26T08:04:14.5282029Z (Reading database ... 5%
+build-and-push	Build and push image	2026-10-26T08:04:14.5282739Z (Reading database ... 10%
+build-and-push	Build and push image	2026-10-26T08:04:14.5283526Z (Reading database ... 15%
+build-and-push	Build and push image	2026-10-26T08:04:14.5284287Z (Reading database ... 20%
+build-and-push	Build and push image	2026-10-26T08:04:14.5284946Z (Reading database ... 25%
+build-and-push	Build and push image	2026-10-26T08:04:14.5285624Z (Reading database ... 30%
+build-and-push	Build and push image	2026-10-26T08:04:14.5286356Z (Reading database ... 35%
+build-and-push	Build and push image	2026-10-26T08:04:14.5287007Z (Reading database ... 40%
+build-and-push	Build and push image	2026-10-26T08:04:14.5287684Z (Reading database ... 45%
+build-and-push	Build and push image	2026-10-26T08:04:14.5288292Z (Reading database ... 50%
+build-and-push	Build and push image	2026-10-26T08:04:14.5288997Z (Reading database ... 55%
+build-and-push	Build and push image	2026-10-26T08:04:14.5289610Z (Reading database ... 60%
+build-and-push	Build and push image	2026-10-26T08:04:14.5290246Z (Reading database ... 65%
+build-and-push	Build and push image	2026-10-26T08:04:14.5290944Z (Reading database ... 70%
+build-and-push	Build and push image	2026-10-26T08:04:14.5291967Z (Reading database ... 75%
+build-and-push	Build and push image	2026-10-26T08:04:14.5292801Z (Reading database ... 80%
+build-and-push	Build and push image	2026-10-26T08:04:14.5293428Z (Reading database ... 85%
+build-and-push	Build and push image	2026-10-26T08:04:14.5294089Z (Reading database ... 90%
+build-and-push	Build and push image	2026-10-26T08:04:14.5294755Z (Reading database ... 95%
+build-and-push	Build and push image	2026-10-26T08:04:14.5295336Z (Reading database ... 100%
+build-and-push	Build and push image	2026-10-26T08:04:14.5296200Z (Reading database ... 23976 files and directories currently installed.)
+build-and-push	Build and push image	2026-10-26T08:04:14.5297198Z #11 8.759 Preparing to unpack .../ca-certificates_20260816ubuntu0.24.04.1_all.deb ...
+build-and-push	Build and push image	2026-10-26T08:04:14.5298175Z #11 8.762 Unpacking ca-certificates (20260816ubuntu0.24.04.1) over (20240203) ...
+build-and-push	Build and push image	2026-10-26T08:04:14.5299090Z #11 8.866 Selecting previously unselected package python3-pip-whl.
+build-and-push	Build and push image	2026-10-26T08:04:14.7674242Z #11 8.871 Preparing to unpack .../python3-pip-whl_24.0+dfsg-1ubuntu1.3_all.deb ...
+build-and-push	Build and push image	2026-10-26T08:04:14.7675311Z #11 8.872 Unpacking python3-pip-whl (24.0+dfsg-1ubuntu1.3) ...
+build-and-push	Build and push image	2026-10-26T08:04:14.7676198Z #11 8.889 Selecting previously unselected package python3-setuptools-whl.
+build-and-push	Build and push image	2026-10-26T08:04:14.7677025Z #11 8.893 Preparing to unpack .../python3-setuptools-whl_68.1.2-2ubuntu1.2_all.deb ...
+build-and-push	Build and push image	2026-10-26T08:04:14.7677726Z #11 8.894 Unpacking python3-setuptools-whl (68.1.2-2ubuntu1.2) ...
+build-and-push	Build and push image	2026-10-26T08:04:14.7678430Z #11 8.910 Selecting previously unselected package python3.12-venv.
+build-and-push	Build and push image	2026-10-26T08:04:14.7679176Z #11 8.913 Preparing to unpack .../python3.12-venv_3.12.3-1ubuntu0.17_amd64.deb ...
+build-and-push	Build and push image	2026-10-26T08:04:14.7679660Z #11 8.914 Unpacking python3.12-venv (3.12.3-1ubuntu0.17) ...
+build-and-push	Build and push image	2026-10-26T08:04:14.7680154Z #11 8.927 Selecting previously unselected package python3-venv.
+build-and-push	Build and push image	2026-10-26T08:04:14.7680650Z #11 8.930 Preparing to unpack .../python3-venv_3.12.3-0ubuntu2.1_amd64.deb ...
+build-and-push	Build and push image	2026-10-26T08:04:14.7681165Z #11 8.931 Unpacking python3-venv (3.12.3-0ubuntu2.1) ...
+build-and-push	Build and push image	2026-10-26T08:04:14.7682861Z #11 8.953 Setting up python3-setuptools-whl (68.1.2-2ubuntu1.2) ...
+build-and-push	Build and push image	2026-10-26T08:04:14.7683326Z #11 8.955 Setting up ca-certificates (20260816ubuntu0.24.04.1) ...
+build-and-push	Build and push image	2026-10-26T08:04:15.6317310Z #11 9.970 Updating certificates in /etc/ssl/certs...
+build-and-push	Build and push image	2026-10-26T08:04:16.1623361Z #11 10.50 rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+build-and-push	Build and push image	2026-10-26T08:04:16.3785266Z #11 10.51 17 added, 43 removed; done.
+build-and-push	Build and push image	2026-10-26T08:04:16.3786121Z #11 10.51 Setting up python3-pip-whl (24.0+dfsg-1ubuntu1.3) ...
+build-and-push	Build and push image	2026-10-26T08:04:16.3787144Z #11 10.52 Setting up python3.12-venv (3.12.3-1ubuntu0.17) ...
+build-and-push	Build and push image	2026-10-26T08:04:16.3787928Z #11 10.56 Setting up python3-venv (3.12.3-0ubuntu2.1) ...
+build-and-push	Build and push image	2026-10-26T08:04:16.3788859Z #11 10.56 Processing triggers for ca-certificates (20260816ubuntu0.24.04.1) ...
+build-and-push	Build and push image	2026-10-26T08:04:16.3789626Z #11 10.57 Updating certificates in /etc/ssl/certs...
+build-and-push	Build and push image	2026-10-26T08:04:16.5498769Z #11 10.89 0 added, 0 removed; done.
+build-and-push	Build and push image	2026-10-26T08:04:16.5501913Z #11 10.89 Running hooks in /etc/ca-certificates/update.d...
+build-and-push	Build and push image	2026-10-26T08:04:16.7016128Z #11 10.89 done.
+build-and-push	Build and push image	2026-10-26T08:04:20.8760949Z #11 DONE 15.2s
+build-and-push	Build and push image	2026-10-26T08:04:21.0515295Z 
+build-and-push	Build and push image	2026-10-26T08:04:21.0516377Z #12 [3/7] WORKDIR /opt/app
+build-and-push	Build and push image	2026-10-26T08:04:21.0516894Z #12 DONE 0.0s
+build-and-push	Build and push image	2026-10-26T08:04:21.0517489Z 
+build-and-push	Build and push image	2026-10-26T08:04:21.0517653Z #13 [4/7] COPY requirements.txt .
+build-and-push	Build and push image	2026-10-26T08:04:21.0518059Z #13 DONE 0.0s
+build-and-push	Build and push image	2026-10-26T08:04:21.0518277Z 
+build-and-push	Build and push image	2026-10-26T08:04:21.0518726Z #14 [5/7] RUN python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
+build-and-push	Build and push image	2026-10-26T08:04:23.8907304Z #14 2.990 Collecting fastapi==0.115.12 (from -r requirements.txt (line 1))
+build-and-push	Build and push image	2026-10-26T08:04:23.9923178Z #14 3.025   Downloading fastapi-0.115.12-py3-none-any.whl.metadata (27 kB)
+build-and-push	Build and push image	2026-10-26T08:04:23.9924396Z #14 3.060 Collecting uvicorn==0.34.2 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Build and push image	2026-10-26T08:04:23.9925933Z #14 3.064   Downloading uvicorn-0.34.2-py3-none-any.whl.metadata (6.5 kB)
+build-and-push	Build and push image	2026-10-26T08:04:23.9926503Z #14 3.091 Collecting requests==2.32.3 (from -r requirements.txt (line 3))
+build-and-push	Build and push image	2026-10-26T08:04:24.1905600Z #14 3.095   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.1907134Z #14 3.144 Collecting starlette<0.47.0,>=0.40.0 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Build and push image	2026-10-26T08:04:24.1907913Z #14 3.148   Downloading starlette-0.46.2-py3-none-any.whl.metadata (6.2 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.1908752Z #14 3.290 Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Build and push image	2026-10-26T08:04:24.3978632Z #14 3.293   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.3979914Z #14 3.298      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.0/133.0 kB 50.2 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:24.3980916Z #14 3.321 Collecting typing-extensions>=4.8.0 (from fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Build and push image	2026-10-26T08:04:24.3982413Z #14 3.325   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.3983531Z #14 3.352 Collecting click>=7.0 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Build and push image	2026-10-26T08:04:24.3984539Z #14 3.356   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.3985668Z #14 3.367 Collecting h11>=0.8 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Build and push image	2026-10-26T08:04:24.3986680Z #14 3.370   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.3987691Z #14 3.497 Collecting charset-normalizer<4,>=2 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	Build and push image	2026-10-26T08:04:24.5604473Z #14 3.501   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.5606741Z #14 3.503      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.4/46.4 kB 343.4 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:24.5607379Z #14 3.522 Collecting idna<4,>=2.5 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	Build and push image	2026-10-26T08:04:24.5608224Z #14 3.525   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.5608840Z #14 3.561 Collecting urllib3<3,>=1.21.1 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	Build and push image	2026-10-26T08:04:24.5609431Z #14 3.564   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.5609971Z #14 3.586 Collecting certifi>=2017.4.17 (from requests==2.32.3->-r requirements.txt (line 3))
+build-and-push	Build and push image	2026-10-26T08:04:24.5610607Z #14 3.589   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.5611190Z #14 3.659 Collecting httptools>=0.6.3 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Build and push image	2026-10-26T08:04:24.6645078Z #14 3.663   Downloading httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.6646081Z #14 3.680 Collecting python-dotenv>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Build and push image	2026-10-26T08:04:24.6646719Z #14 3.683   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.6647355Z #14 3.718 Collecting pyyaml>=5.1 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Build and push image	2026-10-26T08:04:24.6648118Z #14 3.722   Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.6648880Z #14 3.763 Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Build and push image	2026-10-26T08:04:24.8603194Z #14 3.767   Downloading uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.8604840Z #14 3.839 Collecting watchfiles>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Build and push image	2026-10-26T08:04:24.8606153Z #14 3.843   Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+build-and-push	Build and push image	2026-10-26T08:04:24.8607262Z #14 3.959 Collecting websockets>=10.4 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 2))
+build-and-push	Build and push image	2026-10-26T08:04:25.0446918Z #14 3.963   Downloading websockets-17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.0448061Z #14 3.989 Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Build and push image	2026-10-26T08:04:25.0448840Z #14 3.993   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.5659316Z #14 4.665 Collecting pydantic-core==2.50.1 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Build and push image	2026-10-26T08:04:25.7341991Z #14 4.668   Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.7343931Z #14 4.682 Collecting typing-inspection>=0.4.4 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Build and push image	2026-10-26T08:04:25.7344843Z #14 4.685   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.7345587Z #14 4.720 Collecting anyio<5,>=3.6.2 (from starlette<0.47.0,>=0.40.0->fastapi==0.115.12->-r requirements.txt (line 1))
+build-and-push	Build and push image	2026-10-26T08:04:25.7346457Z #14 4.723   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.7347049Z #14 4.833 Downloading fastapi-0.115.12-py3-none-any.whl (95 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8423526Z #14 4.836    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.2/95.2 kB 304.9 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8424608Z #14 4.840 Downloading uvicorn-0.34.2-py3-none-any.whl (62 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8425658Z #14 4.841    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.5/62.5 kB 390.5 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8426444Z #14 4.845 Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8427172Z #14 4.847    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.9/64.9 kB 377.6 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8427992Z #14 4.850 Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8428644Z #14 4.852    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.1/135.1 kB 418.7 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8429320Z #14 4.856 Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8430181Z #14 4.859    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 257.6/257.6 kB 172.4 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8430692Z #14 4.862 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8431286Z #14 4.864    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 498.1 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8432043Z #14 4.868 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8432680Z #14 4.871 Downloading httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (552 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8433551Z #14 4.875    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 552.8/552.8 kB 249.2 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8434080Z #14 4.878 Downloading idna-3.20-py3-none-any.whl (69 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8434746Z #14 4.880    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 391.1 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8435250Z #14 4.883 Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8435848Z #14 4.886    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 488.1/488.1 kB 447.9 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8436541Z #14 4.890 Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8437388Z #14 4.897    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 433.3 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8437904Z #14 4.900 Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8438614Z #14 4.904 Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8439391Z #14 4.908    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 447.2 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8439914Z #14 4.911 Downloading starlette-0.46.2-py3-none-any.whl (72 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8440532Z #14 4.913    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.0/72.0 kB 287.7 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8441057Z #14 4.917 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8441999Z #14 4.918    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 376.8 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8442594Z #14 4.922 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.8443196Z #14 4.924    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 kB 399.7 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.8443909Z #14 4.927 Downloading uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.5 MB)
+build-and-push	Build and push image	2026-10-26T08:04:25.9591020Z #14 4.941    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 376.2 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.9593363Z #14 4.945 Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (458 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.9594657Z #14 4.948    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 458.4/458.4 kB 540.4 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.9595844Z #14 4.951 Downloading websockets-17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.9597217Z #14 4.954    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 225.8/225.8 kB 483.8 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.9598136Z #14 4.957 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.9599077Z #14 4.960 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.9600034Z #14 4.962    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB 479.9 MB/s eta 0:00:00
+build-and-push	Build and push image	2026-10-26T08:04:25.9600854Z #14 4.966 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+build-and-push	Build and push image	2026-10-26T08:04:25.9603414Z #14 5.058 Installing collected packages: websockets, uvloop, urllib3, typing-extensions, pyyaml, python-dotenv, idna, httptools, h11, click, charset-normalizer, certifi, annotated-types, uvicorn, typing-inspection, requests, pydantic-core, anyio, watchfiles, starlette, pydantic, fastapi
+build-and-push	Build and push image	2026-10-26T08:04:27.1836145Z #14 6.282 Successfully installed annotated-types-0.8.0 anyio-4.15.1 certifi-2026.10.23 charset-normalizer-3.5.2 click-8.5.0 fastapi-0.115.12 h11-0.16.0 httptools-0.9.0 idna-3.20 pydantic-2.14.1 pydantic-core-2.50.1 python-dotenv-1.2.4 pyyaml-6.0.3 requests-2.32.3 starlette-0.46.2 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.34.2 uvloop-0.23.0 watchfiles-1.3.0 websockets-17.3
+build-and-push	Build and push image	2026-10-26T08:04:28.0142689Z #14 DONE 7.1s
+build-and-push	Build and push image	2026-10-26T08:04:28.2450066Z 
+build-and-push	Build and push image	2026-10-26T08:04:28.2451207Z #15 [6/7] COPY app.py .
+build-and-push	Build and push image	2026-10-26T08:04:28.2451768Z #15 DONE 0.0s
+build-and-push	Build and push image	2026-10-26T08:04:28.2451929Z 
+build-and-push	Build and push image	2026-10-26T08:04:28.2452183Z #16 [7/7] RUN mkdir -p /models && chmod 755 /models
+build-and-push	Build and push image	2026-10-26T08:04:28.2452628Z #16 DONE 0.1s
+build-and-push	Build and push image	2026-10-26T08:04:28.2452826Z 
+build-and-push	Build and push image	2026-10-26T08:04:28.2452955Z #17 exporting to image
+build-and-push	Build and push image	2026-10-26T08:04:28.2453333Z #17 exporting layers
+build-and-push	Build and push image	2026-10-26T08:04:30.0948174Z #17 exporting layers 2.0s done
+build-and-push	Build and push image	2026-10-26T08:04:30.3331295Z #17 ...
+build-and-push	Build and push image	2026-10-26T08:04:30.3331837Z 
+build-and-push	Build and push image	2026-10-26T08:04:30.3332149Z #18 [auth] zekrock18/gridshare-qwen3.8-27b:pull,push token for ghcr.io
+build-and-push	Build and push image	2026-10-26T08:04:30.3332596Z #18 DONE 0.0s
+build-and-push	Build and push image	2026-10-26T08:04:30.3332770Z 
+build-and-push	Build and push image	2026-10-26T08:04:30.3332939Z #17 exporting to image
+build-and-push	Build and push image	2026-10-26T08:04:30.3333474Z #17 exporting manifest sha256:42f9c63157a05774e923541057023fd5d66e3d2664aab82986eeb7e8c552fb54 done
+build-and-push	Build and push image	2026-10-26T08:04:30.3334155Z #17 exporting config sha256:880f0c731a29a14f0216e87652ca2c7f47055fb7340319ac20d43df539ab6b0a done
+build-and-push	Build and push image	2026-10-26T08:04:30.3334875Z #17 exporting attestation manifest sha256:1d305c9ef30e8515b3e40997f42a7d43dc63e4e9933d1527080c62525d52ffec done
+build-and-push	Build and push image	2026-10-26T08:04:30.3335606Z #17 exporting manifest list sha256:2d6f4e8efbec7d0c09e44ba0eea19dabe053151fd588630472eacd2b15c569a0 done
+build-and-push	Build and push image	2026-10-26T08:04:30.3336583Z #17 pushing layers
+build-and-push	Build and push image	2026-10-26T08:04:33.1833527Z #17 ...
+build-and-push	Build and push image	2026-10-26T08:04:33.1833817Z 
+build-and-push	Build and push image	2026-10-26T08:04:33.1834020Z #19 exporting to GitHub Actions Cache
+build-and-push	Build and push image	2026-10-26T08:04:33.1834458Z #19 preparing build cache for export 0.0s done
+build-and-push	Build and push image	2026-10-26T08:04:33.1834863Z #19 sending cache export
+build-and-push	Build and push image	2026-10-26T08:04:33.1835342Z #19 writing layer sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0
+build-and-push	Build and push image	2026-10-26T08:04:34.2222339Z #19 writing layer sha256:05ec76e31584ec109785cc7045bd88df0240411233c2fcdad66b621c662034c0 4.0s done
+build-and-push	Build and push image	2026-10-26T08:04:34.4331744Z #19 writing layer sha256:1411ce7334c358113ddda4bca704b48d09d270ac06e5ae96f3737e8d896c0607
+build-and-push	Build and push image	2026-10-26T08:04:34.5334509Z #19 writing layer sha256:1411ce7334c358113ddda4bca704b48d09d270ac06e5ae96f3737e8d896c0607 0.3s done
+build-and-push	Build and push image	2026-10-26T08:04:34.7296910Z #19 writing layer sha256:398182656c471d6ecca3c2d6d30e97193b40ffc8028a94515093960322f3d64e
+build-and-push	Build and push image	2026-10-26T08:04:34.8059162Z #19 writing layer sha256:398182656c471d6ecca3c2d6d30e97193b40ffc8028a94515093960322f3d64e 0.2s done
+build-and-push	Build and push image	2026-10-26T08:04:34.9916344Z #19 writing layer sha256:3d6ab8c799cda2f4c6a6277b0e24dd2231c5de83b0316968b7cce81156bb8be0
+build-and-push	Build and push image	2026-10-26T08:04:35.0940724Z #19 writing layer sha256:3d6ab8c799cda2f4c6a6277b0e24dd2231c5de83b0316968b7cce81156bb8be0 0.3s done
+build-and-push	Build and push image	2026-10-26T08:04:35.2819144Z #19 writing layer sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+build-and-push	Build and push image	2026-10-26T08:04:35.3660544Z #19 writing layer sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0.2s done
+build-and-push	Build and push image	2026-10-26T08:04:35.5501980Z #19 writing layer sha256:545a3ada5b6bc612a11c13a659775d67eeda5a61615e7f49c76ecd24adcad626
+build-and-push	Build and push image	2026-10-26T08:04:35.6355615Z #19 writing layer sha256:545a3ada5b6bc612a11c13a659775d67eeda5a61615e7f49c76ecd24adcad626 0.2s done
+build-and-push	Build and push image	2026-10-26T08:04:35.8243621Z #19 writing layer sha256:54fc4b2d53ce99b022ea460b4f4423efb8970242e46c0fa0e5ab5e4b1d5604da
+build-and-push	Build and push image	2026-10-26T08:04:35.9171979Z #19 writing layer sha256:54fc4b2d53ce99b022ea460b4f4423efb8970242e46c0fa0e5ab5e4b1d5604da 0.2s done
+build-and-push	Build and push image	2026-10-26T08:04:36.1090303Z #19 writing layer sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040
+build-and-push	Build and push image	2026-10-26T08:04:38.1016475Z #19 writing layer sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040 2.1s done
+build-and-push	Build and push image	2026-10-26T08:04:38.2922030Z #19 writing layer sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7
+build-and-push	Build and push image	2026-10-26T08:04:47.9315650Z #19 ...
+build-and-push	Build and push image	2026-10-26T08:04:47.9316023Z 
+build-and-push	Build and push image	2026-10-26T08:04:47.9316166Z #17 exporting to image
+build-and-push	Build and push image	2026-10-26T08:04:47.9316906Z #17 pushing layers 17.8s done
+build-and-push	Build and push image	2026-10-26T08:04:47.9317893Z #17 pushing manifest for ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest@sha256:2d6f4e8efbec7d0c09e44ba0eea19dabe053151fd588630472eacd2b15c569a0
+build-and-push	Build and push image	2026-10-26T08:04:49.3355373Z #17 pushing manifest for ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest@sha256:2d6f4e8efbec7d0c09e44ba0eea19dabe053151fd588630472eacd2b15c569a0 1.3s done
+build-and-push	Build and push image	2026-10-26T08:04:49.5809649Z #17 pushing layers 0.2s done
+build-and-push	Build and push image	2026-10-26T08:04:49.5810582Z #17 pushing manifest for ghcr.io/zekrock18/gridshare-qwen3.8-27b:sha-530251018d6fcbf6950d77ea1d57dbdc5ecbab5a@sha256:2d6f4e8efbec7d0c09e44ba0eea19dabe053151fd588630472eacd2b15c569a0
+build-and-push	Build and push image	2026-10-26T08:04:49.8423974Z #17 pushing manifest for ghcr.io/zekrock18/gridshare-qwen3.8-27b:sha-530251018d6fcbf6950d77ea1d57dbdc5ecbab5a@sha256:2d6f4e8efbec7d0c09e44ba0eea19dabe053151fd588630472eacd2b15c569a0 0.4s done
+build-and-push	Build and push image	2026-10-26T08:04:49.8425340Z #17 DONE 21.7s
+build-and-push	Build and push image	2026-10-26T08:04:49.8425541Z 
+build-and-push	Build and push image	2026-10-26T08:04:49.8425687Z #19 exporting to GitHub Actions Cache
+build-and-push	Build and push image	2026-10-26T08:04:49.8426377Z #19 writing layer sha256:69e0001f8711b9c47557406b4491996d5a4a409bf89de638f44070572fabe8c7 10.5s done
+build-and-push	Build and push image	2026-10-26T08:04:49.8427273Z #19 writing layer sha256:6f4e681fa3e1c90f585b4638371904a32086700c817d0499a5567bf02faf426c 0.2s done
+build-and-push	Build and push image	2026-10-26T08:04:49.8428127Z #19 writing layer sha256:7209097bfb98d6f8b422984480f1fddead5ea62f8900ff6b6548e060b71aca76 0.2s done
+build-and-push	Build and push image	2026-10-26T08:04:49.8429378Z #19 writing layer sha256:73389fbd088f5ed5d9fd258baced59de092978b4f483920ea6d074522a105119 0.2s done
+build-and-push	Build and push image	2026-10-26T08:04:49.8430164Z #19 writing layer sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485
+build-and-push	Build and push image	2026-10-26T08:05:07.2786797Z #19 writing layer sha256:7f6cdaf7a337798aa582ee173b2588d41c62b1c261c33fdf52e21af7a7a67485 17.9s done
+build-and-push	Build and push image	2026-10-26T08:05:07.4586110Z #19 writing layer sha256:8c527a0e7a7233f49cb23362f27e9ebeb4ad33ddc3d6e0d8aac6b3e3ce86f289 0.1s done
+build-and-push	Build and push image	2026-10-26T08:05:07.6461249Z #19 writing layer sha256:9303fe791da9bc367e2a203c350b589327625c8d3e82ddbb321b23c87c8dcf66
+build-and-push	Build and push image	2026-10-26T08:05:07.7696543Z #19 writing layer sha256:9303fe791da9bc367e2a203c350b589327625c8d3e82ddbb321b23c87c8dcf66 0.3s done
+build-and-push	Build and push image	2026-10-26T08:05:07.9589757Z #19 writing layer sha256:a102f36d092c0e9e0bef8c97854f606af9156aa36ab408e6fa4b88e27124a7e6
+build-and-push	Build and push image	2026-10-26T08:05:08.5311792Z #19 writing layer sha256:a102f36d092c0e9e0bef8c97854f606af9156aa36ab408e6fa4b88e27124a7e6 0.7s done
+build-and-push	Build and push image	2026-10-26T08:05:08.7199054Z #19 writing layer sha256:ab24a6924cbea507f2957a0b63e6c7b9307e90f0907017cb74e0d6391a488c78
+build-and-push	Build and push image	2026-10-26T08:05:09.0861018Z #19 writing layer sha256:ab24a6924cbea507f2957a0b63e6c7b9307e90f0907017cb74e0d6391a488c78 0.5s done
+build-and-push	Build and push image	2026-10-26T08:05:09.2775572Z #19 writing layer sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053
+build-and-push	Build and push image	2026-10-26T08:07:31.2315910Z #19 writing layer sha256:cbb9175a9bc5f6553f8c0c5025ea9521898b8a3956ee24798dc35c24c6185053 142.1s done
+build-and-push	Build and push image	2026-10-26T08:07:31.4161682Z #19 writing layer sha256:fbf96711774652ba4926c26ebd94dfc8cc41a5b691f93757d295eae06e30d8b1
+build-and-push	Build and push image	2026-10-26T08:07:33.1183886Z #19 writing layer sha256:fbf96711774652ba4926c26ebd94dfc8cc41a5b691f93757d295eae06e30d8b1 1.9s done
+build-and-push	Build and push image	2026-10-26T08:07:33.4202941Z #19 sending cache export 183.3s done
+build-and-push	Build and push image	2026-10-26T08:07:33.4203786Z #19 DONE 183.3s
+build-and-push	Build and push image	2026-10-26T08:07:33.4570362Z 
+build-and-push	Build and push image	2026-10-26T08:07:33.4571686Z #20 resolving provenance for metadata file
+build-and-push	Build and push image	2026-10-26T08:07:33.4572467Z #20 DONE 0.0s
+build-and-push	Build and push image	2026-10-26T08:07:33.4636591Z ##[group]ImageID
+build-and-push	Build and push image	2026-10-26T08:07:33.4637678Z sha256:2d6f4e8efbec7d0c09e44ba0eea19dabe053151fd588630472eacd2b15c569a0
+build-and-push	Build and push image	2026-10-26T08:07:33.4638969Z ##[endgroup]
+build-and-push	Build and push image	2026-10-26T08:07:33.4639887Z ##[group]Digest
+build-and-push	Build and push image	2026-10-26T08:07:33.4640678Z sha256:2d6f4e8efbec7d0c09e44ba0eea19dabe053151fd588630472eacd2b15c569a0
+build-and-push	Build and push image	2026-10-26T08:07:33.4642222Z ##[endgroup]
+build-and-push	Build and push image	2026-10-26T08:07:33.4643100Z ##[group]Metadata
+build-and-push	Build and push image	2026-10-26T08:07:33.4643538Z {
+build-and-push	Build and push image	2026-10-26T08:07:33.4644001Z   "buildx.build.provenance": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4644599Z     "builder": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4645401Z       "id": "https://github.com/ZekRock18/gridshare-qwen3.8-27b/actions/runs/40289582417/attempts/1"
+build-and-push	Build and push image	2026-10-26T08:07:33.4646232Z     },
+build-and-push	Build and push image	2026-10-26T08:07:33.4646718Z     "buildType": "https://mobyproject.org/buildkit@v1",
+build-and-push	Build and push image	2026-10-26T08:07:33.4647356Z     "materials": [
+build-and-push	Build and push image	2026-10-26T08:07:33.4647825Z       {
+build-and-push	Build and push image	2026-10-26T08:07:33.4648289Z         "uri": "pkg:docker/docker/dockerfile@1.7",
+build-and-push	Build and push image	2026-10-26T08:07:33.4648813Z         "digest": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4649408Z           "sha256": "a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e"
+build-and-push	Build and push image	2026-10-26T08:07:33.4650077Z         }
+build-and-push	Build and push image	2026-10-26T08:07:33.4650500Z       },
+build-and-push	Build and push image	2026-10-26T08:07:33.4650990Z       {
+build-and-push	Build and push image	2026-10-26T08:07:33.4652239Z         "uri": "pkg:docker/ghcr.io/ggml-org/llama.cpp@server-cuda?digest=sha256:b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe&platform=linux%2Famd64",
+build-and-push	Build and push image	2026-10-26T08:07:33.4653289Z         "digest": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4653812Z           "sha256": "b51c252687249a6990ae1c168156cb215c954bfd71f9c434eda9a065b1a40dbe"
+build-and-push	Build and push image	2026-10-26T08:07:33.4654452Z         }
+build-and-push	Build and push image	2026-10-26T08:07:33.4654818Z       }
+build-and-push	Build and push image	2026-10-26T08:07:33.4655155Z     ],
+build-and-push	Build and push image	2026-10-26T08:07:33.4655513Z     "invocation": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4655943Z       "configSource": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4656527Z         "entryPoint": "Dockerfile"
+build-and-push	Build and push image	2026-10-26T08:07:33.4656994Z       },
+build-and-push	Build and push image	2026-10-26T08:07:33.4657387Z       "parameters": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4657888Z         "frontend": "gateway.v0",
+build-and-push	Build and push image	2026-10-26T08:07:33.4658403Z         "args": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4659202Z           "cmdline": "docker/dockerfile:1.7",
+build-and-push	Build and push image	2026-10-26T08:07:33.4660127Z           "label:org.opencontainers.image.description": "GridShare serverless wrapper for Qwen3.8-27B Q3_K_P GGUF",
+build-and-push	Build and push image	2026-10-26T08:07:33.4661150Z           "label:org.opencontainers.image.licenses": "MIT",
+build-and-push	Build and push image	2026-10-26T08:07:33.4662350Z           "label:org.opencontainers.image.source": "https://github.com/ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	Build and push image	2026-10-26T08:07:33.4663226Z           "source": "docker/dockerfile:1.7"
+build-and-push	Build and push image	2026-10-26T08:07:33.4663881Z         },
+build-and-push	Build and push image	2026-10-26T08:07:33.4664373Z         "locals": [
+build-and-push	Build and push image	2026-10-26T08:07:33.4664868Z           {
+build-and-push	Build and push image	2026-10-26T08:07:33.4665358Z             "name": "context"
+build-and-push	Build and push image	2026-10-26T08:07:33.4665845Z           },
+build-and-push	Build and push image	2026-10-26T08:07:33.4666276Z           {
+build-and-push	Build and push image	2026-10-26T08:07:33.4666732Z             "name": "dockerfile"
+build-and-push	Build and push image	2026-10-26T08:07:33.4667215Z           }
+build-and-push	Build and push image	2026-10-26T08:07:33.4667706Z         ],
+build-and-push	Build and push image	2026-10-26T08:07:33.4668129Z         "root": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4668690Z           "configSource": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4669298Z             "path": "Dockerfile"
+build-and-push	Build and push image	2026-10-26T08:07:33.4669810Z           },
+build-and-push	Build and push image	2026-10-26T08:07:33.4670233Z           "request": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4670839Z             "args": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4672576Z               "label:org.opencontainers.image.description": "GridShare serverless wrapper for Qwen3.8-27B Q3_K_P GGUF",
+build-and-push	Build and push image	2026-10-26T08:07:33.4673912Z               "label:org.opencontainers.image.licenses": "MIT",
+build-and-push	Build and push image	2026-10-26T08:07:33.4674973Z               "label:org.opencontainers.image.source": "https://github.com/ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	Build and push image	2026-10-26T08:07:33.4675914Z               "vcs:localdir:context": ".",
+build-and-push	Build and push image	2026-10-26T08:07:33.4676506Z               "vcs:localdir:dockerfile": ".",
+build-and-push	Build and push image	2026-10-26T08:07:33.4677156Z               "vcs:revision": "530251018d6fcbf6950d77ea1d57dbdc5ecbab5a",
+build-and-push	Build and push image	2026-10-26T08:07:33.4678091Z               "vcs:source": "https://github.com/ZekRock18/gridshare-qwen3.8-27b"
+build-and-push	Build and push image	2026-10-26T08:07:33.4678845Z             }
+build-and-push	Build and push image	2026-10-26T08:07:33.4679267Z           }
+build-and-push	Build and push image	2026-10-26T08:07:33.4679701Z         },
+build-and-push	Build and push image	2026-10-26T08:07:33.4680239Z         "compatibilityVersion": 30
+build-and-push	Build and push image	2026-10-26T08:07:33.4680810Z       },
+build-and-push	Build and push image	2026-10-26T08:07:33.4681220Z       "environment": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4681798Z         "github_actor": "ZekRock18",
+build-and-push	Build and push image	2026-10-26T08:07:33.4682375Z         "github_actor_id": "189788636",
+build-and-push	Build and push image	2026-10-26T08:07:33.4682982Z         "github_event_name": "push",
+build-and-push	Build and push image	2026-10-26T08:07:33.4683542Z         "github_event_payload": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4684081Z           "after": "530251018d6fcbf6950d77ea1d57dbdc5ecbab5a",
+build-and-push	Build and push image	2026-10-26T08:07:33.4684658Z           "base_ref": null,
+build-and-push	Build and push image	2026-10-26T08:07:33.4685297Z           "before": "0a33b698142d4912ef477f3f42a53e58cfc5a705",
+build-and-push	Build and push image	2026-10-26T08:07:33.4685955Z           "commits": [
+build-and-push	Build and push image	2026-10-26T08:07:33.4686413Z             {
+build-and-push	Build and push image	2026-10-26T08:07:33.4686874Z               "author": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4687401Z                 "email": "prakhar18.linkedin@gmail.com",
+build-and-push	Build and push image	2026-10-26T08:07:33.4688077Z                 "name": "Prakhar Gupta",
+build-and-push	Build and push image	2026-10-26T08:07:33.4688707Z                 "username": "ZekRock18"
+build-and-push	Build and push image	2026-10-26T08:07:33.4689257Z               },
+build-and-push	Build and push image	2026-10-26T08:07:33.4689738Z               "committer": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4690289Z                 "email": "prakhar18.linkedin@gmail.com",
+build-and-push	Build and push image	2026-10-26T08:07:33.4690942Z                 "name": "Prakhar Gupta",
+build-and-push	Build and push image	2026-10-26T08:07:33.4691663Z                 "username": "ZekRock18"
+build-and-push	Build and push image	2026-10-26T08:07:33.4692172Z               },
+build-and-push	Build and push image	2026-10-26T08:07:33.4692662Z               "distinct": true,
+build-and-push	Build and push image	2026-10-26T08:07:33.4693268Z               "id": "530251018d6fcbf6950d77ea1d57dbdc5ecbab5a",
+build-and-push	Build and push image	2026-10-26T08:07:33.4694120Z               "message": "Use pinned official CUDA runtime for faster reproducible image builds",
+build-and-push	Build and push image	2026-10-26T08:07:33.4694997Z               "timestamp": "2026-10-26T13:32:36+05:30",
+build-and-push	Build and push image	2026-10-26T08:07:33.4695657Z               "tree_id": "333327ebede6072d2cf7f5e177a87f0cd8e27107",
+build-and-push	Build and push image	2026-10-26T08:07:33.4696753Z               "url": "https://github.com/ZekRock18/gridshare-qwen3.8-27b/commit/530251018d6fcbf6950d77ea1d57dbdc5ecbab5a"
+build-and-push	Build and push image	2026-10-26T08:07:33.4697826Z             }
+build-and-push	Build and push image	2026-10-26T08:07:33.4698314Z           ],
+build-and-push	Build and push image	2026-10-26T08:07:33.4699136Z           "compare": "https://github.com/ZekRock18/gridshare-qwen3.8-27b/compare/0a33b698142d...530251018d6f",
+build-and-push	Build and push image	2026-10-26T08:07:33.4700113Z           "created": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4700599Z           "deleted": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4701060Z           "forced": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4701606Z           "head_commit": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4702205Z             "author": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4702650Z               "email": "prakhar18.linkedin@gmail.com",
+build-and-push	Build and push image	2026-10-26T08:07:33.4703229Z               "name": "Prakhar Gupta",
+build-and-push	Build and push image	2026-10-26T08:07:33.4703753Z               "username": "ZekRock18"
+build-and-push	Build and push image	2026-10-26T08:07:33.4704270Z             },
+build-and-push	Build and push image	2026-10-26T08:07:33.4704666Z             "committer": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4705093Z               "email": "prakhar18.linkedin@gmail.com",
+build-and-push	Build and push image	2026-10-26T08:07:33.4705659Z               "name": "Prakhar Gupta",
+build-and-push	Build and push image	2026-10-26T08:07:33.4706205Z               "username": "ZekRock18"
+build-and-push	Build and push image	2026-10-26T08:07:33.4706908Z             },
+build-and-push	Build and push image	2026-10-26T08:07:33.4707321Z             "distinct": true,
+build-and-push	Build and push image	2026-10-26T08:07:33.4708073Z             "id": "530251018d6fcbf6950d77ea1d57dbdc5ecbab5a",
+build-and-push	Build and push image	2026-10-26T08:07:33.4708704Z             "message": "Use pinned official CUDA runtime for faster reproducible image builds",
+build-and-push	Build and push image	2026-10-26T08:07:33.4709239Z             "timestamp": "2026-10-26T13:32:36+05:30",
+build-and-push	Build and push image	2026-10-26T08:07:33.4709665Z             "tree_id": "333327ebede6072d2cf7f5e177a87f0cd8e27107",
+build-and-push	Build and push image	2026-10-26T08:07:33.4710286Z             "url": "https://github.com/ZekRock18/gridshare-qwen3.8-27b/commit/530251018d6fcbf6950d77ea1d57dbdc5ecbab5a"
+build-and-push	Build and push image	2026-10-26T08:07:33.4710818Z           },
+build-and-push	Build and push image	2026-10-26T08:07:33.4711155Z           "pusher": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4711648Z             "email": "prakhar18.linkedin@gmail.com",
+build-and-push	Build and push image	2026-10-26T08:07:33.4712038Z             "name": "ZekRock18"
+build-and-push	Build and push image	2026-10-26T08:07:33.4712378Z           },
+build-and-push	Build and push image	2026-10-26T08:07:33.4712667Z           "ref": "refs/heads/main",
+build-and-push	Build and push image	2026-10-26T08:07:33.4713015Z           "repository": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4713347Z             "allow_forking": true,
+build-and-push	Build and push image	2026-10-26T08:07:33.4713905Z             "archive_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/{archive_format}{/ref}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4714628Z             "archived": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4715121Z             "assignees_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/assignees{/user}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4715797Z             "blobs_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/git/blobs{/sha}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4716451Z             "branches_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/branches{/branch}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4717093Z             "clone_url": "https://github.com/ZekRock18/gridshare-qwen3.8-27b.git",
+build-and-push	Build and push image	2026-10-26T08:07:33.4717767Z             "collaborators_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/collaborators{/collaborator}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4718478Z             "comments_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/comments{/number}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4719134Z             "commits_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/commits{/sha}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4719889Z             "compare_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/compare/{base}...{head}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4720645Z             "contents_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/contents/{+path}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4722079Z             "contributors_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/contributors",
+build-and-push	Build and push image	2026-10-26T08:07:33.4722738Z             "created_at": 1792998774,
+build-and-push	Build and push image	2026-10-26T08:07:33.4723291Z             "default_branch": "main",
+build-and-push	Build and push image	2026-10-26T08:07:33.4724139Z             "deployments_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/deployments",
+build-and-push	Build and push image	2026-10-26T08:07:33.4724941Z             "description": null,
+build-and-push	Build and push image	2026-10-26T08:07:33.4725613Z             "disabled": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4726282Z             "downloads_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/downloads",
+build-and-push	Build and push image	2026-10-26T08:07:33.4727266Z             "events_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/events",
+build-and-push	Build and push image	2026-10-26T08:07:33.4728001Z             "fork": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4728416Z             "forks": 0,
+build-and-push	Build and push image	2026-10-26T08:07:33.4728854Z             "forks_count": 0,
+build-and-push	Build and push image	2026-10-26T08:07:33.4729497Z             "forks_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/forks",
+build-and-push	Build and push image	2026-10-26T08:07:33.4730276Z             "full_name": "ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	Build and push image	2026-10-26T08:07:33.4731239Z             "git_commits_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/git/commits{/sha}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4732674Z             "git_refs_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/git/refs{/sha}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4733724Z             "git_tags_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/git/tags{/sha}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4734602Z             "git_url": "git://github.com/ZekRock18/gridshare-qwen3.8-27b.git",
+build-and-push	Build and push image	2026-10-26T08:07:33.4735343Z             "has_discussions": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4735889Z             "has_downloads": true,
+build-and-push	Build and push image	2026-10-26T08:07:33.4736353Z             "has_issues": true,
+build-and-push	Build and push image	2026-10-26T08:07:33.4736798Z             "has_pages": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4737284Z             "has_projects": true,
+build-and-push	Build and push image	2026-10-26T08:07:33.4737794Z             "has_pull_requests": true,
+build-and-push	Build and push image	2026-10-26T08:07:33.4738344Z             "has_wiki": true,
+build-and-push	Build and push image	2026-10-26T08:07:33.4738887Z             "homepage": null,
+build-and-push	Build and push image	2026-10-26T08:07:33.4739494Z             "hooks_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/hooks",
+build-and-push	Build and push image	2026-10-26T08:07:33.4740338Z             "html_url": "https://github.com/ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	Build and push image	2026-10-26T08:07:33.4741003Z             "id": 1434030111,
+build-and-push	Build and push image	2026-10-26T08:07:33.4741620Z             "is_template": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4742496Z             "issue_comment_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/issues/comments{/number}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4743773Z             "issue_events_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/issues/events{/number}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4744917Z             "issues_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/issues{/number}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4745973Z             "keys_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/keys{/key_id}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4746999Z             "labels_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/labels{/name}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4747792Z             "language": "Python",
+build-and-push	Build and push image	2026-10-26T08:07:33.4748457Z             "languages_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/languages",
+build-and-push	Build and push image	2026-10-26T08:07:33.4749297Z             "license": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4749850Z               "key": "other",
+build-and-push	Build and push image	2026-10-26T08:07:33.4750299Z               "name": "Other",
+build-and-push	Build and push image	2026-10-26T08:07:33.4750738Z               "node_id": "MDc6TGljZW5zZTA=",
+build-and-push	Build and push image	2026-10-26T08:07:33.4751563Z               "spdx_id": "NOASSERTION",
+build-and-push	Build and push image	2026-10-26T08:07:33.4752093Z               "url": null
+build-and-push	Build and push image	2026-10-26T08:07:33.4752454Z             },
+build-and-push	Build and push image	2026-10-26T08:07:33.4752761Z             "master_branch": "main",
+build-and-push	Build and push image	2026-10-26T08:07:33.4753380Z             "merges_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/merges",
+build-and-push	Build and push image	2026-10-26T08:07:33.4754070Z             "milestones_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/milestones{/number}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4754637Z             "mirror_url": null,
+build-and-push	Build and push image	2026-10-26T08:07:33.4755019Z             "name": "gridshare-qwen3.8-27b",
+build-and-push	Build and push image	2026-10-26T08:07:33.4755386Z             "node_id": "R_kgDOVXmQHw",
+build-and-push	Build and push image	2026-10-26T08:07:33.4755989Z             "notifications_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/notifications{?since,all,participating}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4756665Z             "open_issues": 0,
+build-and-push	Build and push image	2026-10-26T08:07:33.4757149Z             "open_issues_count": 0,
+build-and-push	Build and push image	2026-10-26T08:07:33.4757523Z             "owner": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4757969Z               "avatar_url": "https://avatars.githubusercontent.com/u/189788636?v=4",
+build-and-push	Build and push image	2026-10-26T08:07:33.4758473Z               "email": "prakhar18.linkedin@gmail.com",
+build-and-push	Build and push image	2026-10-26T08:07:33.4758974Z               "events_url": "https://api.github.com/users/ZekRock18/events{/privacy}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4759524Z               "followers_url": "https://api.github.com/users/ZekRock18/followers",
+build-and-push	Build and push image	2026-10-26T08:07:33.4760128Z               "following_url": "https://api.github.com/users/ZekRock18/following{/other_user}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4760700Z               "gists_url": "https://api.github.com/users/ZekRock18/gists{/gist_id}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4761128Z               "gravatar_id": "",
+build-and-push	Build and push image	2026-10-26T08:07:33.4761923Z               "html_url": "https://github.com/ZekRock18",
+build-and-push	Build and push image	2026-10-26T08:07:33.4762428Z               "id": 189788636,
+build-and-push	Build and push image	2026-10-26T08:07:33.4762919Z               "login": "ZekRock18",
+build-and-push	Build and push image	2026-10-26T08:07:33.4763260Z               "name": "ZekRock18",
+build-and-push	Build and push image	2026-10-26T08:07:33.4763681Z               "node_id": "U_kgDOC0_x3A",
+build-and-push	Build and push image	2026-10-26T08:07:33.4764132Z               "organizations_url": "https://api.github.com/users/ZekRock18/orgs",
+build-and-push	Build and push image	2026-10-26T08:07:33.4764696Z               "received_events_url": "https://api.github.com/users/ZekRock18/received_events",
+build-and-push	Build and push image	2026-10-26T08:07:33.4765198Z               "repos_url": "https://api.github.com/users/ZekRock18/repos",
+build-and-push	Build and push image	2026-10-26T08:07:33.4765657Z               "site_admin": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4766145Z               "starred_url": "https://api.github.com/users/ZekRock18/starred{/owner}{/repo}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4766740Z               "subscriptions_url": "https://api.github.com/users/ZekRock18/subscriptions",
+build-and-push	Build and push image	2026-10-26T08:07:33.4767227Z               "type": "User",
+build-and-push	Build and push image	2026-10-26T08:07:33.4767578Z               "url": "https://api.github.com/users/ZekRock18",
+build-and-push	Build and push image	2026-10-26T08:07:33.4768005Z               "user_view_type": "public"
+build-and-push	Build and push image	2026-10-26T08:07:33.4768344Z             },
+build-and-push	Build and push image	2026-10-26T08:07:33.4768646Z             "private": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4769034Z             "pull_request_creation_policy": "all",
+build-and-push	Build and push image	2026-10-26T08:07:33.4769581Z             "pulls_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/pulls{/number}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4770144Z             "pushed_at": 1793001762,
+build-and-push	Build and push image	2026-10-26T08:07:33.4770622Z             "releases_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/releases{/id}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4771110Z             "size": 0,
+build-and-push	Build and push image	2026-10-26T08:07:33.4771795Z             "ssh_url": "git@github.com:ZekRock18/gridshare-qwen3.8-27b.git",
+build-and-push	Build and push image	2026-10-26T08:07:33.4772356Z             "stargazers": 0,
+build-and-push	Build and push image	2026-10-26T08:07:33.4772705Z             "stargazers_count": 0,
+build-and-push	Build and push image	2026-10-26T08:07:33.4773244Z             "stargazers_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/stargazers",
+build-and-push	Build and push image	2026-10-26T08:07:33.4773971Z             "statuses_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/statuses/{sha}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4774700Z             "subscribers_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/subscribers",
+build-and-push	Build and push image	2026-10-26T08:07:33.4775379Z             "subscription_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/subscription",
+build-and-push	Build and push image	2026-10-26T08:07:33.4775997Z             "svn_url": "https://github.com/ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	Build and push image	2026-10-26T08:07:33.4776537Z             "tags_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/tags",
+build-and-push	Build and push image	2026-10-26T08:07:33.4777117Z             "teams_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/teams",
+build-and-push	Build and push image	2026-10-26T08:07:33.4777673Z             "topics": [],
+build-and-push	Build and push image	2026-10-26T08:07:33.4778149Z             "trees_url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b/git/trees{/sha}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4778684Z             "updated_at": "2026-10-26T07:41:51Z",
+build-and-push	Build and push image	2026-10-26T08:07:33.4779261Z             "url": "https://api.github.com/repos/ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	Build and push image	2026-10-26T08:07:33.4779828Z             "visibility": "public",
+build-and-push	Build and push image	2026-10-26T08:07:33.4780223Z             "watchers": 0,
+build-and-push	Build and push image	2026-10-26T08:07:33.4780550Z             "watchers_count": 0,
+build-and-push	Build and push image	2026-10-26T08:07:33.4780917Z             "web_commit_signoff_required": false
+build-and-push	Build and push image	2026-10-26T08:07:33.4781329Z           },
+build-and-push	Build and push image	2026-10-26T08:07:33.4781824Z           "sender": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4782401Z             "avatar_url": "https://avatars.githubusercontent.com/u/189788636?v=4",
+build-and-push	Build and push image	2026-10-26T08:07:33.4782953Z             "events_url": "https://api.github.com/users/ZekRock18/events{/privacy}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4783505Z             "followers_url": "https://api.github.com/users/ZekRock18/followers",
+build-and-push	Build and push image	2026-10-26T08:07:33.4784069Z             "following_url": "https://api.github.com/users/ZekRock18/following{/other_user}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4784618Z             "gists_url": "https://api.github.com/users/ZekRock18/gists{/gist_id}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4785097Z             "gravatar_id": "",
+build-and-push	Build and push image	2026-10-26T08:07:33.4785506Z             "html_url": "https://github.com/ZekRock18",
+build-and-push	Build and push image	2026-10-26T08:07:33.4785954Z             "id": 189788636,
+build-and-push	Build and push image	2026-10-26T08:07:33.4786293Z             "login": "ZekRock18",
+build-and-push	Build and push image	2026-10-26T08:07:33.4786664Z             "node_id": "U_kgDOC0_x3A",
+build-and-push	Build and push image	2026-10-26T08:07:33.4787114Z             "organizations_url": "https://api.github.com/users/ZekRock18/orgs",
+build-and-push	Build and push image	2026-10-26T08:07:33.4787669Z             "received_events_url": "https://api.github.com/users/ZekRock18/received_events",
+build-and-push	Build and push image	2026-10-26T08:07:33.4788354Z             "repos_url": "https://api.github.com/users/ZekRock18/repos",
+build-and-push	Build and push image	2026-10-26T08:07:33.4788813Z             "site_admin": false,
+build-and-push	Build and push image	2026-10-26T08:07:33.4789318Z             "starred_url": "https://api.github.com/users/ZekRock18/starred{/owner}{/repo}",
+build-and-push	Build and push image	2026-10-26T08:07:33.4789908Z             "subscriptions_url": "https://api.github.com/users/ZekRock18/subscriptions",
+build-and-push	Build and push image	2026-10-26T08:07:33.4790375Z             "type": "User",
+build-and-push	Build and push image	2026-10-26T08:07:33.4790730Z             "url": "https://api.github.com/users/ZekRock18",
+build-and-push	Build and push image	2026-10-26T08:07:33.4791162Z             "user_view_type": "public"
+build-and-push	Build and push image	2026-10-26T08:07:33.4791831Z           }
+build-and-push	Build and push image	2026-10-26T08:07:33.4792150Z         },
+build-and-push	Build and push image	2026-10-26T08:07:33.4792471Z         "github_job": "build-and-push",
+build-and-push	Build and push image	2026-10-26T08:07:33.4792839Z         "github_ref": "refs/heads/main",
+build-and-push	Build and push image	2026-10-26T08:07:33.4793246Z         "github_ref_name": "main",
+build-and-push	Build and push image	2026-10-26T08:07:33.4793618Z         "github_ref_protected": "false",
+build-and-push	Build and push image	2026-10-26T08:07:33.4793975Z         "github_ref_type": "branch",
+build-and-push	Build and push image	2026-10-26T08:07:33.4794389Z         "github_repository": "ZekRock18/gridshare-qwen3.8-27b",
+build-and-push	Build and push image	2026-10-26T08:07:33.4794810Z         "github_repository_id": "1434030111",
+build-and-push	Build and push image	2026-10-26T08:07:33.4795206Z         "github_repository_owner": "ZekRock18",
+build-and-push	Build and push image	2026-10-26T08:07:33.4795620Z         "github_repository_owner_id": "189788636",
+build-and-push	Build and push image	2026-10-26T08:07:33.4795989Z         "github_run_attempt": "1",
+build-and-push	Build and push image	2026-10-26T08:07:33.4796393Z         "github_run_id": "40289582417",
+build-and-push	Build and push image	2026-10-26T08:07:33.4796746Z         "github_run_number": "2",
+build-and-push	Build and push image	2026-10-26T08:07:33.4797100Z         "github_runner_arch": "X64",
+build-and-push	Build and push image	2026-10-26T08:07:33.4797504Z         "github_runner_environment": "github-hosted",
+build-and-push	Build and push image	2026-10-26T08:07:33.4797887Z         "github_runner_image_os": "ubuntu24",
+build-and-push	Build and push image	2026-10-26T08:07:33.4798318Z         "github_runner_image_version": "20261023.334.3",
+build-and-push	Build and push image	2026-10-26T08:07:33.4798727Z         "github_runner_name": "GitHub Actions 1000000126",
+build-and-push	Build and push image	2026-10-26T08:07:33.4799205Z         "github_runner_os": "Linux",
+build-and-push	Build and push image	2026-10-26T08:07:33.4799686Z         "github_runner_tracking_id": "github_456bc4a2-e7ba-4816-8060-d0039baf9e6f",
+build-and-push	Build and push image	2026-10-26T08:07:33.4800186Z         "github_server_url": "https://github.com",
+build-and-push	Build and push image	2026-10-26T08:07:33.4800622Z         "github_triggering_actor": "ZekRock18",
+build-and-push	Build and push image	2026-10-26T08:07:33.4801036Z         "github_workflow": "Build and publish GridShare image",
+build-and-push	Build and push image	2026-10-26T08:07:33.4801981Z         "github_workflow_ref": "ZekRock18/gridshare-qwen3.8-27b/.github/workflows/publish.yml@refs/heads/main",
+build-and-push	Build and push image	2026-10-26T08:07:33.4802753Z         "github_workflow_sha": "530251018d6fcbf6950d77ea1d57dbdc5ecbab5a",
+build-and-push	Build and push image	2026-10-26T08:07:33.4803201Z         "platform": "linux/amd64"
+build-and-push	Build and push image	2026-10-26T08:07:33.4803551Z       }
+build-and-push	Build and push image	2026-10-26T08:07:33.4803866Z     }
+build-and-push	Build and push image	2026-10-26T08:07:33.4804144Z   },
+build-and-push	Build and push image	2026-10-26T08:07:33.4804793Z   "buildx.build.ref": "builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2/builder-95b8935b-2ce4-488a-9a22-3edd6d684ea20/gfmdqt16yhwkb17rej1jfjiep",
+build-and-push	Build and push image	2026-10-26T08:07:33.4805487Z   "containerimage.descriptor": {
+build-and-push	Build and push image	2026-10-26T08:07:33.4805912Z     "mediaType": "application/vnd.oci.image.index.v1+json",
+build-and-push	Build and push image	2026-10-26T08:07:33.4806766Z     "digest": "sha256:2d6f4e8efbec7d0c09e44ba0eea19dabe053151fd588630472eacd2b15c569a0",
+build-and-push	Build and push image	2026-10-26T08:07:33.4807226Z     "size": 856
+build-and-push	Build and push image	2026-10-26T08:07:33.4807560Z   },
+build-and-push	Build and push image	2026-10-26T08:07:33.4808011Z   "containerimage.digest": "sha256:2d6f4e8efbec7d0c09e44ba0eea19dabe053151fd588630472eacd2b15c569a0",
+build-and-push	Build and push image	2026-10-26T08:07:33.4808887Z   "image.name": "ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest,ghcr.io/zekrock18/gridshare-qwen3.8-27b:sha-530251018d6fcbf6950d77ea1d57dbdc5ecbab5a"
+build-and-push	Build and push image	2026-10-26T08:07:33.4809555Z }
+build-and-push	Build and push image	2026-10-26T08:07:33.4810118Z ##[endgroup]
+build-and-push	Build and push image	2026-10-26T08:07:33.4810695Z ##[group]Reference
+build-and-push	Build and push image	2026-10-26T08:07:33.4811541Z builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2/builder-95b8935b-2ce4-488a-9a22-3edd6d684ea20/gfmdqt16yhwkb17rej1jfjiep
+build-and-push	Build and push image	2026-10-26T08:07:33.4812480Z ##[endgroup]
+build-and-push	Build and push image	2026-10-26T08:07:33.4813001Z ##[group]Check build summary support
+build-and-push	Build and push image	2026-10-26T08:07:33.4813507Z Build summary supported!
+build-and-push	Build and push image	2026-10-26T08:07:33.4814024Z ##[endgroup]
+build-and-push	Post Build and push image	﻿2026-10-26T08:07:33.4922732Z Post job cleanup.
+build-and-push	Post Build and push image	2026-10-26T08:07:33.7173497Z ##[group]Generating build summary
+build-and-push	Post Build and push image	2026-10-26T08:07:33.7177081Z exporting build record to /home/runner/work/_temp/docker-actions-toolkit-HH5PGQ/export
+build-and-push	Post Build and push image	2026-10-26T08:07:33.7188954Z (node:8257) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	Post Build and push image	2026-10-26T08:07:33.7189912Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	Post Build and push image	2026-10-26T08:07:33.9075110Z [command]/usr/bin/docker buildx history export --builder builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2 --output /home/runner/work/_temp/docker-actions-toolkit-HH5PGQ/export/ZekRock18~gridshare-qwen3.8-27b~GFMDQT.dockerbuild gfmdqt16yhwkb17rej1jfjiep --finalize
+build-and-push	Post Build and push image	2026-10-26T08:07:34.2653258Z Build record written to /home/runner/work/_temp/docker-actions-toolkit-HH5PGQ/export/ZekRock18~gridshare-qwen3.8-27b~GFMDQT.dockerbuild (87.71 KB)
+build-and-push	Post Build and push image	2026-10-26T08:07:34.2677065Z Uploading ZekRock18~gridshare-qwen3.8-27b~GFMDQT.dockerbuild to blob storage
+build-and-push	Post Build and push image	2026-10-26T08:07:34.5395425Z Beginning upload of artifact content to blob storage
+build-and-push	Post Build and push image	2026-10-26T08:07:34.5476039Z (node:8257) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+build-and-push	Post Build and push image	2026-10-26T08:07:34.5484458Z Uploaded bytes 65536
+build-and-push	Post Build and push image	2026-10-26T08:07:34.5486199Z Uploaded bytes 89812
+build-and-push	Post Build and push image	2026-10-26T08:07:34.6980176Z Finished uploading artifact content to blob storage!
+build-and-push	Post Build and push image	2026-10-26T08:07:34.6984654Z SHA256 hash of uploaded artifact is 6f125f8a31a5236d20abee2d607ba391cdd5c5180a791bc04daa8d808b8ed0ee
+build-and-push	Post Build and push image	2026-10-26T08:07:34.6986897Z Finalizing artifact upload
+build-and-push	Post Build and push image	2026-10-26T08:07:35.1863361Z Artifact successfully finalized (12635379734)
+build-and-push	Post Build and push image	2026-10-26T08:07:35.1864491Z Artifact download URL: https://github.com/ZekRock18/gridshare-qwen3.8-27b/actions/runs/40289582417/artifacts/12635379734
+build-and-push	Post Build and push image	2026-10-26T08:07:35.1889279Z Writing summary
+build-and-push	Post Build and push image	2026-10-26T08:07:35.1902518Z ##[endgroup]
+build-and-push	Post Build and push image	2026-10-26T08:07:35.1903493Z ##[group]Removing temp folder /home/runner/work/_temp/docker-actions-toolkit-kKzQFt
+build-and-push	Post Build and push image	2026-10-26T08:07:35.1908527Z ##[endgroup]
+build-and-push	Post Build and push image	2026-10-26T08:07:35.1909989Z ##[group]Post cache
+build-and-push	Post Build and push image	2026-10-26T08:07:35.1910696Z State not set
+build-and-push	Post Build and push image	2026-10-26T08:07:35.1911892Z ##[endgroup]
+build-and-push	Post Log in to GitHub Container Registry	﻿2026-10-26T08:07:35.2106220Z Post job cleanup.
+build-and-push	Post Log in to GitHub Container Registry	2026-10-26T08:07:35.4978486Z ##[group]Logout from ghcr.io
+build-and-push	Post Log in to GitHub Container Registry	2026-10-26T08:07:35.5003761Z (node:8406) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	Post Log in to GitHub Container Registry	2026-10-26T08:07:35.5005013Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	Post Log in to GitHub Container Registry	2026-10-26T08:07:35.5028802Z [command]/usr/bin/docker logout ghcr.io
+build-and-push	Post Log in to GitHub Container Registry	2026-10-26T08:07:35.5188021Z Removing login credentials for ghcr.io
+build-and-push	Post Log in to GitHub Container Registry	2026-10-26T08:07:35.5211338Z ##[endgroup]
+build-and-push	Post Log in to GitHub Container Registry	2026-10-26T08:07:35.5212166Z ##[group]Post cache
+build-and-push	Post Log in to GitHub Container Registry	2026-10-26T08:07:35.5212563Z State not set
+build-and-push	Post Log in to GitHub Container Registry	2026-10-26T08:07:35.5213141Z ##[endgroup]
+build-and-push	Post Set up Python	﻿2026-10-26T08:07:35.5347307Z Post job cleanup.
+build-and-push	Post Set up Python	2026-10-26T08:07:35.6576696Z (node:8426) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	Post Set up Python	2026-10-26T08:07:35.6577391Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	Post Set up Docker Buildx	﻿2026-10-26T08:07:35.6699394Z Post job cleanup.
+build-and-push	Post Set up Docker Buildx	2026-10-26T08:07:35.9110199Z ##[group]Removing builder
+build-and-push	Post Set up Docker Buildx	2026-10-26T08:07:35.9115784Z (node:8434) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push	Post Set up Docker Buildx	2026-10-26T08:07:35.9116734Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push	Post Set up Docker Buildx	2026-10-26T08:07:36.0233801Z [command]/usr/bin/docker buildx rm builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2
+build-and-push	Post Set up Docker Buildx	2026-10-26T08:07:39.6719855Z builder-95b8935b-2ce4-488a-9a22-3edd6d684ea2 removed
+build-and-push	Post Set up Docker Buildx	2026-10-26T08:07:39.6736870Z ##[endgroup]
+build-and-push	Post Set up Docker Buildx	2026-10-26T08:07:39.6737350Z ##[group]Cleaning up certificates
+build-and-push	Post Set up Docker Buildx	2026-10-26T08:07:39.6738537Z ##[endgroup]
+build-and-push	Post Set up Docker Buildx	2026-10-26T08:07:39.6739064Z ##[group]Post cache
+build-and-push	Post Set up Docker Buildx	2026-10-26T08:07:39.6740875Z State not set
+build-and-push	Post Set up Docker Buildx	2026-10-26T08:07:39.6742126Z ##[endgroup]
+build-and-push	Post Check out repository	﻿2026-10-26T08:07:39.6882581Z Post job cleanup.
+build-and-push	Post Check out repository	2026-10-26T08:07:39.7743170Z [command]/usr/bin/git version
+build-and-push	Post Check out repository	2026-10-26T08:07:39.7788174Z git version 2.55.0
+build-and-push	Post Check out repository	2026-10-26T08:07:39.7831163Z Temporarily overriding HOME='/home/runner/work/_temp/cb34d3f4-89ee-422f-a3ea-3a2400194e34' before making global git config changes
+build-and-push	Post Check out repository	2026-10-26T08:07:39.7832444Z Adding repository directory to the temporary git global config as a safe directory
+build-and-push	Post Check out repository	2026-10-26T08:07:39.7838705Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gridshare-qwen3.8-27b/gridshare-qwen3.8-27b
+build-and-push	Post Check out repository	2026-10-26T08:07:39.7879816Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-push	Post Check out repository	2026-10-26T08:07:39.7913495Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-push	Post Check out repository	2026-10-26T08:07:39.8147430Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-push	Post Check out repository	2026-10-26T08:07:39.8172992Z http.https://github.com/.extraheader
+build-and-push	Post Check out repository	2026-10-26T08:07:39.8184462Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-push	Post Check out repository	2026-10-26T08:07:39.8219325Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-push	Post Check out repository	2026-10-26T08:07:39.8453593Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-push	Post Check out repository	2026-10-26T08:07:39.8490037Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-push	Complete job	﻿2026-10-26T08:07:39.8839124Z Cleaning up orphan processes
+build-and-push	Complete job	2026-10-26T08:07:39.9162662Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, docker/build-push-action@v6, docker/login-action@v3, docker/setup-buildx-action@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

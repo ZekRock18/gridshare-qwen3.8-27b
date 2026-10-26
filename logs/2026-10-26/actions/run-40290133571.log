@@ -1,0 +1,174 @@
+smoke	Set up job	﻿2026-10-26T08:07:47.9368227Z Current runner version: '2.338.0'
+smoke	Set up job	2026-10-26T08:07:47.9395375Z ##[group]Runner Image Provisioner
+smoke	Set up job	2026-10-26T08:07:47.9396259Z Hosted Compute Agent
+smoke	Set up job	2026-10-26T08:07:47.9396974Z Version: 20261021.618
+smoke	Set up job	2026-10-26T08:07:47.9397653Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+smoke	Set up job	2026-10-26T08:07:47.9398425Z Build Date: 2026-10-21T00:45:21Z
+smoke	Set up job	2026-10-26T08:07:47.9399140Z Worker ID: {3b8b3976-37a2-4018-aa07-ff50cf00670e}
+smoke	Set up job	2026-10-26T08:07:47.9399831Z Region: westus2
+smoke	Set up job	2026-10-26T08:07:47.9400450Z Cloud: Azure
+smoke	Set up job	2026-10-26T08:07:47.9400997Z ##[endgroup]
+smoke	Set up job	2026-10-26T08:07:47.9403089Z ##[group]Operating System
+smoke	Set up job	2026-10-26T08:07:47.9403831Z Ubuntu
+smoke	Set up job	2026-10-26T08:07:47.9404362Z 24.04.5
+smoke	Set up job	2026-10-26T08:07:47.9404938Z LTS
+smoke	Set up job	2026-10-26T08:07:47.9405455Z ##[endgroup]
+smoke	Set up job	2026-10-26T08:07:47.9406090Z ##[group]Runner Image
+smoke	Set up job	2026-10-26T08:07:47.9406742Z Image: ubuntu-24.04
+smoke	Set up job	2026-10-26T08:07:47.9407317Z Version: 20261012.334.1
+smoke	Set up job	2026-10-26T08:07:47.9408451Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+smoke	Set up job	2026-10-26T08:07:47.9410255Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+smoke	Set up job	2026-10-26T08:07:47.9411323Z ##[endgroup]
+smoke	Set up job	2026-10-26T08:07:47.9412801Z ##[group]GITHUB_TOKEN Permissions
+smoke	Set up job	2026-10-26T08:07:47.9415008Z Contents: read
+smoke	Set up job	2026-10-26T08:07:47.9415689Z Metadata: read
+smoke	Set up job	2026-10-26T08:07:47.9416387Z Packages: read
+smoke	Set up job	2026-10-26T08:07:47.9416964Z ##[endgroup]
+smoke	Set up job	2026-10-26T08:07:47.9419199Z Secret source: Actions
+smoke	Set up job	2026-10-26T08:07:47.9420309Z Cache mode: write
+smoke	Set up job	2026-10-26T08:07:47.9421020Z Prepare workflow directory
+smoke	Set up job	2026-10-26T08:07:47.9765293Z Prepare all required actions
+smoke	Set up job	2026-10-26T08:07:47.9814291Z Getting action download info
+smoke	Set up job	2026-10-26T08:07:48.3286288Z Download action repository 'docker/login-action@v3' (SHA:c94ce9fb468520275223c153574b00df6fe4bcc9)
+smoke	Set up job	2026-10-26T08:07:48.8121233Z Complete job name: smoke
+smoke	Log in to GHCR	﻿2026-10-26T08:07:48.9023735Z ##[group]Run docker/login-action@v3
+smoke	Log in to GHCR	2026-10-26T08:07:48.9024706Z with:
+smoke	Log in to GHCR	2026-10-26T08:07:48.9025150Z   registry: ghcr.io
+smoke	Log in to GHCR	2026-10-26T08:07:48.9025648Z   username: ZekRock18
+smoke	Log in to GHCR	2026-10-26T08:07:48.9030118Z   password: ***
+smoke	Log in to GHCR	2026-10-26T08:07:48.9030602Z   logout: true
+smoke	Log in to GHCR	2026-10-26T08:07:48.9031403Z ##[endgroup]
+smoke	Log in to GHCR	2026-10-26T08:07:49.2458960Z Logging into ghcr.io...
+smoke	Log in to GHCR	2026-10-26T08:07:49.2482316Z (node:2405) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+smoke	Log in to GHCR	2026-10-26T08:07:49.2484613Z (Use `node --trace-deprecation ...` to show where the warning was created)
+smoke	Log in to GHCR	2026-10-26T08:07:49.6970957Z Login Succeeded!
+smoke	Check binary and HTTP startup without downloading weights	﻿2026-10-26T08:07:49.7242169Z ##[group]Run set -euo pipefail
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7243835Z [36;1mset -euo pipefail[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7245444Z [36;1mimage="ghcr.io/${GITHUB_REPOSITORY,,}:latest"[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7247175Z [36;1mdocker pull "$image"[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7249032Z [36;1mdocker run --rm --entrypoint /app/llama-server "$image" --version[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7251311Z [36;1mdocker run -d --name smoke -p 127.0.0.1:8080:8080 \[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7253967Z [36;1m  -e MODEL_URL=http://127.0.0.1:1/intentionally-unavailable "$image"[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7256251Z [36;1mtrap 'docker logs smoke; docker rm -f smoke' EXIT[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7258029Z [36;1mfor attempt in $(seq 1 30); do[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7260278Z [36;1m  status=$(curl -s -o /tmp/health.json -w '%{http_code}' http://127.0.0.1:8080/health || true)[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7262782Z [36;1m  if [ "$status" = "503" ]; then[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7264925Z [36;1m    python3 -c 'import json; assert json.load(open("/tmp/health.json"))["ready"] is False'[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7267230Z [36;1m    curl -fsS http://127.0.0.1:8080/[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7268672Z [36;1m    exit 0[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7269788Z [36;1m  fi[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7270808Z [36;1m  sleep 2[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7272074Z [36;1mdone[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7273685Z [36;1mecho 'Wrapper did not expose an unready health response within 60 seconds'[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7275623Z [36;1mexit 1[0m
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7583961Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:49.7586067Z ##[endgroup]
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.2720183Z latest: Pulling from zekrock18/gridshare-qwen3.8-27b
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4143951Z 5a7813e071bf: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4145496Z a102f36d092c: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4146228Z 05ec76e31584: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4147076Z 398182656c47: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4148050Z 73389fbd088f: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4148949Z cbb9175a9bc5: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4149735Z 3d6ab8c799cd: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4150302Z 7209097bfb98: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4150743Z 545a3ada5b6b: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4151130Z 7f6cdaf7a337: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4151484Z 69e0001f8711: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4152214Z 9303fe791da9: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4152619Z 4f4fb700ef54: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4153048Z ab24a6924cbe: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4153442Z 398182656c47: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4153757Z 8c527a0e7a72: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4154106Z 54fc4b2d53ce: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4154452Z fbf967117746: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4154780Z 73389fbd088f: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4155091Z 1411ce7334c3: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4155432Z 6f4e681fa3e1: Pulling fs layer
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4155765Z cbb9175a9bc5: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4156064Z 7209097bfb98: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4156369Z 3d6ab8c799cd: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4156676Z 69e0001f8711: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4156969Z 545a3ada5b6b: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4157278Z 9303fe791da9: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4157755Z 54fc4b2d53ce: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4158377Z 7f6cdaf7a337: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4158979Z fbf967117746: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4159575Z 4f4fb700ef54: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4159936Z ab24a6924cbe: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4160352Z 8c527a0e7a72: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4161228Z 1411ce7334c3: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.4162125Z 6f4e681fa3e1: Waiting
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.6857401Z 5a7813e071bf: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.6858753Z 5a7813e071bf: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.6918619Z a102f36d092c: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.6920536Z a102f36d092c: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.8724466Z 398182656c47: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.8725375Z 398182656c47: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.8903751Z 73389fbd088f: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:50.8906235Z 73389fbd088f: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:51.0765721Z 3d6ab8c799cd: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:51.2723971Z 7209097bfb98: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:51.2739408Z 7209097bfb98: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:51.4663598Z 545a3ada5b6b: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:51.4664357Z 545a3ada5b6b: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:51.7421314Z 05ec76e31584: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:51.7422625Z 05ec76e31584: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:51.8597663Z 5a7813e071bf: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:55.5136457Z a102f36d092c: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:55.9145586Z 69e0001f8711: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:55.9146919Z 69e0001f8711: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:56.1049252Z 9303fe791da9: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:56.1050772Z 9303fe791da9: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:56.2286521Z 4f4fb700ef54: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:56.2287233Z 4f4fb700ef54: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:56.5184865Z 05ec76e31584: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:56.5244712Z ab24a6924cbe: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:56.5250625Z ab24a6924cbe: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:56.7219074Z 8c527a0e7a72: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:56.7220424Z 8c527a0e7a72: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:57.0499431Z 54fc4b2d53ce: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:57.0501109Z 54fc4b2d53ce: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:57.1014103Z 7f6cdaf7a337: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:57.1015373Z 7f6cdaf7a337: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:57.4146850Z 1411ce7334c3: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:57.4148321Z 1411ce7334c3: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:57.4149112Z 398182656c47: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:57.6212496Z 6f4e681fa3e1: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:57.6213176Z 6f4e681fa3e1: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:57.7154944Z fbf967117746: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:57.7155339Z fbf967117746: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:07:58.0667777Z 73389fbd088f: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:08:35.8336288Z cbb9175a9bc5: Verifying Checksum
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:08:35.8337305Z cbb9175a9bc5: Download complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:08:55.5154777Z cbb9175a9bc5: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:08:55.5299565Z 3d6ab8c799cd: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:08:55.5436981Z 7209097bfb98: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:08:55.5556994Z 545a3ada5b6b: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:04.4610955Z 7f6cdaf7a337: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:05.6017208Z 69e0001f8711: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:05.6120946Z 9303fe791da9: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:05.6204782Z 4f4fb700ef54: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:05.7310008Z ab24a6924cbe: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:05.7407712Z 8c527a0e7a72: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:05.7486094Z 54fc4b2d53ce: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:06.5978266Z fbf967117746: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:06.6084065Z 1411ce7334c3: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:06.6222665Z 6f4e681fa3e1: Pull complete
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:06.6266647Z Digest: sha256:2d6f4e8efbec7d0c09e44ba0eea19dabe053151fd588630472eacd2b15c569a0
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:06.6276909Z Status: Downloaded newer image for ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:06.6288414Z ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:06.8380755Z /app/llama-server: error while loading shared libraries: libllama-server-impl.so: cannot open shared object file: No such file or directory
+smoke	Check binary and HTTP startup without downloading weights	2026-10-26T08:09:06.9133122Z ##[error]Process completed with exit code 127.
+smoke	Post Log in to GHCR	﻿2026-10-26T08:09:06.9252794Z Post job cleanup.
+smoke	Post Log in to GHCR	2026-10-26T08:09:07.2578717Z ##[group]Logout from ghcr.io
+smoke	Post Log in to GHCR	2026-10-26T08:09:07.2604425Z (node:2938) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+smoke	Post Log in to GHCR	2026-10-26T08:09:07.2605579Z (Use `node --trace-deprecation ...` to show where the warning was created)
+smoke	Post Log in to GHCR	2026-10-26T08:09:07.2649018Z [command]/usr/bin/docker logout ghcr.io
+smoke	Post Log in to GHCR	2026-10-26T08:09:07.2800601Z Removing login credentials for ghcr.io
+smoke	Post Log in to GHCR	2026-10-26T08:09:07.2836179Z ##[endgroup]
+smoke	Post Log in to GHCR	2026-10-26T08:09:07.2837127Z ##[group]Post cache
+smoke	Post Log in to GHCR	2026-10-26T08:09:07.2837792Z State not set
+smoke	Post Log in to GHCR	2026-10-26T08:09:07.2838675Z ##[endgroup]
+smoke	Complete job	﻿2026-10-26T08:09:07.3044983Z Cleaning up orphan processes
+smoke	Complete job	2026-10-26T08:09:07.5368739Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: docker/login-action@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

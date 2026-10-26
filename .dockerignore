@@ -6,3 +6,7 @@ models/
 __pycache__/
 *.pyc
 .env
+*.env
+logs/
+docs/
+.build-artifacts/

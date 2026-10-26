@@ -1,0 +1,3 @@
+# Preserve archived evidence bytes and stable documentation checksums.
+logs/** -text
+docs/** text eol=lf
