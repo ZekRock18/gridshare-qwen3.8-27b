@@ -51,10 +51,10 @@ Use the exact image URI created by your workflow:
 
 - **Endpoint name:** `qwen38-27b-q3`
 - **Docker image:** `ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest`
-- **Min VRAM:** `24` GB
-- **Preferred GPU family:** `RTX 4090` (this is an NVIDIA CUDA image; a VRAM minimum alone does not establish runtime compatibility)
+- **Min VRAM:** `20` GB for the budget test; GPU inference is still to be verified.
+- **Preferred GPU family:** `RTX 4000 Ada` via API. This was the cheapest available compatible NVIDIA GPU listed on 2026-10-26. The UI dropdown does not offer this family; use `gridshare-endpoint.json` through the API. Do not substitute Any GPU if you need to retain this cost preference.
 - **Environment variables** (model URL and filename are already built in):
-  - `MODEL_CTX` = `4096`
+  - `MODEL_CTX` = `2048`
   - `MODEL_PORT` = `8081`
 - **Min workers:** `0`
 - **Max workers:** `1`
