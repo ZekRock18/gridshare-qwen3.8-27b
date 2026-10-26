@@ -6,6 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     LLAMA_SERVER=/app/llama-server \
+    LD_LIBRARY_PATH=/app:/usr/local/cuda/lib64 \
     PORT=8080 \
     MODEL_PORT=8081 \
     MODEL_CTX=4096 \
