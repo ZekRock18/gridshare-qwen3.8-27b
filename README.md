@@ -2,6 +2,24 @@
 
 This repository builds a public GHCR Docker image for GridShare's custom serverless container interface.
 
+## Verified live test — 2026-10-26
+
+The public image built successfully, passed five HTTP contract tests and a container startup smoke check, and completed a real GridShare inference request on an **NVIDIA RTX 4000 Ada Generation, 20 GB**.
+
+| Measurement | Result |
+| --- | --- |
+| Model | Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q3_K_P.gguf |
+| Context | 2048 tokens |
+| Prompt / generated tokens | 22 / 69 |
+| Active compute | 3.192 seconds |
+| Request compute charge | INR 0.040565 |
+| Generation speed reported by llama.cpp | 22.88 tokens/second |
+| Initial image/model cold start | Approximately 7 minutes 40 seconds including request completion |
+
+This is one smoke-test prompt, not a comprehensive performance benchmark. The observed active rate was approximately INR 0.0127083/second; the endpoint's generic estimated rate was higher. At 20% of the observed active rate, retaining this worker for the full ten minutes would add about INR 1.53. Pricing and GPU availability can change.
+
+The endpoint is already created as `qwen38-27b-q3` with minimum workers 0 and maximum workers 1. Select it in GridShare's Test Console and paste the contents of `test-input.json` **without** adding another `input` wrapper. The first cold start is longer than the console's 300-second synchronous wait; use the asynchronous API instructions below after scale-to-zero.
+
 It runs the **Q3_K_P** text GGUF from:
 
 `HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF`
@@ -51,7 +69,7 @@ Use the exact image URI created by your workflow:
 
 - **Endpoint name:** `qwen38-27b-q3`
 - **Docker image:** `ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest`
-- **Min VRAM:** `20` GB for the budget test; GPU inference is still to be verified.
+- **Min VRAM:** `20` GB, verified on the RTX 4000 Ada with context 2048.
 - **Preferred GPU family:** `RTX 4000 Ada` via API. This was the cheapest available compatible NVIDIA GPU listed on 2026-10-26. The UI dropdown does not offer this family; use `gridshare-endpoint.json` through the API. Do not substitute Any GPU if you need to retain this cost preference.
 - **Environment variables** (model URL and filename are already built in):
   - `MODEL_CTX` = `2048`
