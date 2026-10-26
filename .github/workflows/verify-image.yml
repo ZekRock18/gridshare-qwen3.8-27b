@@ -1,0 +1,46 @@
+name: Verify published container
+
+on:
+  workflow_run:
+    workflows: ["Build and publish GridShare image"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  smoke:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check binary and HTTP startup without downloading weights
+        shell: bash
+        run: |
+          set -euo pipefail
+          image="ghcr.io/${GITHUB_REPOSITORY,,}:latest"
+          docker pull "$image"
+          docker run --rm --entrypoint /opt/llama/bin/llama-server "$image" --version
+          docker run -d --name smoke -p 127.0.0.1:8080:8080 \
+            -e MODEL_URL=http://127.0.0.1:1/intentionally-unavailable "$image"
+          trap 'docker logs smoke; docker rm -f smoke' EXIT
+          for attempt in $(seq 1 30); do
+            status=$(curl -s -o /tmp/health.json -w '%{http_code}' http://127.0.0.1:8080/health || true)
+            if [ "$status" = "503" ]; then
+              python3 -c 'import json; assert json.load(open("/tmp/health.json"))["ready"] is False'
+              curl -fsS http://127.0.0.1:8080/
+              exit 0
+            fi
+            sleep 2
+          done
+          echo 'Wrapper did not expose an unready health response within 60 seconds'
+          exit 1
