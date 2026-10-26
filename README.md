@@ -26,7 +26,7 @@ Model file: `Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q3_K_P.gguf` (~13.44 GB)
 
 ## Files
 
-- `Dockerfile`: multi-stage CUDA build of `llama.cpp` and runtime image.
+- `Dockerfile`: digest-pinned official llama.cpp CUDA server (b11889) plus the Python HTTP wrapper.
 - `app.py`: GridShare wrapper, model download/startup, health check and request forwarding.
 - `.github/workflows/publish.yml`: builds and publishes the image to GitHub Container Registry (GHCR) on push to `main`.
 - `.dockerignore`: keeps repository build context small.
@@ -151,5 +151,5 @@ Optional `enable_thinking: false` is forwarded as `chat_template_kwargs` for com
 - **Image pull error:** verify the GHCR package is Public and use the exact lowercase `ghcr.io/...:latest` URI.
 - **Health timeout:** model download/load may take too long; check logs and confirm startup wait is set to 900 seconds.
 - **CUDA OOM:** choose a 24 GB or larger GPU and lower context to 2048.
-- **Unsupported model architecture / flags:** the model requires a recent Qwen3.8-compatible `llama.cpp`. This Dockerfile checks out the commit specified in the model card and applies its runtime patch. If the upstream model card changes, review its build instructions.
+- **Unsupported model architecture / flags:** the image uses the official CUDA server b11889, pinned by digest. The custom HauhauCS patch is for its optional FastMTP sidecar, which this text-only deployment does not load.
 - **Request timeout:** GridShare documents a synchronous wait of up to 300 seconds; use short prompts and low `max_tokens` for the first test.
