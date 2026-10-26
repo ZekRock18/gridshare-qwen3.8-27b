@@ -1,0 +1,10 @@
+{
+  "name": "qwen38-27b-q3",
+  "image": "ghcr.io/zekrock18/gridshare-qwen3.8-27b:latest",
+  "min_vram_gb": 24,
+  "preferred_gpu_family": "",
+  "env": {"MODEL_CTX": "4096"},
+  "min_workers": 0,
+  "max_workers": 1,
+  "warmup_timeout_s": 900
+}

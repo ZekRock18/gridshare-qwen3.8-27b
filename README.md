@@ -45,6 +45,8 @@ The workflow uses the built-in `GITHUB_TOKEN`; no personal access token needs to
 
 ## GridShare endpoint settings
 
+In the Docker image dropdown choose **Your own image...**, then paste the image URI below. Wait for the GitHub Actions build to succeed and make the GHCR package public before invoking it.
+
 Use the exact image URI created by your workflow:
 
 - **Endpoint name:** `qwen38-27b-q3`
@@ -87,6 +89,26 @@ The GridShare Test Console may ask only for the *inner input* because it wraps t
 ```
 
 If the first start times out, check GridShare's startup timeout and worker logs before retrying; repeated cold starts may repeat the model download. If it reports CUDA out-of-memory, stop/delete the endpoint and try a GPU with more VRAM or lower `MODEL_CTX` to `2048`.
+
+### API test for a long cold start
+
+The dashboard's synchronous console waits only 300 seconds, even with a 900-second worker warmup. Use the asynchronous API for the first cold request. Set `GRIDSHARE_TOKEN` locally to a GridShare API key (never a GitHub token). From PowerShell in this folder:
+
+```powershell
+$headers = @{Authorization = "Bearer $env:GRIDSHARE_TOKEN"}
+# Create once. If you already created the endpoint in the UI, list endpoints
+# with GET https://gridshare.in/v1/serverless/endpoints/ and use its id instead.
+$endpoint = Invoke-RestMethod https://gridshare.in/v1/serverless/endpoints/ -Method Post -Headers $headers -ContentType 'application/json' -Body (Get-Content gridshare-endpoint.json -Raw)
+$body = @{input = (Get-Content test-input.json -Raw | ConvertFrom-Json)} | ConvertTo-Json -Depth 10
+$job = Invoke-RestMethod "https://gridshare.in/v1/serverless/$($endpoint.id)/run-async" -Method Post -Headers $headers -ContentType 'application/json' -Body $body
+do {
+    Start-Sleep -Seconds 10
+    $result = Invoke-RestMethod "https://gridshare.in/v1/serverless/requests/$($job.request_id)" -Headers $headers
+    $result | ConvertTo-Json -Depth 20
+} while ($result.status -in @('queued', 'pending', 'running', 'processing'))
+```
+
+After testing, delete the endpoint in the dashboard to stop any retained warm worker charges.
 
 ## Input schema
 
